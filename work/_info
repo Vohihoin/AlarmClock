@@ -209,3 +209,54 @@ r1
 !i113 1
 R6
 R7
+vsec_reg_tb
+R0
+!s110 1747155970
+!i10b 1
+!s100 W2iB5>lQV@Ac?:=3jaiW21
+R2
+IFPajh8gKV9;zNFU=>A1Gj3
+R3
+S1
+R4
+w1747155963
+8C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_tb.sv
+FC:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_tb.sv
+!i122 29
+L0 1 67
+R5
+r1
+!s85 0
+31
+!s108 1747155969.000000
+!s107 C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_tb.sv|
+!i113 1
+R6
+R7
+vsec_reg_U
+R0
+!s110 1747156187
+!i10b 1
+!s100 fJlnOiNG=_@4g^0XfN01?2
+R2
+I?:BHcUQO7RoIAA8^nX7BZ0
+R3
+S1
+R4
+w1747156177
+8C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_U.sv
+FC:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_U.sv
+!i122 30
+L0 3 23
+R5
+r1
+!s85 0
+31
+!s108 1747156187.000000
+!s107 C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_U.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_reg_U.sv|
+!i113 1
+R6
+R7
+nsec_reg_@u
