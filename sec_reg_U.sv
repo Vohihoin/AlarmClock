@@ -18,7 +18,7 @@ module sec_reg_U(
     assign load = reset || set || ((hit9) && inc_sec);
     assign reg_input = ((reset) || ((hit9) && inc_sec)) ? 4'b0000 : new_val; // if we hit 9 and we're incrementing, we want to reset our counter
 
-    reg4bit register(.D(reg_input), .Q(Q), .inc(inc_sec), .load(load), .clk(clk)); // we want to be constantly incrementing
+    reg4bit register(.D(reg_input), .Q(Q), .inc(inc_sec), .load(load), .clk(clk)); 
 
     assign hit9 = (Q == 4'b1001);
 
