@@ -1,16 +1,16 @@
-C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module reg_cell
-
-Top level modules:
-	reg_cell
-
-} {} {}} C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg4bit.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg4bit.sv
+C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg4bit.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg4bit.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module reg4bit
 
 Top level modules:
 	reg4bit
+
+} {} {}} C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reg_cell
+
+Top level modules:
+	reg_cell
 
 } {} {}} C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/half_adder.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/half_adder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -18,6 +18,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	half_adder
+
+} {} {}} C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/register_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/register_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module register_tb
+
+Top level modules:
+	register_tb
+
+} {} {}} C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_counter_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_counter_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sec_counter_tb
+
+Top level modules:
+	sec_counter_tb
 
 } {} {}} C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/d_ff.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/d_ff.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

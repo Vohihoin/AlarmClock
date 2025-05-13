@@ -1,0 +1,96 @@
+# Compile of sec_counter.sv was successful.
+vsim -gui work.register_tb
+# vsim -gui work.register_tb 
+# Start time: 20:02:15 on May 12,2025
+# Loading sv_std.std
+# Loading work.register_tb
+# Loading work.reg4bit
+# Loading work.reg_cell
+# Loading work.half_adder
+# Loading work.d_ff
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/register_tb/D \
+sim:/register_tb/inc \
+sim:/register_tb/load \
+sim:/register_tb/clk \
+sim:/register_tb/Q
+run
+# YAHOO! All tests passed
+# Compile of sec_counter_tb.sv was successful.
+vsim -gui work.sec_counter_tb
+# End time: 20:13:21 on May 12,2025, Elapsed time: 0:11:06
+# Errors: 0, Warnings: 5
+# vsim -gui work.sec_counter_tb 
+# Start time: 20:13:21 on May 12,2025
+# Loading sv_std.std
+# Loading work.sec_counter_tb
+# Loading work.sec_counter
+# Loading work.d_ff
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/sec_counter_tb/clk \
+sim:/sec_counter_tb/reset_sync \
+sim:/sec_counter_tb/inc_out \
+sim:/sec_counter_tb/count
+run
+# Break key hit
+# Break in Module sec_counter_tb at C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/sec_counter_tb.sv line 24
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+restart
+# Compile of sec_counter.sv was successful.
+# Compile of sec_counter_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+# Compile of sec_counter_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sec_counter_tb
+# Loading work.sec_counter
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Yay, sec reached
+# 50000000
+# Break key hit
+# Simulation stop requested.
+# Compile of sec_counter_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sec_counter_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+# Compile of sec_counter_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.sec_counter_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Yay, sec reached
+# 50000000
+#        1000000010000
+# Break key hit
+# Simulation stop requested.
