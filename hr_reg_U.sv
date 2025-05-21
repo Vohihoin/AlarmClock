@@ -1,13 +1,12 @@
-//`default_nettype none
-
-module sec_reg_U(
+module hr_reg_U(
     input wire inc,
     input wire clk,
     input wire reset,
     input wire set,
     input logic[3:0] new_val,
     output wire[3:0] Q,
-    output wire hit9
+    output wire hit9,
+    output wire hit3
 );
 
     wire load;
@@ -21,6 +20,7 @@ module sec_reg_U(
     reg4bit register(.D(reg_input), .Q(Q), .inc(inc), .load(load), .clk(clk)); 
 
     assign hit9 = (Q == 4'b1001);
+    assign hit3 = (Q == 4'b0011);
 
 endmodule
 

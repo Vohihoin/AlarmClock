@@ -1,6 +1,4 @@
-//`default_nettype none
-
-module sec_reg_U(
+module min_reg_U(
     input wire inc,
     input wire clk,
     input wire reset,
