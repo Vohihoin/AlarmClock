@@ -3,7 +3,7 @@
 module sec_reg_U(
     input wire inc,
     input wire clk,
-    input wire reset,
+    input wire resetn,
     input wire set,
     input logic[3:0] new_val,
     output wire[3:0] Q,
@@ -15,8 +15,8 @@ module sec_reg_U(
 
     // if we're setting or resetting, we're loading a new value
     // but reset takes precedence over set
-    assign load = reset || set || ((hit9) && inc);
-    assign reg_input = ((reset) || ((hit9) && inc)) ? 4'b0000 : new_val; // if we hit 9 and we're incrementing, we want to reset our counter
+    assign load = !resetn || set || ((hit9) && inc);
+    assign reg_input = ((!resetn) || ((hit9) && inc)) ? 4'b0000 : new_val; // if we hit 9 and we're incrementing, we want to reset our counter
 
     reg4bit register(.D(reg_input), .Q(Q), .inc(inc), .load(load), .clk(clk)); 
 

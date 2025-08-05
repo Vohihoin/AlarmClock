@@ -1,149 +1,18 @@
-# Compile of sec_counter.sv was successful.
-# Compile of sec_reg_U.sv was successful.
-# Compile of alarm_clock.sv was successful.
-# Compile of alarm_clock_tb.sv failed with 1 errors.
-# Compile of sec_reg_T.sv was successful.
-# 5 compiles, 1 failed with 1 error.
+# Compile of alarm_clock.sv failed with 5 errors.
 # Compile of alarm_clock_tb.sv was successful.
-vsim -gui work.alarm_clock_tb
-# vsim -gui work.alarm_clock_tb 
-# Start time: 17:37:53 on May 21,2025
-# Loading sv_std.std
-# Loading work.alarm_clock_tb
-# Loading work.alarm_clock
-# Loading work.sec_counter
-# Loading work.sec_reg_T
-# Loading work.reg4bit
-# Loading work.sec_reg_U
-# Loading work.d_ff
-# Loading work.reg_cell
-# Loading work.half_adder
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/alarm_clock_tb/clk \
-sim:/alarm_clock_tb/reset \
-sim:/alarm_clock_tb/secU \
-sim:/alarm_clock_tb/secT
-run
-run
-# Compile of sec_counter.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sec_counter
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Compile of alarm_clock.sv was successful.
-# Compile of alarm_clock_tb.sv failed with 1 errors.
-# Compile of min_reg_T.sv was successful.
-# Compile of min_reg_U.sv was successful.
-# 4 compiles, 1 failed with 1 error.
-# Compile of alarm_clock_tb.sv was successful.
-vsim -gui work.alarm_clock_tb
-# End time: 17:52:57 on May 21,2025, Elapsed time: 0:15:04
-# Errors: 0, Warnings: 4
-# vsim -gui work.alarm_clock_tb 
-# Start time: 17:52:57 on May 21,2025
-# Loading sv_std.std
-# Loading work.alarm_clock_tb
-# Loading work.alarm_clock
-# Loading work.sec_counter
-# Loading work.sec_reg_T
-# Loading work.reg4bit
-# Loading work.sec_reg_U
-# Loading work.min_reg_U
-# Loading work.min_reg_T
-# Loading work.d_ff
-# Loading work.reg_cell
-# Loading work.half_adder
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/alarm_clock_tb/clk \
-sim:/alarm_clock_tb/reset \
-sim:/alarm_clock_tb/secU \
-sim:/alarm_clock_tb/secT \
-sim:/alarm_clock_tb/minU \
-sim:/alarm_clock_tb/minT
-run
-add wave -position insertpoint  \
-sim:/alarm_clock_tb/iDUT/secUHit9 \
-sim:/alarm_clock_tb/iDUT/secTHit5 \
-sim:/alarm_clock_tb/iDUT/minUHit9 \
-sim:/alarm_clock_tb/iDUT/minTHit5
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Compile of alarm_clock.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Compile of alarm_clock.sv failed with 1 errors.
-# Compile of alarm_clock_tb.sv was successful.
-# 2 compiles, 1 failed with 1 error.
+# Compile of bcd7seg.sv was successful.
+# Compile of segAdec.sv was successful.
+# Compile of segBdec.sv was successful.
+# Compile of segCdec.sv was successful.
+# Compile of segDdec.sv was successful.
+# Compile of segEdec.sv was successful.
+# Compile of segFdec.sv was successful.
+# Compile of segGdec.sv was successful.
+# 10 compiles, 1 failed with 5 errors.
 # Compile of alarm_clock.sv was successful.
 vsim -gui work.alarm_clock_tb
-# End time: 18:25:09 on May 21,2025, Elapsed time: 0:32:12
-# Errors: 0, Warnings: 3
 # vsim -gui work.alarm_clock_tb 
-# Start time: 18:25:09 on May 21,2025
-# Loading sv_std.std
-# Loading work.alarm_clock_tb
-# Loading work.alarm_clock
-# Loading work.sec_counter
-# Loading work.sec_reg_T
-# Loading work.reg4bit
-# Loading work.sec_reg_U
-# Loading work.min_reg_U
-# Loading work.min_reg_T
-# ** Error: (vsim-3033) Instantiation of 'hr_reg_U' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb/iDUT File: C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/alarm_clock.sv Line: 29
-#         Searched libraries:
-#             C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/work
-# ** Error: (vsim-3033) Instantiation of 'hr_reg_T' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb/iDUT File: C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/alarm_clock.sv Line: 30
-#         Searched libraries:
-#             C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/work
-# Error loading design
-# End time: 18:25:10 on May 21,2025, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 1
-# Compile of hr_reg_T.sv was successful.
-# Compile of hr_reg_U.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.alarm_clock_tb
-# vsim -gui work.alarm_clock_tb 
-# Start time: 18:25:54 on May 21,2025
+# Start time: 01:37:13 on May 23,2025
 # Loading sv_std.std
 # Loading work.alarm_clock_tb
 # Loading work.alarm_clock
@@ -155,6 +24,14 @@ vsim -gui work.alarm_clock_tb
 # Loading work.min_reg_T
 # Loading work.hr_reg_U
 # Loading work.hr_reg_T
+# Loading work.bcd7seg
+# Loading work.segAdec
+# Loading work.segBdec
+# Loading work.segCdec
+# Loading work.segDdec
+# Loading work.segEdec
+# Loading work.segFdec
+# Loading work.segGdec
 # Loading work.d_ff
 # Loading work.reg_cell
 # Loading work.half_adder
@@ -167,52 +44,16 @@ sim:/alarm_clock_tb/secT \
 sim:/alarm_clock_tb/minU \
 sim:/alarm_clock_tb/minT \
 sim:/alarm_clock_tb/hrU \
-sim:/alarm_clock_tb/hrT
+sim:/alarm_clock_tb/hrT \
+sim:/alarm_clock_tb/secUSeg \
+sim:/alarm_clock_tb/secTSeg \
+sim:/alarm_clock_tb/minUSeg \
+sim:/alarm_clock_tb/minTSeg \
+sim:/alarm_clock_tb/hrUSeg \
+sim:/alarm_clock_tb/hrTSeg
 run
-# Compile of alarm_clock.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-add wave -position insertpoint  \
-sim:/alarm_clock_tb/iDUT/secUHit9 \
-sim:/alarm_clock_tb/iDUT/secTHit5 \
-sim:/alarm_clock_tb/iDUT/minUHit9 \
-sim:/alarm_clock_tb/iDUT/minTHit5 \
-sim:/alarm_clock_tb/iDUT/hrUHit9 \
-sim:/alarm_clock_tb/iDUT/hrUHit3 \
-sim:/alarm_clock_tb/iDUT/hrTHit2 \
-sim:/alarm_clock_tb/iDUT/every_thing_maxed
-run
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Compile of alarm_clock.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 18:37:59 on May 25,2025, Elapsed time: 65:00:46
+# Errors: 0, Warnings: 4

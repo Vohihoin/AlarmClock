@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Aug  3 16:29:30 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : AlarmClock
+Top-level Entity Name : AlarmClock
+Family : Cyclone IV E
+Total logic elements : 212
+    Total combinational functions : 212
+    Dedicated logic registers : 50
+Total registers : 50
+Total pins : 46
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
