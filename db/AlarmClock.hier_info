@@ -1,79 +1,122 @@
 |AlarmClock
-alarm <= alarm_clock:inst6.alarm_ring
+hrTSeg[0] <= alarm_clock:inst1.hrTSeg[0]
+hrTSeg[1] <= alarm_clock:inst1.hrTSeg[1]
+hrTSeg[2] <= alarm_clock:inst1.hrTSeg[2]
+hrTSeg[3] <= alarm_clock:inst1.hrTSeg[3]
+hrTSeg[4] <= alarm_clock:inst1.hrTSeg[4]
+hrTSeg[5] <= alarm_clock:inst1.hrTSeg[5]
+hrTSeg[6] <= alarm_clock:inst1.hrTSeg[6]
 CLOCK_50 => PLL:inst3.inclk0
-reset => alarm_clock:inst6.resetn
-alarm_mode => alarm_clock:inst6.alarm_mode
-hrTSeg[0] <= alarm_clock:inst6.hrTSeg[0]
-hrTSeg[1] <= alarm_clock:inst6.hrTSeg[1]
-hrTSeg[2] <= alarm_clock:inst6.hrTSeg[2]
-hrTSeg[3] <= alarm_clock:inst6.hrTSeg[3]
-hrTSeg[4] <= alarm_clock:inst6.hrTSeg[4]
-hrTSeg[5] <= alarm_clock:inst6.hrTSeg[5]
-hrTSeg[6] <= alarm_clock:inst6.hrTSeg[6]
-hrUSeg[0] <= alarm_clock:inst6.hrUSeg[0]
-hrUSeg[1] <= alarm_clock:inst6.hrUSeg[1]
-hrUSeg[2] <= alarm_clock:inst6.hrUSeg[2]
-hrUSeg[3] <= alarm_clock:inst6.hrUSeg[3]
-hrUSeg[4] <= alarm_clock:inst6.hrUSeg[4]
-hrUSeg[5] <= alarm_clock:inst6.hrUSeg[5]
-hrUSeg[6] <= alarm_clock:inst6.hrUSeg[6]
-minTSeg[0] <= alarm_clock:inst6.minTSeg[0]
-minTSeg[1] <= alarm_clock:inst6.minTSeg[1]
-minTSeg[2] <= alarm_clock:inst6.minTSeg[2]
-minTSeg[3] <= alarm_clock:inst6.minTSeg[3]
-minTSeg[4] <= alarm_clock:inst6.minTSeg[4]
-minTSeg[5] <= alarm_clock:inst6.minTSeg[5]
-minTSeg[6] <= alarm_clock:inst6.minTSeg[6]
-minUSeg[0] <= alarm_clock:inst6.minUSeg[0]
-minUSeg[1] <= alarm_clock:inst6.minUSeg[1]
-minUSeg[2] <= alarm_clock:inst6.minUSeg[2]
-minUSeg[3] <= alarm_clock:inst6.minUSeg[3]
-minUSeg[4] <= alarm_clock:inst6.minUSeg[4]
-minUSeg[5] <= alarm_clock:inst6.minUSeg[5]
-minUSeg[6] <= alarm_clock:inst6.minUSeg[6]
-secTSeg[0] <= alarm_clock:inst6.secTSeg[0]
-secTSeg[1] <= alarm_clock:inst6.secTSeg[1]
-secTSeg[2] <= alarm_clock:inst6.secTSeg[2]
-secTSeg[3] <= alarm_clock:inst6.secTSeg[3]
-secTSeg[4] <= alarm_clock:inst6.secTSeg[4]
-secTSeg[5] <= alarm_clock:inst6.secTSeg[5]
-secTSeg[6] <= alarm_clock:inst6.secTSeg[6]
-secUSeg[0] <= alarm_clock:inst6.secUSeg[0]
-secUSeg[1] <= alarm_clock:inst6.secUSeg[1]
-secUSeg[2] <= alarm_clock:inst6.secUSeg[2]
-secUSeg[3] <= alarm_clock:inst6.secUSeg[3]
-secUSeg[4] <= alarm_clock:inst6.secUSeg[4]
-secUSeg[5] <= alarm_clock:inst6.secUSeg[5]
-secUSeg[6] <= alarm_clock:inst6.secUSeg[6]
+reset => alarm_clock:inst1.resetn
+set_time => alarm_clock:inst1.set_time
+increment => alarm_clock:inst1.increment_in
+hrUSeg[0] <= alarm_clock:inst1.hrUSeg[0]
+hrUSeg[1] <= alarm_clock:inst1.hrUSeg[1]
+hrUSeg[2] <= alarm_clock:inst1.hrUSeg[2]
+hrUSeg[3] <= alarm_clock:inst1.hrUSeg[3]
+hrUSeg[4] <= alarm_clock:inst1.hrUSeg[4]
+hrUSeg[5] <= alarm_clock:inst1.hrUSeg[5]
+hrUSeg[6] <= alarm_clock:inst1.hrUSeg[6]
+LED_output[0] <= alarm_clock:inst1.secU[0]
+LED_output[1] <= alarm_clock:inst1.secU[1]
+LED_output[2] <= alarm_clock:inst1.secU[2]
+LED_output[3] <= alarm_clock:inst1.secU[3]
+minTSeg[0] <= alarm_clock:inst1.minTSeg[0]
+minTSeg[1] <= alarm_clock:inst1.minTSeg[1]
+minTSeg[2] <= alarm_clock:inst1.minTSeg[2]
+minTSeg[3] <= alarm_clock:inst1.minTSeg[3]
+minTSeg[4] <= alarm_clock:inst1.minTSeg[4]
+minTSeg[5] <= alarm_clock:inst1.minTSeg[5]
+minTSeg[6] <= alarm_clock:inst1.minTSeg[6]
+minUSeg[0] <= alarm_clock:inst1.minUSeg[0]
+minUSeg[1] <= alarm_clock:inst1.minUSeg[1]
+minUSeg[2] <= alarm_clock:inst1.minUSeg[2]
+minUSeg[3] <= alarm_clock:inst1.minUSeg[3]
+minUSeg[4] <= alarm_clock:inst1.minUSeg[4]
+minUSeg[5] <= alarm_clock:inst1.minUSeg[5]
+minUSeg[6] <= alarm_clock:inst1.minUSeg[6]
+secTSeg[0] <= alarm_clock:inst1.secTSeg[0]
+secTSeg[1] <= alarm_clock:inst1.secTSeg[1]
+secTSeg[2] <= alarm_clock:inst1.secTSeg[2]
+secTSeg[3] <= alarm_clock:inst1.secTSeg[3]
+secTSeg[4] <= alarm_clock:inst1.secTSeg[4]
+secTSeg[5] <= alarm_clock:inst1.secTSeg[5]
+secTSeg[6] <= alarm_clock:inst1.secTSeg[6]
+secUSeg[0] <= alarm_clock:inst1.secUSeg[0]
+secUSeg[1] <= alarm_clock:inst1.secUSeg[1]
+secUSeg[2] <= alarm_clock:inst1.secUSeg[2]
+secUSeg[3] <= alarm_clock:inst1.secUSeg[3]
+secUSeg[4] <= alarm_clock:inst1.secUSeg[4]
+secUSeg[5] <= alarm_clock:inst1.secUSeg[5]
+secUSeg[6] <= alarm_clock:inst1.secUSeg[6]
 
 
-|AlarmClock|alarm_clock:inst6
-clk => clk.IN14
-resetn => resetn.IN14
-secU[0] <= secU[0].DB_MAX_OUTPUT_PORT_TYPE
-secU[1] <= secU[1].DB_MAX_OUTPUT_PORT_TYPE
-secU[2] <= secU[2].DB_MAX_OUTPUT_PORT_TYPE
-secU[3] <= secU[3].DB_MAX_OUTPUT_PORT_TYPE
-secT[0] <= secT[0].DB_MAX_OUTPUT_PORT_TYPE
-secT[1] <= secT[1].DB_MAX_OUTPUT_PORT_TYPE
-secT[2] <= secT[2].DB_MAX_OUTPUT_PORT_TYPE
-secT[3] <= secT[3].DB_MAX_OUTPUT_PORT_TYPE
-minU[0] <= minU[0].DB_MAX_OUTPUT_PORT_TYPE
-minU[1] <= minU[1].DB_MAX_OUTPUT_PORT_TYPE
-minU[2] <= minU[2].DB_MAX_OUTPUT_PORT_TYPE
-minU[3] <= minU[3].DB_MAX_OUTPUT_PORT_TYPE
-minT[0] <= minT[0].DB_MAX_OUTPUT_PORT_TYPE
-minT[1] <= minT[1].DB_MAX_OUTPUT_PORT_TYPE
-minT[2] <= minT[2].DB_MAX_OUTPUT_PORT_TYPE
-minT[3] <= minT[3].DB_MAX_OUTPUT_PORT_TYPE
-hrU[0] <= hrU[0].DB_MAX_OUTPUT_PORT_TYPE
-hrU[1] <= hrU[1].DB_MAX_OUTPUT_PORT_TYPE
-hrU[2] <= hrU[2].DB_MAX_OUTPUT_PORT_TYPE
-hrU[3] <= hrU[3].DB_MAX_OUTPUT_PORT_TYPE
-hrT[0] <= hrT[0].DB_MAX_OUTPUT_PORT_TYPE
-hrT[1] <= hrT[1].DB_MAX_OUTPUT_PORT_TYPE
-hrT[2] <= hrT[2].DB_MAX_OUTPUT_PORT_TYPE
-hrT[3] <= hrT[3].DB_MAX_OUTPUT_PORT_TYPE
+|AlarmClock|alarm_clock:inst1
+clk => clk.IN11
+resetn => resetn.IN7
+set_time => set_time_nxt_state.OUTPUTSELECT
+set_time => secUnewVal.OUTPUTSELECT
+set_time => secUnewVal.OUTPUTSELECT
+set_time => secUnewVal.OUTPUTSELECT
+set_time => secUnewVal.OUTPUTSELECT
+set_time => secTnewVal.OUTPUTSELECT
+set_time => secTnewVal.OUTPUTSELECT
+set_time => secTnewVal.OUTPUTSELECT
+set_time => secTnewVal.OUTPUTSELECT
+set_time => minUnewVal.OUTPUTSELECT
+set_time => minUnewVal.OUTPUTSELECT
+set_time => minUnewVal.OUTPUTSELECT
+set_time => minUnewVal.OUTPUTSELECT
+set_time => minTnewVal.OUTPUTSELECT
+set_time => minTnewVal.OUTPUTSELECT
+set_time => minTnewVal.OUTPUTSELECT
+set_time => minTnewVal.OUTPUTSELECT
+set_time => hrUnewVal.OUTPUTSELECT
+set_time => hrUnewVal.OUTPUTSELECT
+set_time => hrUnewVal.OUTPUTSELECT
+set_time => hrUnewVal.OUTPUTSELECT
+set_time => hrTnewVal.OUTPUTSELECT
+set_time => hrTnewVal.OUTPUTSELECT
+set_time => hrTnewVal.OUTPUTSELECT
+set_time => hrTnewVal.OUTPUTSELECT
+set_time => selections_next.OUTPUTSELECT
+set_time => selections_next.OUTPUTSELECT
+set_time => selections_next.OUTPUTSELECT
+set_time => selections_next.OUTPUTSELECT
+set_time => selections_next.OUTPUTSELECT
+set_time => selections_next.OUTPUTSELECT
+set_time => secUset.DATAA
+set_time => secTset.DATAA
+set_time => minUset.DATAA
+set_time => minTset.DATAA
+set_time => hrUset.DATAA
+set_time => hrTset.DATAA
+switch_select_in => switch_select_in.IN1
+increment_in => increment_in.IN1
+secU[0] <= secUclock[0].DB_MAX_OUTPUT_PORT_TYPE
+secU[1] <= secUclock[1].DB_MAX_OUTPUT_PORT_TYPE
+secU[2] <= secUclock[2].DB_MAX_OUTPUT_PORT_TYPE
+secU[3] <= secUclock[3].DB_MAX_OUTPUT_PORT_TYPE
+secT[0] <= secTclock[0].DB_MAX_OUTPUT_PORT_TYPE
+secT[1] <= secTclock[1].DB_MAX_OUTPUT_PORT_TYPE
+secT[2] <= secTclock[2].DB_MAX_OUTPUT_PORT_TYPE
+secT[3] <= secTclock[3].DB_MAX_OUTPUT_PORT_TYPE
+minU[0] <= minUclock[0].DB_MAX_OUTPUT_PORT_TYPE
+minU[1] <= minUclock[1].DB_MAX_OUTPUT_PORT_TYPE
+minU[2] <= minUclock[2].DB_MAX_OUTPUT_PORT_TYPE
+minU[3] <= minUclock[3].DB_MAX_OUTPUT_PORT_TYPE
+minT[0] <= minTclock[0].DB_MAX_OUTPUT_PORT_TYPE
+minT[1] <= minTclock[1].DB_MAX_OUTPUT_PORT_TYPE
+minT[2] <= minTclock[2].DB_MAX_OUTPUT_PORT_TYPE
+minT[3] <= minTclock[3].DB_MAX_OUTPUT_PORT_TYPE
+hrU[0] <= hrUclock[0].DB_MAX_OUTPUT_PORT_TYPE
+hrU[1] <= hrUclock[1].DB_MAX_OUTPUT_PORT_TYPE
+hrU[2] <= hrUclock[2].DB_MAX_OUTPUT_PORT_TYPE
+hrU[3] <= hrUclock[3].DB_MAX_OUTPUT_PORT_TYPE
+hrT[0] <= hrTclock[0].DB_MAX_OUTPUT_PORT_TYPE
+hrT[1] <= hrTclock[1].DB_MAX_OUTPUT_PORT_TYPE
+hrT[2] <= hrTclock[2].DB_MAX_OUTPUT_PORT_TYPE
+hrT[3] <= hrTclock[3].DB_MAX_OUTPUT_PORT_TYPE
 secUSeg[0] <= bcd7seg:secUDec.seg
 secUSeg[1] <= bcd7seg:secUDec.seg
 secUSeg[2] <= bcd7seg:secUDec.seg
@@ -116,13 +159,206 @@ hrTSeg[3] <= bcd7seg:hrTDec.seg
 hrTSeg[4] <= bcd7seg:hrTDec.seg
 hrTSeg[5] <= bcd7seg:hrTDec.seg
 hrTSeg[6] <= bcd7seg:hrTDec.seg
-sel_inc_wire => sel_inc_wire.IN1
-sel_next_wire => sel_next_wire.IN1
-alarm_mode => alarm_mode.IN1
-alarm_ring <= alarm_ring.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter
+|AlarmClock|alarm_clock:inst1|reg6bit:iREG1
+D[0] => d_ff:iREG[0].D
+D[1] => d_ff:iREG[1].D
+D[2] => d_ff:iREG[2].D
+D[3] => d_ff:iREG[3].D
+D[4] => d_ff:iREG[4].D
+D[5] => d_ff:iREG[5].D
+Q[0] <= d_ff:iREG[0].Q
+Q[1] <= d_ff:iREG[1].Q
+Q[2] <= d_ff:iREG[2].Q
+Q[3] <= d_ff:iREG[3].Q
+Q[4] <= d_ff:iREG[4].Q
+Q[5] <= d_ff:iREG[5].Q
+clk => d_ff:iREG[0].clk
+clk => d_ff:iREG[1].clk
+clk => d_ff:iREG[2].clk
+clk => d_ff:iREG[3].clk
+clk => d_ff:iREG[4].clk
+clk => d_ff:iREG[5].clk
+resetn => d_ff:iREG[0].CLRN
+resetn => d_ff:iREG[1].CLRN
+resetn => d_ff:iREG[2].CLRN
+resetn => d_ff:iREG[3].CLRN
+resetn => d_ff:iREG[4].CLRN
+resetn => d_ff:iREG[5].CLRN
+
+
+|AlarmClock|alarm_clock:inst1|reg6bit:iREG1|d_ff:iREG[0]
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|reg6bit:iREG1|d_ff:iREG[1]
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|reg6bit:iREG1|d_ff:iREG[2]
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|reg6bit:iREG1|d_ff:iREG[3]
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|reg6bit:iREG1|d_ff:iREG[4]
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|reg6bit:iREG1|d_ff:iREG[5]
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:switch_select_debouncer
+pb_1 => pb_1.IN1
+clk => clk.IN4
+pb_out <= pb_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:switch_select_debouncer|clock_enable:u1
+Clk_50M => counter[0].CLK
+Clk_50M => counter[1].CLK
+Clk_50M => counter[2].CLK
+Clk_50M => counter[3].CLK
+Clk_50M => counter[4].CLK
+Clk_50M => counter[5].CLK
+Clk_50M => counter[6].CLK
+Clk_50M => counter[7].CLK
+Clk_50M => counter[8].CLK
+Clk_50M => counter[9].CLK
+Clk_50M => counter[10].CLK
+Clk_50M => counter[11].CLK
+Clk_50M => counter[12].CLK
+Clk_50M => counter[13].CLK
+Clk_50M => counter[14].CLK
+Clk_50M => counter[15].CLK
+Clk_50M => counter[16].CLK
+Clk_50M => counter[17].CLK
+Clk_50M => counter[18].CLK
+Clk_50M => counter[19].CLK
+Clk_50M => counter[20].CLK
+Clk_50M => counter[21].CLK
+Clk_50M => counter[22].CLK
+Clk_50M => counter[23].CLK
+Clk_50M => counter[24].CLK
+Clk_50M => counter[25].CLK
+Clk_50M => counter[26].CLK
+slow_clk_en <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:switch_select_debouncer|my_dff_en:d0
+DFF_CLOCK => Q~reg0.CLK
+clock_enable => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:switch_select_debouncer|my_dff_en:d1
+DFF_CLOCK => Q~reg0.CLK
+clock_enable => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:switch_select_debouncer|my_dff_en:d2
+DFF_CLOCK => Q~reg0.CLK
+clock_enable => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:increment_debouncer
+pb_1 => pb_1.IN1
+clk => clk.IN4
+pb_out <= pb_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:increment_debouncer|clock_enable:u1
+Clk_50M => counter[0].CLK
+Clk_50M => counter[1].CLK
+Clk_50M => counter[2].CLK
+Clk_50M => counter[3].CLK
+Clk_50M => counter[4].CLK
+Clk_50M => counter[5].CLK
+Clk_50M => counter[6].CLK
+Clk_50M => counter[7].CLK
+Clk_50M => counter[8].CLK
+Clk_50M => counter[9].CLK
+Clk_50M => counter[10].CLK
+Clk_50M => counter[11].CLK
+Clk_50M => counter[12].CLK
+Clk_50M => counter[13].CLK
+Clk_50M => counter[14].CLK
+Clk_50M => counter[15].CLK
+Clk_50M => counter[16].CLK
+Clk_50M => counter[17].CLK
+Clk_50M => counter[18].CLK
+Clk_50M => counter[19].CLK
+Clk_50M => counter[20].CLK
+Clk_50M => counter[21].CLK
+Clk_50M => counter[22].CLK
+Clk_50M => counter[23].CLK
+Clk_50M => counter[24].CLK
+Clk_50M => counter[25].CLK
+Clk_50M => counter[26].CLK
+slow_clk_en <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:increment_debouncer|my_dff_en:d0
+DFF_CLOCK => Q~reg0.CLK
+clock_enable => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:increment_debouncer|my_dff_en:d1
+DFF_CLOCK => Q~reg0.CLK
+clock_enable => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|debouncer:increment_debouncer|my_dff_en:d2
+DFF_CLOCK => Q~reg0.CLK
+clock_enable => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|sec_counter:counter
 clk => d_ff:count_reg[0].clk
 clk => d_ff:count_reg[1].clk
 clk => d_ff:count_reg[2].clk
@@ -179,7 +415,7 @@ count[24] <= d_ff:count_reg[24].Q
 count[25] <= d_ff:count_reg[25].Q
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[0]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[0]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -188,7 +424,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[1]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[1]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -197,7 +433,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[2]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[2]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -206,7 +442,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[3]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[3]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -215,7 +451,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[4]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[4]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -224,7 +460,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[5]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[5]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -233,7 +469,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[6]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[6]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -242,7 +478,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[7]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[7]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -251,7 +487,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[8]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[8]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -260,7 +496,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[9]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[9]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -269,7 +505,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[10]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[10]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -278,7 +514,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[11]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[11]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -287,7 +523,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[12]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[12]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -296,7 +532,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[13]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[13]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -305,7 +541,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[14]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[14]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -314,7 +550,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[15]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[15]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -323,7 +559,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[16]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[16]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -332,7 +568,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[17]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[17]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -341,7 +577,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[18]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[18]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -350,7 +586,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[19]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[19]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -359,7 +595,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[20]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[20]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -368,7 +604,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[21]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[21]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -377,7 +613,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[22]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[22]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -386,7 +622,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[23]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[23]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -395,7 +631,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[24]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[24]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -404,7 +640,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_counter:counter|d_ff:count_reg[25]
+|AlarmClock|alarm_clock:inst1|sec_counter:counter|d_ff:count_reg[25]
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -413,168 +649,23 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT
-clk => clk.IN1
-resetn => reg_input.IN1
-resetn => load_signal.IN0
-set => load_signal.IN1
-inc => inc.IN1
-new_val[0] => reg_input.DATAA
-new_val[1] => reg_input.DATAA
-new_val[2] => reg_input.DATAA
-new_val[3] => reg_input.DATAA
-Q[0] <= reg4bit:register.Q
-Q[1] <= reg4bit:register.Q
-Q[2] <= reg4bit:register.Q
-Q[3] <= reg4bit:register.Q
-hit5 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register
-Q[0] <= reg_cell:reg4bit[0].Q
-Q[1] <= reg_cell:reg4bit[1].Q
-Q[2] <= reg_cell:reg4bit[2].Q
-Q[3] <= reg_cell:reg4bit[3].Q
-D[0] => reg_cell:reg4bit[0].D
-D[1] => reg_cell:reg4bit[1].D
-D[2] => reg_cell:reg4bit[2].D
-D[3] => reg_cell:reg4bit[3].D
-inc => reg_cell:reg4bit[0].inc
-inc => reg_cell:reg4bit[1].inc
-inc => reg_cell:reg4bit[2].inc
-inc => reg_cell:reg4bit[3].inc
-load => reg_cell:reg4bit[0].load
-load => reg_cell:reg4bit[1].load
-load => reg_cell:reg4bit[2].load
-load => reg_cell:reg4bit[3].load
-clk => reg_cell:reg4bit[0].clk
-clk => reg_cell:reg4bit[1].clk
-clk => reg_cell:reg4bit[2].clk
-clk => reg_cell:reg4bit[3].clk
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[0]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[1]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[2]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[3]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU
 inc => inc.IN1
 clk => clk.IN1
 resetn => load.IN0
-resetn => reg_input.IN1
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
 set => load.IN1
-new_val[0] => reg_input.DATAA
-new_val[1] => reg_input.DATAA
-new_val[2] => reg_input.DATAA
-new_val[3] => reg_input.DATAA
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+new_val[0] => reg_input.DATAB
+new_val[1] => reg_input.DATAB
+new_val[2] => reg_input.DATAB
+new_val[3] => reg_input.DATAB
 Q[0] <= reg4bit:register.Q
 Q[1] <= reg4bit:register.Q
 Q[2] <= reg4bit:register.Q
@@ -582,7 +673,7 @@ Q[3] <= reg4bit:register.Q
 hit9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register
 Q[0] <= reg_cell:reg4bit[0].Q
 Q[1] <= reg_cell:reg4bit[1].Q
 Q[2] <= reg_cell:reg4bit[2].Q
@@ -605,7 +696,7 @@ clk => reg_cell:reg4bit[2].clk
 clk => reg_cell:reg4bit[3].clk
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[0]
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[0]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -615,7 +706,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -624,7 +715,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -633,7 +724,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[1]
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[1]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -643,7 +734,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -652,7 +743,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -661,7 +752,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[2]
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[2]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -671,7 +762,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -680,7 +771,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -689,7 +780,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[3]
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[3]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -699,7 +790,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -708,7 +799,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_U:secRegU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -717,168 +808,23 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU
-inc => inc.IN1
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT
 clk => clk.IN1
-resetn => load.IN0
-resetn => reg_input.IN1
-set => load.IN1
-new_val[0] => reg_input.DATAA
-new_val[1] => reg_input.DATAA
-new_val[2] => reg_input.DATAA
-new_val[3] => reg_input.DATAA
-Q[0] <= reg4bit:register.Q
-Q[1] <= reg4bit:register.Q
-Q[2] <= reg4bit:register.Q
-Q[3] <= reg4bit:register.Q
-hit9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register
-Q[0] <= reg_cell:reg4bit[0].Q
-Q[1] <= reg_cell:reg4bit[1].Q
-Q[2] <= reg_cell:reg4bit[2].Q
-Q[3] <= reg_cell:reg4bit[3].Q
-D[0] => reg_cell:reg4bit[0].D
-D[1] => reg_cell:reg4bit[1].D
-D[2] => reg_cell:reg4bit[2].D
-D[3] => reg_cell:reg4bit[3].D
-inc => reg_cell:reg4bit[0].inc
-inc => reg_cell:reg4bit[1].inc
-inc => reg_cell:reg4bit[2].inc
-inc => reg_cell:reg4bit[3].inc
-load => reg_cell:reg4bit[0].load
-load => reg_cell:reg4bit[1].load
-load => reg_cell:reg4bit[2].load
-load => reg_cell:reg4bit[3].load
-clk => reg_cell:reg4bit[0].clk
-clk => reg_cell:reg4bit[1].clk
-clk => reg_cell:reg4bit[2].clk
-clk => reg_cell:reg4bit[3].clk
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[0]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[1]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[2]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[3]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT
-clk => clk.IN1
-resetn => reg_input.IN1
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
 resetn => load_signal.IN0
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
 set => load_signal.IN1
 inc => inc.IN1
-new_val[0] => reg_input.DATAA
-new_val[1] => reg_input.DATAA
-new_val[2] => reg_input.DATAA
-new_val[3] => reg_input.DATAA
+new_val[0] => reg_input.DATAB
+new_val[1] => reg_input.DATAB
+new_val[2] => reg_input.DATAB
+new_val[3] => reg_input.DATAB
 Q[0] <= reg4bit:register.Q
 Q[1] <= reg4bit:register.Q
 Q[2] <= reg4bit:register.Q
@@ -886,7 +832,7 @@ Q[3] <= reg4bit:register.Q
 hit5 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register
 Q[0] <= reg_cell:reg4bit[0].Q
 Q[1] <= reg_cell:reg4bit[1].Q
 Q[2] <= reg_cell:reg4bit[2].Q
@@ -909,7 +855,7 @@ clk => reg_cell:reg4bit[2].clk
 clk => reg_cell:reg4bit[3].clk
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[0]
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[0]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -919,7 +865,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -928,7 +874,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -937,7 +883,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[1]
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[1]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -947,7 +893,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -956,7 +902,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -965,7 +911,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[2]
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[2]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -975,7 +921,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -984,7 +930,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -993,7 +939,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[3]
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[3]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1003,7 +949,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1012,7 +958,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|sec_reg_T:secRegT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1021,16 +967,341 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU
 inc => inc.IN1
 clk => clk.IN1
 resetn => load.IN0
-resetn => reg_input.IN1
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
 set => load.IN1
-new_val[0] => reg_input.DATAA
-new_val[1] => reg_input.DATAA
-new_val[2] => reg_input.DATAA
-new_val[3] => reg_input.DATAA
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+new_val[0] => reg_input.DATAB
+new_val[1] => reg_input.DATAB
+new_val[2] => reg_input.DATAB
+new_val[3] => reg_input.DATAB
+Q[0] <= reg4bit:register.Q
+Q[1] <= reg4bit:register.Q
+Q[2] <= reg4bit:register.Q
+Q[3] <= reg4bit:register.Q
+hit9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register
+Q[0] <= reg_cell:reg4bit[0].Q
+Q[1] <= reg_cell:reg4bit[1].Q
+Q[2] <= reg_cell:reg4bit[2].Q
+Q[3] <= reg_cell:reg4bit[3].Q
+D[0] => reg_cell:reg4bit[0].D
+D[1] => reg_cell:reg4bit[1].D
+D[2] => reg_cell:reg4bit[2].D
+D[3] => reg_cell:reg4bit[3].D
+inc => reg_cell:reg4bit[0].inc
+inc => reg_cell:reg4bit[1].inc
+inc => reg_cell:reg4bit[2].inc
+inc => reg_cell:reg4bit[3].inc
+load => reg_cell:reg4bit[0].load
+load => reg_cell:reg4bit[1].load
+load => reg_cell:reg4bit[2].load
+load => reg_cell:reg4bit[3].load
+clk => reg_cell:reg4bit[0].clk
+clk => reg_cell:reg4bit[1].clk
+clk => reg_cell:reg4bit[2].clk
+clk => reg_cell:reg4bit[3].clk
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[0]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[1]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[2]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[3]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_U:minRegU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT
+clk => clk.IN1
+resetn => load_signal.IN0
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+set => load_signal.IN1
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+inc => inc.IN1
+new_val[0] => reg_input.DATAB
+new_val[1] => reg_input.DATAB
+new_val[2] => reg_input.DATAB
+new_val[3] => reg_input.DATAB
+Q[0] <= reg4bit:register.Q
+Q[1] <= reg4bit:register.Q
+Q[2] <= reg4bit:register.Q
+Q[3] <= reg4bit:register.Q
+hit5 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register
+Q[0] <= reg_cell:reg4bit[0].Q
+Q[1] <= reg_cell:reg4bit[1].Q
+Q[2] <= reg_cell:reg4bit[2].Q
+Q[3] <= reg_cell:reg4bit[3].Q
+D[0] => reg_cell:reg4bit[0].D
+D[1] => reg_cell:reg4bit[1].D
+D[2] => reg_cell:reg4bit[2].D
+D[3] => reg_cell:reg4bit[3].D
+inc => reg_cell:reg4bit[0].inc
+inc => reg_cell:reg4bit[1].inc
+inc => reg_cell:reg4bit[2].inc
+inc => reg_cell:reg4bit[3].inc
+load => reg_cell:reg4bit[0].load
+load => reg_cell:reg4bit[1].load
+load => reg_cell:reg4bit[2].load
+load => reg_cell:reg4bit[3].load
+clk => reg_cell:reg4bit[0].clk
+clk => reg_cell:reg4bit[1].clk
+clk => reg_cell:reg4bit[2].clk
+clk => reg_cell:reg4bit[3].clk
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[0]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[1]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[2]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[3]
+Lout <= half_adder:adder.Cout
+Rin => Rin.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+D => ff_input.DATAB
+inc => ff_input.OUTPUTSELECT
+load => ff_input.OUTPUTSELECT
+clk => clk.IN1
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
+A => iXOR.IN0
+A => iAND.IN0
+B => iXOR.IN1
+B => iAND.IN1
+S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|min_reg_T:minRegT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+CLRN => Q.IN0
+CLRN => Q~reg0.ACLR
+PRN => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU
+inc => inc.IN1
+clk => clk.IN1
+resetn => load.IN0
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+set => load.IN1
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+new_val[0] => reg_input.DATAB
+new_val[1] => reg_input.DATAB
+new_val[2] => reg_input.DATAB
+new_val[3] => reg_input.DATAB
 Q[0] <= reg4bit:register.Q
 Q[1] <= reg4bit:register.Q
 Q[2] <= reg4bit:register.Q
@@ -1039,7 +1310,7 @@ hit9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 hit3 <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register
 Q[0] <= reg_cell:reg4bit[0].Q
 Q[1] <= reg_cell:reg4bit[1].Q
 Q[2] <= reg_cell:reg4bit[2].Q
@@ -1062,7 +1333,7 @@ clk => reg_cell:reg4bit[2].clk
 clk => reg_cell:reg4bit[3].clk
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[0]
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[0]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1072,7 +1343,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1081,7 +1352,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1090,7 +1361,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[1]
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[1]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1100,7 +1371,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1109,7 +1380,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1118,7 +1389,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[2]
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[2]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1128,7 +1399,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1137,7 +1408,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1146,7 +1417,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[3]
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[3]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1156,7 +1427,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1165,7 +1436,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_U:hrRegU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1174,16 +1445,23 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT
 clk => clk.IN1
-resetn => reg_input.IN1
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
+resetn => reg_input.OUTPUTSELECT
 resetn => load_signal.IN0
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
+set => reg_input.OUTPUTSELECT
 set => load_signal.IN1
 inc => inc.IN1
-new_val[0] => reg_input.DATAA
-new_val[1] => reg_input.DATAA
-new_val[2] => reg_input.DATAA
-new_val[3] => reg_input.DATAA
+new_val[0] => reg_input.DATAB
+new_val[1] => reg_input.DATAB
+new_val[2] => reg_input.DATAB
+new_val[3] => reg_input.DATAB
 Q[0] <= reg4bit:register.Q
 Q[1] <= reg4bit:register.Q
 Q[2] <= reg4bit:register.Q
@@ -1191,7 +1469,7 @@ Q[3] <= reg4bit:register.Q
 hit2 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register
 Q[0] <= reg_cell:reg4bit[0].Q
 Q[1] <= reg_cell:reg4bit[1].Q
 Q[2] <= reg_cell:reg4bit[2].Q
@@ -1214,7 +1492,7 @@ clk => reg_cell:reg4bit[2].clk
 clk => reg_cell:reg4bit[3].clk
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[0]
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[0]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1224,7 +1502,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1233,7 +1511,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1242,7 +1520,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[1]
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[1]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1252,7 +1530,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1261,7 +1539,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1270,7 +1548,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[2]
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[2]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1280,7 +1558,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1289,7 +1567,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1298,7 +1576,7 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[3]
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[3]
 Lout <= half_adder:adder.Cout
 Rin => Rin.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
@@ -1308,7 +1586,7 @@ load => ff_input.OUTPUTSELECT
 clk => clk.IN1
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
 A => iXOR.IN0
 A => iAND.IN0
 B => iXOR.IN1
@@ -1317,7 +1595,7 @@ S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
+|AlarmClock|alarm_clock:inst1|hr_reg_T:hrRegT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
@@ -1326,1216 +1604,458 @@ PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AlarmClock|alarm_clock:inst6|press_detector:inc_press_detect
-signal => signal_t.DATAA
-signal => signal_t.DATAB
-press_seen <= press_seen.DB_MAX_OUTPUT_PORT_TYPE
-NC => signal_t.OUTPUTSELECT
-clk => clk.IN1
-resetn => resetn.IN1
-sustained <= sustained$latch.DB_MAX_OUTPUT_PORT_TYPE
-sustained_resetn => always1.IN1
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec
+num[0] => num[0].IN7
+num[1] => num[1].IN7
+num[2] => num[2].IN7
+num[3] => num[3].IN7
+seg[0] <= segGdec:iG.segG
+seg[1] <= segFdec:iF.segF
+seg[2] <= segEdec:iE.segE
+seg[3] <= segDdec:iD.segD
+seg[4] <= segCdec:iC.segC
+seg[5] <= segBdec:iB.segB
+seg[6] <= segAdec:iA.segA
 
 
-|AlarmClock|alarm_clock:inst6|press_detector:inc_press_detect|reg1bit:state_reg
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec|segAdec:iA
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec|segBdec:iB
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec|segCdec:iC
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec|segDdec:iD
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec|segEdec:iE
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec|segFdec:iF
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secUDec|segGdec:iG
+D[0] => and2.IN0
+D[1] => and2.IN1
+D[1] => and1.IN0
+D[2] => and2.IN2
+D[2] => and1.IN1
+D[3] => and1.IN2
+D[3] => and2.IN3
+segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec
+num[0] => num[0].IN7
+num[1] => num[1].IN7
+num[2] => num[2].IN7
+num[3] => num[3].IN7
+seg[0] <= segGdec:iG.segG
+seg[1] <= segFdec:iF.segF
+seg[2] <= segEdec:iE.segE
+seg[3] <= segDdec:iD.segD
+seg[4] <= segCdec:iC.segC
+seg[5] <= segBdec:iB.segB
+seg[6] <= segAdec:iA.segA
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec|segAdec:iA
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec|segBdec:iB
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec|segCdec:iC
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec|segDdec:iD
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec|segEdec:iE
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec|segFdec:iF
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:secTDec|segGdec:iG
+D[0] => and2.IN0
+D[1] => and2.IN1
+D[1] => and1.IN0
+D[2] => and2.IN2
+D[2] => and1.IN1
+D[3] => and1.IN2
+D[3] => and2.IN3
+segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec
+num[0] => num[0].IN7
+num[1] => num[1].IN7
+num[2] => num[2].IN7
+num[3] => num[3].IN7
+seg[0] <= segGdec:iG.segG
+seg[1] <= segFdec:iF.segF
+seg[2] <= segEdec:iE.segE
+seg[3] <= segDdec:iD.segD
+seg[4] <= segCdec:iC.segC
+seg[5] <= segBdec:iB.segB
+seg[6] <= segAdec:iA.segA
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec|segAdec:iA
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec|segBdec:iB
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec|segCdec:iC
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec|segDdec:iD
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec|segEdec:iE
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec|segFdec:iF
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minUDec|segGdec:iG
+D[0] => and2.IN0
+D[1] => and2.IN1
+D[1] => and1.IN0
+D[2] => and2.IN2
+D[2] => and1.IN1
+D[3] => and1.IN2
+D[3] => and2.IN3
+segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec
+num[0] => num[0].IN7
+num[1] => num[1].IN7
+num[2] => num[2].IN7
+num[3] => num[3].IN7
+seg[0] <= segGdec:iG.segG
+seg[1] <= segFdec:iF.segF
+seg[2] <= segEdec:iE.segE
+seg[3] <= segDdec:iD.segD
+seg[4] <= segCdec:iC.segC
+seg[5] <= segBdec:iB.segB
+seg[6] <= segAdec:iA.segA
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec|segAdec:iA
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec|segBdec:iB
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec|segCdec:iC
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec|segDdec:iD
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec|segEdec:iE
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec|segFdec:iF
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:minTDec|segGdec:iG
+D[0] => and2.IN0
+D[1] => and2.IN1
+D[1] => and1.IN0
+D[2] => and2.IN2
+D[2] => and1.IN1
+D[3] => and1.IN2
+D[3] => and2.IN3
+segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec
+num[0] => num[0].IN7
+num[1] => num[1].IN7
+num[2] => num[2].IN7
+num[3] => num[3].IN7
+seg[0] <= segGdec:iG.segG
+seg[1] <= segFdec:iF.segF
+seg[2] <= segEdec:iE.segE
+seg[3] <= segDdec:iD.segD
+seg[4] <= segCdec:iC.segC
+seg[5] <= segBdec:iB.segB
+seg[6] <= segAdec:iA.segA
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec|segAdec:iA
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec|segBdec:iB
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec|segCdec:iC
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec|segDdec:iD
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec|segEdec:iE
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec|segFdec:iF
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrUDec|segGdec:iG
+D[0] => and2.IN0
+D[1] => and2.IN1
+D[1] => and1.IN0
+D[2] => and2.IN2
+D[2] => and1.IN1
+D[3] => and1.IN2
+D[3] => and2.IN3
+segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec
+num[0] => num[0].IN7
+num[1] => num[1].IN7
+num[2] => num[2].IN7
+num[3] => num[3].IN7
+seg[0] <= segGdec:iG.segG
+seg[1] <= segFdec:iF.segF
+seg[2] <= segEdec:iE.segE
+seg[3] <= segDdec:iD.segD
+seg[4] <= segCdec:iC.segC
+seg[5] <= segBdec:iB.segB
+seg[6] <= segAdec:iA.segA
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec|segAdec:iA
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec|segBdec:iB
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec|segCdec:iC
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec|segDdec:iD
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec|segEdec:iE
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec|segFdec:iF
+D[0] => Mux0.IN19
+D[1] => Mux0.IN18
+D[2] => Mux0.IN17
+D[3] => Mux0.IN16
+segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|bcd7seg:hrTDec|segGdec:iG
+D[0] => and2.IN0
+D[1] => and2.IN1
+D[1] => and1.IN0
+D[2] => and2.IN2
+D[2] => and1.IN1
+D[3] => and1.IN2
+D[3] => and2.IN3
+segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|alarm_clock:inst1|reg1bit:setTimeReg
 D => D.IN1
 Q <= d_ff:comb_3.Q
 clk => clk.IN1
 resetn => resetn.IN1
 
 
-|AlarmClock|alarm_clock:inst6|press_detector:inc_press_detect|reg1bit:state_reg|d_ff:comb_3
+|AlarmClock|alarm_clock:inst1|reg1bit:setTimeReg|d_ff:comb_3
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 CLRN => Q.IN0
 CLRN => Q~reg0.ACLR
 PRN => Q.IN1
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|press_detector:next_press_detect
-signal => signal_t.DATAA
-signal => signal_t.DATAB
-press_seen <= press_seen.DB_MAX_OUTPUT_PORT_TYPE
-NC => signal_t.OUTPUTSELECT
-clk => clk.IN1
-resetn => resetn.IN1
-sustained <= sustained$latch.DB_MAX_OUTPUT_PORT_TYPE
-sustained_resetn => always1.IN1
-
-
-|AlarmClock|alarm_clock:inst6|press_detector:next_press_detect|reg1bit:state_reg
-D => D.IN1
-Q <= d_ff:comb_3.Q
-clk => clk.IN1
-resetn => resetn.IN1
-
-
-|AlarmClock|alarm_clock:inst6|press_detector:next_press_detect|reg1bit:state_reg|d_ff:comb_3
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point
-count_val[0] <= reg3bit:counter_reg.Q
-count_val[1] <= reg3bit:counter_reg.Q
-count_val[2] <= reg3bit:counter_reg.Q
-out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[7] <= out.DB_MAX_OUTPUT_PORT_TYPE
-inc => comb.IN0
-resetn => load_input.IN1
-max[0] => Add0.IN6
-max[1] => Add0.IN5
-max[2] => Add0.IN4
-active => load_input.IN1
-active => comb.IN1
-active => out.OUTPUTSELECT
-active => out.OUTPUTSELECT
-active => out.OUTPUTSELECT
-active => out.OUTPUTSELECT
-active => out.OUTPUTSELECT
-active => out.OUTPUTSELECT
-active => out.OUTPUTSELECT
-active => out.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg
-Q[0] <= reg_cell:reg4bit[0].Q
-Q[1] <= reg_cell:reg4bit[1].Q
-Q[2] <= reg_cell:reg4bit[2].Q
-D[0] => reg_cell:reg4bit[0].D
-D[1] => reg_cell:reg4bit[1].D
-D[2] => reg_cell:reg4bit[2].D
-inc => reg_cell:reg4bit[0].inc
-inc => reg_cell:reg4bit[1].inc
-inc => reg_cell:reg4bit[2].inc
-load => reg_cell:reg4bit[0].load
-load => reg_cell:reg4bit[1].load
-load => reg_cell:reg4bit[2].load
-clk => reg_cell:reg4bit[0].clk
-clk => reg_cell:reg4bit[1].clk
-clk => reg_cell:reg4bit[2].clk
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[0]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[0]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[0]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[1]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[1]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[1]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[2]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[2]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|pointselector:alarm_sel_4point|reg3bit:counter_reg|reg_cell:reg4bit[2]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU
-Q[0] <= reg4bit:register.Q
-Q[1] <= reg4bit:register.Q
-Q[2] <= reg4bit:register.Q
-Q[3] <= reg4bit:register.Q
-inc => inc_input.IN0
-resetn => load.IN0
-active => load.IN1
-active => inc_input.IN1
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register
-Q[0] <= reg_cell:reg4bit[0].Q
-Q[1] <= reg_cell:reg4bit[1].Q
-Q[2] <= reg_cell:reg4bit[2].Q
-Q[3] <= reg_cell:reg4bit[3].Q
-D[0] => reg_cell:reg4bit[0].D
-D[1] => reg_cell:reg4bit[1].D
-D[2] => reg_cell:reg4bit[2].D
-D[3] => reg_cell:reg4bit[3].D
-inc => reg_cell:reg4bit[0].inc
-inc => reg_cell:reg4bit[1].inc
-inc => reg_cell:reg4bit[2].inc
-inc => reg_cell:reg4bit[3].inc
-load => reg_cell:reg4bit[0].load
-load => reg_cell:reg4bit[1].load
-load => reg_cell:reg4bit[2].load
-load => reg_cell:reg4bit[3].load
-clk => reg_cell:reg4bit[0].clk
-clk => reg_cell:reg4bit[1].clk
-clk => reg_cell:reg4bit[2].clk
-clk => reg_cell:reg4bit[3].clk
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[0]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[1]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[2]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[3]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT
-Q[0] <= reg4bit:register.Q
-Q[1] <= reg4bit:register.Q
-Q[2] <= reg4bit:register.Q
-Q[3] <= reg4bit:register.Q
-inc => inc_input.IN0
-resetn => load.IN0
-active => load.IN1
-active => inc_input.IN1
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register
-Q[0] <= reg_cell:reg4bit[0].Q
-Q[1] <= reg_cell:reg4bit[1].Q
-Q[2] <= reg_cell:reg4bit[2].Q
-Q[3] <= reg_cell:reg4bit[3].Q
-D[0] => reg_cell:reg4bit[0].D
-D[1] => reg_cell:reg4bit[1].D
-D[2] => reg_cell:reg4bit[2].D
-D[3] => reg_cell:reg4bit[3].D
-inc => reg_cell:reg4bit[0].inc
-inc => reg_cell:reg4bit[1].inc
-inc => reg_cell:reg4bit[2].inc
-inc => reg_cell:reg4bit[3].inc
-load => reg_cell:reg4bit[0].load
-load => reg_cell:reg4bit[1].load
-load => reg_cell:reg4bit[2].load
-load => reg_cell:reg4bit[3].load
-clk => reg_cell:reg4bit[0].clk
-clk => reg_cell:reg4bit[1].clk
-clk => reg_cell:reg4bit[2].clk
-clk => reg_cell:reg4bit[3].clk
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[0]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[1]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[2]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[3]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_minT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU
-Q[0] <= reg4bit:register.Q
-Q[1] <= reg4bit:register.Q
-Q[2] <= reg4bit:register.Q
-Q[3] <= reg4bit:register.Q
-inc => inc_input.IN0
-resetn => load.IN0
-active => load.IN1
-active => inc_input.IN1
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register
-Q[0] <= reg_cell:reg4bit[0].Q
-Q[1] <= reg_cell:reg4bit[1].Q
-Q[2] <= reg_cell:reg4bit[2].Q
-Q[3] <= reg_cell:reg4bit[3].Q
-D[0] => reg_cell:reg4bit[0].D
-D[1] => reg_cell:reg4bit[1].D
-D[2] => reg_cell:reg4bit[2].D
-D[3] => reg_cell:reg4bit[3].D
-inc => reg_cell:reg4bit[0].inc
-inc => reg_cell:reg4bit[1].inc
-inc => reg_cell:reg4bit[2].inc
-inc => reg_cell:reg4bit[3].inc
-load => reg_cell:reg4bit[0].load
-load => reg_cell:reg4bit[1].load
-load => reg_cell:reg4bit[2].load
-load => reg_cell:reg4bit[3].load
-clk => reg_cell:reg4bit[0].clk
-clk => reg_cell:reg4bit[1].clk
-clk => reg_cell:reg4bit[2].clk
-clk => reg_cell:reg4bit[3].clk
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[0]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[1]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[2]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[3]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secU|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT
-Q[0] <= reg4bit:register.Q
-Q[1] <= reg4bit:register.Q
-Q[2] <= reg4bit:register.Q
-Q[3] <= reg4bit:register.Q
-inc => inc_input.IN0
-resetn => load.IN0
-active => load.IN1
-active => inc_input.IN1
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register
-Q[0] <= reg_cell:reg4bit[0].Q
-Q[1] <= reg_cell:reg4bit[1].Q
-Q[2] <= reg_cell:reg4bit[2].Q
-Q[3] <= reg_cell:reg4bit[3].Q
-D[0] => reg_cell:reg4bit[0].D
-D[1] => reg_cell:reg4bit[1].D
-D[2] => reg_cell:reg4bit[2].D
-D[3] => reg_cell:reg4bit[3].D
-inc => reg_cell:reg4bit[0].inc
-inc => reg_cell:reg4bit[1].inc
-inc => reg_cell:reg4bit[2].inc
-inc => reg_cell:reg4bit[3].inc
-load => reg_cell:reg4bit[0].load
-load => reg_cell:reg4bit[1].load
-load => reg_cell:reg4bit[2].load
-load => reg_cell:reg4bit[3].load
-clk => reg_cell:reg4bit[0].clk
-clk => reg_cell:reg4bit[1].clk
-clk => reg_cell:reg4bit[2].clk
-clk => reg_cell:reg4bit[3].clk
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[0]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[0]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[0]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[1]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[1]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[1]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[2]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[2]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[2]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[3]
-Lout <= half_adder:adder.Cout
-Rin => Rin.IN1
-Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
-D => ff_input.DATAB
-inc => ff_input.OUTPUTSELECT
-load => ff_input.OUTPUTSELECT
-clk => clk.IN1
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[3]|half_adder:adder
-A => iXOR.IN0
-A => iAND.IN0
-B => iXOR.IN1
-B => iAND.IN1
-S <= iXOR.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= iAND.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|alarm_reg:alm_secT|reg4bit:register|reg_cell:reg4bit[3]|d_ff:ff
-clk => Q~reg0.CLK
-D => Q~reg0.DATAIN
-CLRN => Q.IN0
-CLRN => Q~reg0.ACLR
-PRN => Q.IN1
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec
-num[0] => num[0].IN7
-num[1] => num[1].IN7
-num[2] => num[2].IN7
-num[3] => num[3].IN7
-seg[0] <= segGdec:iG.segG
-seg[1] <= segFdec:iF.segF
-seg[2] <= segEdec:iE.segE
-seg[3] <= segDdec:iD.segD
-seg[4] <= segCdec:iC.segC
-seg[5] <= segBdec:iB.segB
-seg[6] <= segAdec:iA.segA
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec|segAdec:iA
-D[0] => Decoder0.IN3
-D[1] => Decoder0.IN2
-D[2] => Decoder0.IN1
-D[3] => Decoder0.IN0
-segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec|segBdec:iB
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec|segCdec:iC
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec|segDdec:iD
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec|segEdec:iE
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec|segFdec:iF
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secUDec|segGdec:iG
-D[0] => and2.IN0
-D[1] => and2.IN1
-D[1] => and1.IN0
-D[2] => and2.IN2
-D[2] => and1.IN1
-D[3] => and1.IN2
-D[3] => and2.IN3
-segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec
-num[0] => num[0].IN7
-num[1] => num[1].IN7
-num[2] => num[2].IN7
-num[3] => num[3].IN7
-seg[0] <= segGdec:iG.segG
-seg[1] <= segFdec:iF.segF
-seg[2] <= segEdec:iE.segE
-seg[3] <= segDdec:iD.segD
-seg[4] <= segCdec:iC.segC
-seg[5] <= segBdec:iB.segB
-seg[6] <= segAdec:iA.segA
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec|segAdec:iA
-D[0] => Decoder0.IN3
-D[1] => Decoder0.IN2
-D[2] => Decoder0.IN1
-D[3] => Decoder0.IN0
-segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec|segBdec:iB
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec|segCdec:iC
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec|segDdec:iD
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec|segEdec:iE
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec|segFdec:iF
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:secTDec|segGdec:iG
-D[0] => and2.IN0
-D[1] => and2.IN1
-D[1] => and1.IN0
-D[2] => and2.IN2
-D[2] => and1.IN1
-D[3] => and1.IN2
-D[3] => and2.IN3
-segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec
-num[0] => num[0].IN7
-num[1] => num[1].IN7
-num[2] => num[2].IN7
-num[3] => num[3].IN7
-seg[0] <= segGdec:iG.segG
-seg[1] <= segFdec:iF.segF
-seg[2] <= segEdec:iE.segE
-seg[3] <= segDdec:iD.segD
-seg[4] <= segCdec:iC.segC
-seg[5] <= segBdec:iB.segB
-seg[6] <= segAdec:iA.segA
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec|segAdec:iA
-D[0] => Decoder0.IN3
-D[1] => Decoder0.IN2
-D[2] => Decoder0.IN1
-D[3] => Decoder0.IN0
-segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec|segBdec:iB
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec|segCdec:iC
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec|segDdec:iD
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec|segEdec:iE
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec|segFdec:iF
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minUDec|segGdec:iG
-D[0] => and2.IN0
-D[1] => and2.IN1
-D[1] => and1.IN0
-D[2] => and2.IN2
-D[2] => and1.IN1
-D[3] => and1.IN2
-D[3] => and2.IN3
-segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec
-num[0] => num[0].IN7
-num[1] => num[1].IN7
-num[2] => num[2].IN7
-num[3] => num[3].IN7
-seg[0] <= segGdec:iG.segG
-seg[1] <= segFdec:iF.segF
-seg[2] <= segEdec:iE.segE
-seg[3] <= segDdec:iD.segD
-seg[4] <= segCdec:iC.segC
-seg[5] <= segBdec:iB.segB
-seg[6] <= segAdec:iA.segA
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec|segAdec:iA
-D[0] => Decoder0.IN3
-D[1] => Decoder0.IN2
-D[2] => Decoder0.IN1
-D[3] => Decoder0.IN0
-segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec|segBdec:iB
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec|segCdec:iC
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec|segDdec:iD
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec|segEdec:iE
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec|segFdec:iF
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:minTDec|segGdec:iG
-D[0] => and2.IN0
-D[1] => and2.IN1
-D[1] => and1.IN0
-D[2] => and2.IN2
-D[2] => and1.IN1
-D[3] => and1.IN2
-D[3] => and2.IN3
-segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec
-num[0] => num[0].IN7
-num[1] => num[1].IN7
-num[2] => num[2].IN7
-num[3] => num[3].IN7
-seg[0] <= segGdec:iG.segG
-seg[1] <= segFdec:iF.segF
-seg[2] <= segEdec:iE.segE
-seg[3] <= segDdec:iD.segD
-seg[4] <= segCdec:iC.segC
-seg[5] <= segBdec:iB.segB
-seg[6] <= segAdec:iA.segA
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec|segAdec:iA
-D[0] => Decoder0.IN3
-D[1] => Decoder0.IN2
-D[2] => Decoder0.IN1
-D[3] => Decoder0.IN0
-segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec|segBdec:iB
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec|segCdec:iC
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec|segDdec:iD
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec|segEdec:iE
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec|segFdec:iF
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrUDec|segGdec:iG
-D[0] => and2.IN0
-D[1] => and2.IN1
-D[1] => and1.IN0
-D[2] => and2.IN2
-D[2] => and1.IN1
-D[3] => and1.IN2
-D[3] => and2.IN3
-segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec
-num[0] => num[0].IN7
-num[1] => num[1].IN7
-num[2] => num[2].IN7
-num[3] => num[3].IN7
-seg[0] <= segGdec:iG.segG
-seg[1] <= segFdec:iF.segF
-seg[2] <= segEdec:iE.segE
-seg[3] <= segDdec:iD.segD
-seg[4] <= segCdec:iC.segC
-seg[5] <= segBdec:iB.segB
-seg[6] <= segAdec:iA.segA
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec|segAdec:iA
-D[0] => Decoder0.IN3
-D[1] => Decoder0.IN2
-D[2] => Decoder0.IN1
-D[3] => Decoder0.IN0
-segA <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec|segBdec:iB
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segB <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec|segCdec:iC
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segC <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec|segDdec:iD
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segD <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec|segEdec:iE
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segE <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec|segFdec:iF
-D[0] => Mux0.IN19
-D[1] => Mux0.IN18
-D[2] => Mux0.IN17
-D[3] => Mux0.IN16
-segF <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AlarmClock|alarm_clock:inst6|bcd7seg:hrTDec|segGdec:iG
-D[0] => and2.IN0
-D[1] => and2.IN1
-D[1] => and1.IN0
-D[2] => and2.IN2
-D[2] => and1.IN1
-D[3] => and1.IN2
-D[3] => and2.IN3
-segG <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |AlarmClock|PLL:inst3
@@ -2613,11 +2133,7 @@ inclk[0] => pll1.CLK
 inclk[1] => pll1.CLK1
 
 
-|AlarmClock|LPM_CONSTANT:const2
-result[0] <= <GND>
-
-
-|AlarmClock|LPM_CONSTANT:const1
-result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
+|AlarmClock|logic0:inst
+Q <= <GND>
 
 

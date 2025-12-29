@@ -1,6 +1,9 @@
 module alarm_clock(
     input wire clk,
     input wire resetn,
+    input wire set_time,
+    input wire switch_select_in,
+    input wire increment_in,
 
     output wire [3:0] secU,
     output wire [3:0] secT,
@@ -9,22 +12,20 @@ module alarm_clock(
     output wire [3:0] hrU,
     output wire [3:0] hrT,
 
-    output wire [6:0] secUSeg,
-    output wire [6:0] secTSeg,
-    output wire [6:0] minUSeg,
-    output wire [6:0] minTSeg,
-    output wire [6:0] hrUSeg,
-    output wire [6:0] hrTSeg,
-
-    input wire sel_inc_wire,
-    input wire sel_next_wire,
-
-    input wire alarm_mode,
-    output wire alarm_ring
+    output [6:0] secUSeg,
+    output [6:0] secTSeg,
+    output [6:0] minUSeg,
+    output [6:0] minTSeg,
+    output [6:0] hrUSeg,
+    output [6:0] hrTSeg
 
 );
 
+    // This is just used if we ever want to see how many clock cycles sec_counter has counted
     logic [25:0] count;
+
+    // These are the main indicators transferred between different registers to signify
+    // when a register hits its max value
     logic secUHit9;
     logic secTHit5;
     logic minUHit9;
@@ -33,13 +34,10 @@ module alarm_clock(
     logic hrUHit3;
     logic hrTHit2;
     logic inc;
-
-    
     logic every_thing_maxed;
     assign every_thing_maxed = inc && hrTHit2 && hrUHit3 && minTHit5 && minUHit9 && secTHit5 && secUHit9;
 
-    // These components hold and manage the current time
-
+    // Outputs from the registers showing the current time
     logic [3:0] secUclock;
     logic [3:0] secTclock;
     logic [3:0] minUclock;
@@ -47,94 +45,151 @@ module alarm_clock(
     logic [3:0] hrUclock;
     logic [3:0] hrTclock;
 
+    //
+    logic secUset;
+    logic secTset;
+    logic minUset;
+    logic minTset;
+    logic hrUset;
+    logic hrTset;
 
+    logic [3:0] secUnewVal;
+    logic [3:0] secTnewVal;
+    logic [3:0] minUnewVal;
+    logic [3:0] minTnewVal;
+    logic [3:0] hrUnewVal;
+    logic [3:0] hrTnewVal;
+
+
+    // logic for debouncing input signals and a register for holding the state of the digit selector 
+
+    logic [5:0] selections_next;
+    logic [5:0] selections;
+
+    reg6bit iREG1(.clk(clk), .resetn(resetn), .D(selections_next), .Q(selections));
+    logic switch_select;
+    debouncer switch_select_debouncer(.pb_1(switch_select_in), .clk(clk), .pb_out(switch_select));
+
+    logic increment;
+    debouncer increment_debouncer(.pb_1(increment_in), .clk(clk), .pb_out(increment));
+
+    // We initialize and connect our registers and counter
     sec_counter counter(.clk(clk), .resetn_sync(resetn), .inc(inc), .count(count));
-    sec_reg_T secRegT(.clk(clk), .resetn(resetn), .set(1'b0), .inc(inc && secUHit9), .new_val(4'b0000), .Q(secTclock), .hit5(secTHit5));
-    sec_reg_U secRegU(.inc(inc), .clk(clk), .resetn(resetn), .set(1'b0), .new_val(4'b0000), .Q(secUclock), .hit9(secUHit9));
-    min_reg_U minRegU(.inc(inc && secUHit9 && secTHit5), .clk(clk), .resetn(resetn), .set(1'b0), .new_val(4'b0000), .Q(minUclock), .hit9(minUHit9));
-    min_reg_T minRegT(.clk(clk), .resetn(resetn), .set(1'b0), .inc(inc && minUHit9 && secTHit5 && secUHit9), .new_val(4'b0000), .Q(minTclock), .hit5(minTHit5));
-    hr_reg_U hrRegU(.inc(inc && minTHit5 && minUHit9 && secTHit5 && secUHit9), .clk(clk), .resetn(resetn || every_thing_maxed), .set(1'b0), .new_val(4'b0000), .Q(hrUclock), .hit9(hrUHit9), .hit3(hrUHit3));
-    hr_reg_T hrRegT(.clk(clk), .resetn(resetn || every_thing_maxed), .set(1'b0), .inc(inc && hrUHit9 && minTHit5 && minUHit9 && secTHit5 && secUHit9), .new_val(4'b0000), .Q(hrTclock), .hit2(hrTHit2));
+    sec_reg_U secRegU(.inc(inc), .clk(clk), .resetn(resetn), .set(secUset), .new_val(secUnewVal), .Q(secUclock), .hit9(secUHit9));
+    sec_reg_T secRegT(.clk(clk), .resetn(resetn), .set(secTset), .inc(inc && secUHit9), .new_val(secTnewVal), .Q(secTclock), .hit5(secTHit5));
+    min_reg_U minRegU(.inc(inc && secUHit9 && secTHit5), .clk(clk), .resetn(resetn), .set(minUset), .new_val(minUnewVal), .Q(minUclock), .hit9(minUHit9));
+    min_reg_T minRegT(.clk(clk), .resetn(resetn), .set(minTset), .inc(inc && minUHit9 && secTHit5 && secUHit9), .new_val(minTnewVal), .Q(minTclock), .hit5(minTHit5));
+    hr_reg_U hrRegU(.inc(inc && minTHit5 && minUHit9 && secTHit5 && secUHit9), .clk(clk), .resetn(resetn && !every_thing_maxed), .set(hrUset), .new_val(hrUnewVal), .Q(hrUclock), .hit9(hrUHit9), .hit3(hrUHit3));
+    hr_reg_T hrRegT(.clk(clk), .resetn(resetn && !every_thing_maxed), .set(hrTset), .inc(inc && hrUHit9 && minTHit5 && minUHit9 && secTHit5 && secUHit9), .new_val(hrTnewVal), .Q(hrTclock), .hit2(hrTHit2));
 
-    // Button press management
 
-    logic sel_inc;
-    logic sel_next;
+    // Assign our outward facing outputs to the clock values
+    assign secU = secUclock;
+    assign secT = secTclock;
+    assign minU = minUclock;
+    assign minT = minTclock;
+    assign hrU = hrUclock;
+    assign hrT = hrTclock;
 
-    logic inc_sustained;
-    logic next_sustained;
+    // These convert the register values to 7 segment display inputs
+    bcd7seg secUDec(.num(secUclock), .seg(secUSeg));
+    bcd7seg secTDec(.num(secTclock), .seg(secTSeg));
+    bcd7seg minUDec(.num(minUclock), .seg(minUSeg));
+    bcd7seg minTDec(.num(minTclock), .seg(minTSeg));
+    bcd7seg hrUDec(.num(hrUclock), .seg(hrUSeg));
+    bcd7seg hrTDec(.num(hrTclock), .seg(hrTSeg));
 
-    press_detector inc_press_detect(.signal(sel_inc_wire), .NC(1'b0), .clk(clk), .resetn(resetn), .press_seen(sel_inc), .sustained(inc_sustained), .sustained_resetn(resetn));
-    press_detector next_press_detect(.signal(sel_next_wire), .NC(1'b0), .clk(clk), .resetn(resetn), .press_seen(sel_next), .sustained(next_sustained), .sustained_resetn(resetn));
-    
+    // Set time state machine
 
-    // Alarm Logic
+    typedef enum reg {WAIT=1'b0, MAIN=1'b1} set_time_state_t;
 
-    logic alm_minU_active;
-    logic alm_minT_active;
-    logic alm_hrU_active;
-    logic alm_hrT_active;
-
-    logic [3:0] alm_minU_out;
-    logic [3:0] alm_minT_out;
-    logic [3:0] alm_hrU_out;
-    logic [3:0] alm_hrT_out;
-
-    logic [2:0] alarm_sel_count_val;
-    logic [3:0] rest_of_alarm_sel_out;
-    
-
-    pointselector alarm_sel_4point(.inc(sel_next), .count_val(alarm_sel_count_val), .out({rest_of_alarm_sel_out, alm_hrT_active, alm_hrU_active, alm_minT_active, alm_minU_active}), .resetn(resetn), .max(3'b100), .active(alarm_mode), .clk(clk));
-
-    alarm_reg alm_minU(.Q(alm_minU_out), .inc(sel_inc), .resetn(resetn), .active(alm_minU_active), .clk(clk));
-    alarm_reg alm_minT(.Q(alm_minT_out), .inc(sel_inc), .resetn(resetn), .active(alm_minT_active), .clk(clk));
-    alarm_reg alm_secU(.Q(alm_hrU_out), .inc(sel_inc), .resetn(resetn), .active(alm_hrU_active), .clk(clk));
-    alarm_reg alm_secT(.Q(alm_hrT_out), .inc(sel_inc), .resetn(resetn), .active(alm_hrT_active), .clk(clk));
-
-    assign alarm_ring = (alm_minU_out == minUclock) &&
-                 (alm_minT_out == minTclock) &&
-                 (alm_hrU_out == hrUclock) &&
-                 (alm_hrT_out == hrTclock);
-
-    // output signal management
-
-    logic dashed_seg = 4'b1111; // with hex code 1111, our screen ends up getting dashed out.
+    set_time_state_t set_time_nxt_state;
+    reg set_time_state;
+    reg1bit setTimeReg(.clk(clk), .resetn(resetn), .D(set_time_nxt_state), .Q(set_time_state));
 
     always_comb begin
 
-        case (alarm_mode)
+        secUset = 1'b0;
+        secTset = 1'b0;
+        minUset = 1'b0;
+        minTset = 1'b0;
+        hrUset = 1'b0;
+        hrTset = 1'b0;
 
-            1'b0: begin
-                secU = secUclock;
-                secT = secTclock;
-                minU = minUclock;
-                minT = minTclock;
-                hrU = hrUclock;
-                hrT = hrTclock;
-            end 
-            1'b1: begin
-                secU = dashed_seg;
-                secT = dashed_seg;
-                minU = alm_minU_out;
-                minT = alm_minT_out;
-                hrU = alm_hrU_out;
-                hrT = alm_hrT_out;
+        // default new value for the digit registers should be the current value stored within them
+        secUnewVal = secUclock;
+        secTnewVal = secTclock;
+        minUnewVal = minUclock;
+        minTnewVal = minTclock;
+        hrUnewVal = hrUclock;
+        hrTnewVal = hrTclock;
+
+        set_time_nxt_state = set_time_state_t'(set_time_state);
+        selections_next = selections;
+        
+        case (set_time_state)
+
+            WAIT: begin
+
+                if (set_time) begin
+                    
+                    set_time_nxt_state = MAIN;
+                    selections_next = 6'b000001;
+
+                end
+
             end
 
-        endcase
+            MAIN: begin
 
+                secUset = 1'b1;
+                secTset = 1'b1;
+                minUset = 1'b1;
+                minTset = 1'b1;
+                hrUset = 1'b1;
+                hrTset = 1'b1;  
+
+                if (switch_select) begin
+                    // we left rotate selections once
+                    selections_next = {selections[4:0], selections[5]};
+                end
+
+                if (increment) begin
+                    case (selections) 
+                        
+                        6'b000001 : begin // sec U is selected
+                            secUnewVal = secUclock + 1'b1;
+                        end
+                        6'b000010 : begin // sec T is selected
+                            secTnewVal = secTclock + 1'b1;
+                        end
+                        6'b000100 : begin // min U is selected
+                            minUnewVal = minUclock + 1'b1;
+                        end
+                        6'b001000 : begin // min T is selected
+                            minTnewVal = minTclock + 1'b1;
+                        end
+                        6'b010000 : begin // hr U is selected
+                            hrUnewVal = hrUclock + 1'b1;
+                        end
+                        6'b100000 : begin // hr T is selected
+                            hrTnewVal = hrTclock + 1'b1;
+                        end
+
+                    endcase
+                end
+
+            end
+        
+        endcase
 
     end
 
+// This block will eventually be used to make the selected register / display blink
+/*     always_comb begin
 
-    // These convert the register values to 7 segment display inputs
-    bcd7seg secUDec(.num(secU), .seg(secUSeg));
-    bcd7seg secTDec(.num(secT), .seg(secTSeg));
-    bcd7seg minUDec(.num(minU), .seg(minUSeg));
-    bcd7seg minTDec(.num(minT), .seg(minTSeg));
-    bcd7seg hrUDec(.num(hrU), .seg(hrUSeg));
-    bcd7seg hrTDec(.num(hrT), .seg(hrTSeg));
-
+    end
+ */
 
 
 endmodule

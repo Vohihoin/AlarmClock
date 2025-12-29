@@ -1,6 +1,35 @@
-# Compile of alarm_clock.sv failed with 5 errors.
+# Compile of alarm_clock.sv was successful.
 # Compile of alarm_clock_tb.sv was successful.
+# Compile of alarm_clock_tb2.sv was successful.
+# Compile of alarm_reg.sv was successful.
 # Compile of bcd7seg.sv was successful.
+# Compile of d_ff.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of half_adder.sv was successful.
+# Compile of hr_reg_T.sv was successful.
+# Compile of hr_reg_U.sv was successful.
+# Compile of logic0.sv was successful.
+# Compile of logic1.sv was successful.
+# Compile of min_reg_T.sv was successful.
+# Compile of min_reg_U.sv was successful.
+# Compile of my_mux.v was successful.
+# Compile of my_mux_bb.v was successful.
+# Compile of PLL.v was successful.
+# Compile of PLL_bb.v was successful.
+# Compile of pointselector.sv failed with 10 errors.
+# Compile of press_detector.sv failed with 6 errors.
+# Compile of reg_cell.sv was successful.
+# Compile of reg1bit.sv was successful.
+# Compile of reg3bit.sv was successful.
+# Compile of reg4bit.sv was successful.
+# Compile of reg6bit.sv was successful.
+# Compile of register_tb.sv was successful.
+# Compile of sec_counter.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# Compile of sec_counter_tb.sv was successful.
+# Compile of sec_reg_T.sv was successful.
+# Compile of sec_reg_tb.sv was successful.
+# Compile of sec_reg_U.sv was successful.
 # Compile of segAdec.sv was successful.
 # Compile of segBdec.sv was successful.
 # Compile of segCdec.sv was successful.
@@ -8,18 +37,83 @@
 # Compile of segEdec.sv was successful.
 # Compile of segFdec.sv was successful.
 # Compile of segGdec.sv was successful.
-# 10 compiles, 1 failed with 5 errors.
+# Compile of simple_counter.sv was successful.
+# 40 compiles, 3 failed with 18 errors.
 # Compile of alarm_clock.sv was successful.
-vsim -gui work.alarm_clock_tb
-# vsim -gui work.alarm_clock_tb 
-# Start time: 01:37:13 on May 23,2025
+# Compile of alarm_clock_tb.sv was successful.
+# Compile of alarm_clock_tb2.sv was successful.
+# Compile of alarm_reg.sv was successful.
+# Compile of bcd7seg.sv was successful.
+# Compile of d_ff.sv was successful.
+# Compile of debouncer.sv was successful.
+# Compile of half_adder.sv was successful.
+# Compile of hr_reg_T.sv was successful.
+# Compile of hr_reg_U.sv was successful.
+# Compile of logic0.sv was successful.
+# Compile of logic1.sv was successful.
+# Compile of min_reg_T.sv was successful.
+# Compile of min_reg_U.sv was successful.
+# Compile of my_mux.v was successful.
+# Compile of my_mux_bb.v was successful.
+# Compile of PLL.v was successful.
+# Compile of PLL_bb.v was successful.
+# Compile of pointselector.sv was successful.
+# Compile of press_detector.sv was successful.
+# Compile of reg_cell.sv was successful.
+# Compile of reg1bit.sv was successful.
+# Compile of reg3bit.sv was successful.
+# Compile of reg4bit.sv was successful.
+# Compile of reg6bit.sv was successful.
+# Compile of register_tb.sv was successful.
+# Compile of sec_counter.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# Compile of sec_counter_tb.sv was successful.
+# Compile of sec_reg_T.sv was successful.
+# Compile of sec_reg_tb.sv was successful.
+# Compile of sec_reg_U.sv was successful.
+# Compile of segAdec.sv was successful.
+# Compile of segBdec.sv was successful.
+# Compile of segCdec.sv was successful.
+# Compile of segDdec.sv was successful.
+# Compile of segEdec.sv was successful.
+# Compile of segFdec.sv was successful.
+# Compile of segGdec.sv was successful.
+# Compile of simple_counter.sv was successful.
+# 40 compiles, 1 failed with 2 errors.
+vsim -gui work.alarm_clock_tb2
+# vsim -gui work.alarm_clock_tb2 
+# Start time: 18:54:13 on Dec 26,2025
 # Loading sv_std.std
-# Loading work.alarm_clock_tb
+# Loading work.alarm_clock_tb2
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/clk
+run
+run
+# Compile of alarm_clock_tb2.sv failed with 1 errors.
+# Compile of sec_counter.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 2 failed with 3 errors.
+# Compile of alarm_clock_tb2.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# Compile of sec_counter_inst.v failed with 2 errors.
+vsim -gui work.alarm_clock_tb2
+# End time: 19:16:18 on Dec 26,2025, Elapsed time: 0:22:05
+# Errors: 0, Warnings: 10
+# vsim -gui work.alarm_clock_tb2 
+# Start time: 19:16:18 on Dec 26,2025
+# Loading sv_std.std
+# Loading work.alarm_clock_tb2
 # Loading work.alarm_clock
+# Loading work.reg6bit
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
 # Loading work.sec_counter
-# Loading work.sec_reg_T
-# Loading work.reg4bit
 # Loading work.sec_reg_U
+# Loading work.reg4bit
+# Loading work.sec_reg_T
 # Loading work.min_reg_U
 # Loading work.min_reg_T
 # Loading work.hr_reg_U
@@ -32,28 +126,504 @@ vsim -gui work.alarm_clock_tb
 # Loading work.segEdec
 # Loading work.segFdec
 # Loading work.segGdec
+# Loading work.reg1bit
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'd_ff'.
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT/setTimeReg File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv Line: 8
+# Error loading design
+# End time: 19:16:18 on Dec 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -gui work.alarm_clock_tb2
+# vsim -gui work.alarm_clock_tb2 
+# Start time: 19:16:47 on Dec 26,2025
+# Loading sv_std.std
+# Loading work.alarm_clock_tb2
+# Loading work.alarm_clock
+# Loading work.reg6bit
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
+# Loading work.sec_counter
+# Loading work.sec_reg_U
+# Loading work.reg4bit
+# Loading work.sec_reg_T
+# Loading work.min_reg_U
+# Loading work.min_reg_T
+# Loading work.hr_reg_U
+# Loading work.hr_reg_T
+# Loading work.bcd7seg
+# Loading work.segAdec
+# Loading work.segBdec
+# Loading work.segCdec
+# Loading work.segDdec
+# Loading work.segEdec
+# Loading work.segFdec
+# Loading work.segGdec
+# Loading work.reg1bit
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'd_ff'.
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT/setTimeReg File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv Line: 8
+# Error loading design
+# End time: 19:16:47 on Dec 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of reg1bit.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+vsim -gui work.alarm_clock_tb2
+# vsim -gui work.alarm_clock_tb2 
+# Start time: 19:18:21 on Dec 26,2025
+# Loading sv_std.std
+# Loading work.alarm_clock_tb2
+# Loading work.alarm_clock
+# Loading work.reg6bit
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
+# Loading work.sec_counter
+# Loading work.sec_reg_U
+# Loading work.reg4bit
+# Loading work.sec_reg_T
+# Loading work.min_reg_U
+# Loading work.min_reg_T
+# Loading work.hr_reg_U
+# Loading work.hr_reg_T
+# Loading work.bcd7seg
+# Loading work.segAdec
+# Loading work.segBdec
+# Loading work.segCdec
+# Loading work.segDdec
+# Loading work.segEdec
+# Loading work.segFdec
+# Loading work.segGdec
+# Loading work.reg1bit
 # Loading work.d_ff
 # Loading work.reg_cell
 # Loading work.half_adder
-# WARNING: No extended dataflow license exists
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iDUT'.  Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'secU'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'secT'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'minU'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'hrU'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'hrT'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'secUSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'secTSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'minUSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(17).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'minTSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'hrUSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'hrTSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 31
+# ** Warning: (vsim-3722) C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv(31): [TFMPC] - Missing connection for port 'minT'.
 add wave -position insertpoint  \
-sim:/alarm_clock_tb/clk \
-sim:/alarm_clock_tb/reset \
-sim:/alarm_clock_tb/secU \
-sim:/alarm_clock_tb/secT \
-sim:/alarm_clock_tb/minU \
-sim:/alarm_clock_tb/minT \
-sim:/alarm_clock_tb/hrU \
-sim:/alarm_clock_tb/hrT \
-sim:/alarm_clock_tb/secUSeg \
-sim:/alarm_clock_tb/secTSeg \
-sim:/alarm_clock_tb/minUSeg \
-sim:/alarm_clock_tb/minTSeg \
-sim:/alarm_clock_tb/hrUSeg \
-sim:/alarm_clock_tb/hrTSeg
+sim:/alarm_clock_tb2/clk \
+sim:/alarm_clock_tb2/secU \
+sim:/alarm_clock_tb2/secT \
+sim:/alarm_clock_tb2/minU \
+sim:/alarm_clock_tb2/minT \
+sim:/alarm_clock_tb2/hrU \
+sim:/alarm_clock_tb2/hrT
 run
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# End time: 18:37:59 on May 25,2025, Elapsed time: 65:00:46
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iDUT'.  Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'secU'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'secT'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'minU'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'hrU'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'hrT'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'secUSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'secTSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'minUSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(17).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'minTSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'hrUSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'hrTSeg'. The port definition is at: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv(20).
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3722) C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv(40): [TFMPC] - Missing connection for port 'minT'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alarm_clock_tb2.sv was successful.
+vsim -gui work.alarm_clock_tb2
+# End time: 19:25:36 on Dec 26,2025, Elapsed time: 0:07:15
+# Errors: 0, Warnings: 15
+# vsim -gui work.alarm_clock_tb2 
+# Start time: 19:25:36 on Dec 26,2025
+# Loading sv_std.std
+# Loading work.alarm_clock_tb2
+# Loading work.alarm_clock
+# Loading work.reg6bit
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
+# Loading work.sec_counter
+# Loading work.sec_reg_U
+# Loading work.reg4bit
+# Loading work.sec_reg_T
+# Loading work.min_reg_U
+# Loading work.min_reg_T
+# Loading work.hr_reg_U
+# Loading work.hr_reg_T
+# Loading work.bcd7seg
+# Loading work.segAdec
+# Loading work.segBdec
+# Loading work.segCdec
+# Loading work.segDdec
+# Loading work.segEdec
+# Loading work.segFdec
+# Loading work.segGdec
+# Loading work.reg1bit
+# Loading work.d_ff
+# Loading work.reg_cell
+# Loading work.half_adder
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iDUT'.  Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3722) C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv(40): [TFMPC] - Missing connection for port 'minT'.
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/clk \
+sim:/alarm_clock_tb2/secU \
+sim:/alarm_clock_tb2/secT \
+sim:/alarm_clock_tb2/minU \
+sim:/alarm_clock_tb2/minT \
+sim:/alarm_clock_tb2/hrU \
+sim:/alarm_clock_tb2/hrT
+run
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/resetn
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iDUT'.  Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3722) C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv(40): [TFMPC] - Missing connection for port 'minT'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/iDUT/counter/count
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'iDUT'.  Expected 17, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /alarm_clock_tb2/iDUT File: C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv Line: 40
+# ** Warning: (vsim-3722) C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv(40): [TFMPC] - Missing connection for port 'minT'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alarm_clock_tb2.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+vsim -gui work.alarm_clock_tb2
+# End time: 19:34:53 on Dec 26,2025, Elapsed time: 0:09:17
 # Errors: 0, Warnings: 4
+# vsim -gui work.alarm_clock_tb2 
+# Start time: 19:34:53 on Dec 26,2025
+# Loading sv_std.std
+# Loading work.alarm_clock_tb2
+# Loading work.alarm_clock
+# Loading work.reg6bit
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
+# Loading work.sec_counter
+# Loading work.sec_reg_U
+# Loading work.reg4bit
+# Loading work.sec_reg_T
+# Loading work.min_reg_U
+# Loading work.min_reg_T
+# Loading work.hr_reg_U
+# Loading work.hr_reg_T
+# Loading work.bcd7seg
+# Loading work.segAdec
+# Loading work.segBdec
+# Loading work.segCdec
+# Loading work.segDdec
+# Loading work.segEdec
+# Loading work.segFdec
+# Loading work.segGdec
+# Loading work.reg1bit
+# Loading work.d_ff
+# Loading work.reg_cell
+# Loading work.half_adder
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/clk \
+sim:/alarm_clock_tb2/secU \
+sim:/alarm_clock_tb2/secT \
+sim:/alarm_clock_tb2/minU \
+sim:/alarm_clock_tb2/minT \
+sim:/alarm_clock_tb2/hrU \
+sim:/alarm_clock_tb2/hrT
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/resetn
+run
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/iDUT/minT
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/iDUT/secUclock \
+sim:/alarm_clock_tb2/iDUT/secTclock \
+sim:/alarm_clock_tb2/iDUT/minUclock \
+sim:/alarm_clock_tb2/iDUT/minTclock \
+sim:/alarm_clock_tb2/iDUT/hrUclock \
+sim:/alarm_clock_tb2/iDUT/hrTclock
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+restart
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/iDUT/every_thing_maxed
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Compile of alarm_clock.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Compile of alarm_clock.sv was successful.
+# Compile of alarm_clock_tb2.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+vsim -gui work.alarm_clock_tb2
+# End time: 00:44:21 on Dec 27,2025, Elapsed time: 5:09:28
+# Errors: 0, Warnings: 2
+# vsim -gui work.alarm_clock_tb2 
+# Start time: 00:44:21 on Dec 27,2025
+# Loading sv_std.std
+# Loading work.alarm_clock_tb2
+# Loading work.alarm_clock
+# Loading work.reg6bit
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
+# Loading work.sec_counter
+# Loading work.sec_reg_U
+# Loading work.reg4bit
+# Loading work.sec_reg_T
+# Loading work.min_reg_U
+# Loading work.min_reg_T
+# Loading work.hr_reg_U
+# Loading work.hr_reg_T
+# Loading work.bcd7seg
+# Loading work.segAdec
+# Loading work.segBdec
+# Loading work.segCdec
+# Loading work.segDdec
+# Loading work.segEdec
+# Loading work.segFdec
+# Loading work.segGdec
+# Loading work.reg1bit
+# Loading work.d_ff
+# Loading work.reg_cell
+# Loading work.half_adder
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/secU \
+sim:/alarm_clock_tb2/secT \
+sim:/alarm_clock_tb2/minU \
+sim:/alarm_clock_tb2/minT \
+sim:/alarm_clock_tb2/hrU \
+sim:/alarm_clock_tb2/hrT
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/clk
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/resetn
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/switch_select_in
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/increment_in
+add wave -position insertpoint  \
+sim:/alarm_clock_tb2/iDUT/switch_select \
+sim:/alarm_clock_tb2/iDUT/increment
+run
+run
+# Compile of debouncer.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
+run
+run
+run
+# Compile of debouncer.sv was successful.
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+# Loading work.debouncer
+# Loading work.clock_enable
+# Loading work.my_dff_en
+run
+run
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+run
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+run
+run
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+run
+run
+run
+run
+run
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+run
+restart
+# Compile of alarm_clock_tb2.sv was successful.
+run
+run
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+run
+# End time: 02:14:12 on Dec 27,2025, Elapsed time: 1:29:51
+# Errors: 0, Warnings: 1

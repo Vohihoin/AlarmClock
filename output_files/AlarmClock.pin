@@ -70,45 +70,45 @@ CHIP  "AlarmClock"  ASSIGNED TO AN: EP4CE22F17C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-minTSeg[4]                   : A2        : output : 2.5 V             :         : 8         : Y              
-minTSeg[3]                   : A3        : output : 2.5 V             :         : 8         : Y              
-minTSeg[0]                   : A4        : output : 2.5 V             :         : 8         : Y              
-hrUSeg[6]                    : A5        : output : 2.5 V             :         : 8         : Y              
-hrTSeg[5]                    : A6        : output : 2.5 V             :         : 8         : Y              
-hrUSeg[3]                    : A7        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : A2        :        :                   :         : 8         :                
+RESERVED_INPUT               : A3        :        :                   :         : 8         :                
+RESERVED_INPUT               : A4        :        :                   :         : 8         :                
+RESERVED_INPUT               : A5        :        :                   :         : 8         :                
+RESERVED_INPUT               : A6        :        :                   :         : 8         :                
+RESERVED_INPUT               : A7        :        :                   :         : 8         :                
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
 RESERVED_INPUT               : A10       :        :                   :         : 7         :                
-RESERVED_INPUT               : A11       :        :                   :         : 7         :                
+LED_output[3]                : A11       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : A12       :        :                   :         : 7         :                
-RESERVED_INPUT               : A13       :        :                   :         : 7         :                
+LED_output[1]                : A13       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : A14       :        :                   :         : 7         :                
-alarm                        : A15       : output : 2.5 V             :         : 7         : Y              
+LED_output[0]                : A15       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT               : B1        :        :                   :         : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-minTSeg[2]                   : B3        : output : 2.5 V             :         : 8         : Y              
-minTSeg[1]                   : B4        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : B3        :        :                   :         : 8         :                
+increment                    : B4        : input  : 2.5 V             :         : 8         : Y              
 RESERVED_INPUT               : B5        :        :                   :         : 8         :                
-hrUSeg[5]                    : B6        : output : 2.5 V             :         : 8         : Y              
-hrUSeg[4]                    : B7        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : B6        :        :                   :         : 8         :                
+RESERVED_INPUT               : B7        :        :                   :         : 8         :                
 GND+                         : B8        :        :                   :         : 8         :                
-GND+                         : B9        :        :                   :         : 7         :                
+set_time                     : B9        : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : B10       :        :                   :         : 7         :                
 RESERVED_INPUT               : B11       :        :                   :         : 7         :                
 RESERVED_INPUT               : B12       :        :                   :         : 7         :                
-RESERVED_INPUT               : B13       :        :                   :         : 7         :                
+LED_output[2]                : B13       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : B14       :        :                   :         : 7         :                
 GND                          : B15       : gnd    :                   :         :           :                
 RESERVED_INPUT               : B16       :        :                   :         : 6         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : C2        :        :                   :         : 1         :                
-minTSeg[5]                   : C3        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : C3        :        :                   :         : 8         :                
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-hrTSeg[3]                    : C6        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : C6        :        :                   :         : 8         :                
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-hrUSeg[2]                    : C8        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : C8        :        :                   :         : 8         :                
 RESERVED_INPUT               : C9        :        :                   :         : 7         :                
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT               : C11       :        :                   :         : 7         :                
@@ -119,12 +119,12 @@ RESERVED_INPUT               : C15       :        :                   :         
 RESERVED_INPUT               : C16       :        :                   :         : 6         :                
 RESERVED_INPUT               : D1        :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
-minTSeg[6]                   : D3        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : D3        :        :                   :         : 8         :                
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
-hrTSeg[6]                    : D5        : output : 2.5 V             :         : 8         : Y              
-hrTSeg[4]                    : D6        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : D5        :        :                   :         : 8         :                
+RESERVED_INPUT               : D6        :        :                   :         : 8         :                
 GND                          : D7        : gnd    :                   :         :           :                
-hrTSeg[1]                    : D8        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : D8        :        :                   :         : 8         :                
 RESERVED_INPUT               : D9        :        :                   :         : 7         :                
 GND                          : D10       : gnd    :                   :         :           :                
 RESERVED_INPUT               : D11       :        :                   :         : 7         :                
@@ -138,9 +138,9 @@ GND                          : E2        : gnd    :                   :         
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
-hrTSeg[2]                    : E6        : output : 2.5 V             :         : 8         : Y              
-hrUSeg[1]                    : E7        : output : 2.5 V             :         : 8         : Y              
-hrUSeg[0]                    : E8        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : E6        :        :                   :         : 8         :                
+RESERVED_INPUT               : E7        :        :                   :         : 8         :                
+hrUSeg[0]                    : E8        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT               : E9        :        :                   :         : 7         :                
 RESERVED_INPUT               : E10       :        :                   :         : 7         :                
 RESERVED_INPUT               : E11       :        :                   :         : 7         :                
@@ -156,12 +156,12 @@ nSTATUS                      : F4        :        :                   :         
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-hrTSeg[0]                    : F8        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT               : F8        :        :                   :         : 8         :                
 RESERVED_INPUT               : F9        :        :                   :         : 7         :                
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-minUSeg[6]                   : F13       : output : 2.5 V             :         : 6         : Y              
+RESERVED_INPUT               : F13       :        :                   :         : 6         :                
 RESERVED_INPUT               : F14       :        :                   :         : 6         :                
 RESERVED_INPUT               : F15       :        :                   :         : 6         :                
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
@@ -210,9 +210,9 @@ GND                          : J10       : gnd    :                   :         
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : J13       :        :                   :         : 5         :                
-RESERVED_INPUT               : J14       :        :                   :         : 5         :                
+secTSeg[4]                   : J14       : output : 2.5 V             :         : 5         : N              
 reset                        : J15       : input  : 2.5 V             :         : 5         : Y              
-RESERVED_INPUT               : J16       :        :                   :         : 5         :                
+secTSeg[6]                   : J16       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : K1        :        :                   :         : 2         :                
 RESERVED_INPUT               : K2        :        :                   :         : 2         :                
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
@@ -227,39 +227,39 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT               : K15       :        :                   :         : 5         :                
-secTSeg[2]                   : K16       : output : 2.5 V             :         : 5         : Y              
+secTSeg[1]                   : K15       : output : 2.5 V             :         : 5         : N              
+secUSeg[3]                   : K16       : output : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : L1        :        :                   :         : 2         :                
 RESERVED_INPUT               : L2        :        :                   :         : 2         :                
 RESERVED_INPUT               : L3        :        :                   :         : 2         :                
 RESERVED_INPUT               : L4        :        :                   :         : 2         :                
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : L7        :        :                   :         : 3         :                
-RESERVED_INPUT               : L8        :        :                   :         : 3         :                
+hrUSeg[2]                    : L7        : output : 2.5 V             :         : 3         : N              
+hrUSeg[3]                    : L8        : output : 2.5 V             :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT               : L13       :        :                   :         : 5         :                
+secTSeg[3]                   : L13       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : L14       :        :                   :         : 5         :                
-secTSeg[1]                   : L15       : output : 2.5 V             :         : 5         : Y              
-secUSeg[2]                   : L16       : output : 2.5 V             :         : 5         : Y              
+secUSeg[4]                   : L15       : output : 2.5 V             :         : 5         : Y              
+secTSeg[0]                   : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 GND+                         : M2        :        :                   :         : 2         :                
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-RESERVED_INPUT               : M6        :        :                   :         : 3         :                
-RESERVED_INPUT               : M7        :        :                   :         : 3         :                
-RESERVED_INPUT               : M8        :        :                   :         : 3         :                
+hrTSeg[3]                    : M6        : output : 2.5 V             :         : 3         : N              
+hrTSeg[6]                    : M7        : output : 2.5 V             :         : 3         : N              
+hrUSeg[1]                    : M8        : output : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : M10       :        :                   :         : 4         :                
+minUSeg[3]                   : M10       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
-alarm_mode                   : M15       : input  : 2.5 V             :         : 5         : Y              
+GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
 RESERVED_INPUT               : N1        :        :                   :         : 2         :                
 RESERVED_INPUT               : N2        :        :                   :         : 2         :                
@@ -268,15 +268,15 @@ VCCD_PLL1                    : N4        : power  :                   : 1.2V    
 RESERVED_INPUT               : N5        :        :                   :         : 3         :                
 RESERVED_INPUT               : N6        :        :                   :         : 3         :                
 GND                          : N7        : gnd    :                   :         :           :                
-RESERVED_INPUT               : N8        :        :                   :         : 3         :                
-secUSeg[3]                   : N9        : output : 2.5 V             :         : 4         : Y              
+hrUSeg[6]                    : N8        : output : 2.5 V             :         : 3         : N              
+minUSeg[4]                   : N9        : output : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-secTSeg[3]                   : N11       : output : 2.5 V             :         : 4         : Y              
-secUSeg[4]                   : N12       : output : 2.5 V             :         : 4         : Y              
+secUSeg[2]                   : N11       : output : 2.5 V             :         : 4         : Y              
+minTSeg[0]                   : N12       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : N14       :        :                   :         : 5         :                
-RESERVED_INPUT               : N15       :        :                   :         : 5         :                
-RESERVED_INPUT               : N16       :        :                   :         : 5         :                
+minUSeg[0]                   : N14       : output : 2.5 V             :         : 5         : N              
+secTSeg[5]                   : N15       : output : 2.5 V             :         : 5         : N              
+secUSeg[6]                   : N16       : output : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : P1        :        :                   :         : 2         :                
 RESERVED_INPUT               : P2        :        :                   :         : 2         :                
 RESERVED_INPUT               : P3        :        :                   :         : 3         :                
@@ -284,44 +284,44 @@ VCCIO3                       : P4        : power  :                   : 2.5V    
 GND                          : P5        : gnd    :                   :         :           :                
 RESERVED_INPUT               : P6        :        :                   :         : 3         :                
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT               : P8        :        :                   :         : 3         :                
-secTSeg[4]                   : P9        : output : 2.5 V             :         : 4         : Y              
+hrUSeg[5]                    : P8        : output : 2.5 V             :         : 3         : N              
+secUSeg[0]                   : P9        : output : 2.5 V             :         : 4         : Y              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-secUSeg[5]                   : P11       : output : 2.5 V             :         : 4         : Y              
+minUSeg[2]                   : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT               : P14       :        :                   :         : 4         :                
-secUSeg[0]                   : P15       : output : 2.5 V             :         : 5         : Y              
-secTSeg[0]                   : P16       : output : 2.5 V             :         : 5         : Y              
+minTSeg[2]                   : P15       : output : 2.5 V             :         : 5         : N              
+secUSeg[5]                   : P16       : output : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT               : R1        :        :                   :         : 2         :                
 GND                          : R2        : gnd    :                   :         :           :                
 RESERVED_INPUT               : R3        :        :                   :         : 3         :                
 RESERVED_INPUT               : R4        :        :                   :         : 3         :                
-RESERVED_INPUT               : R5        :        :                   :         : 3         :                
-RESERVED_INPUT               : R6        :        :                   :         : 3         :                
-RESERVED_INPUT               : R7        :        :                   :         : 3         :                
+hrTSeg[1]                    : R5        : output : 2.5 V             :         : 3         : N              
+hrTSeg[4]                    : R6        : output : 2.5 V             :         : 3         : N              
+hrUSeg[4]                    : R7        : output : 2.5 V             :         : 3         : N              
 CLOCK_50                     : R8        : input  : 2.5 V             :         : 3         : Y              
 GND+                         : R9        :        :                   :         : 4         :                
-secTSeg[5]                   : R10       : output : 2.5 V             :         : 4         : Y              
-secTSeg[6]                   : R11       : output : 2.5 V             :         : 4         : Y              
-minUSeg[0]                   : R12       : output : 2.5 V             :         : 4         : Y              
-minUSeg[2]                   : R13       : output : 2.5 V             :         : 4         : Y              
+secUSeg[1]                   : R10       : output : 2.5 V             :         : 4         : Y              
+minUSeg[1]                   : R11       : output : 2.5 V             :         : 4         : N              
+minTSeg[5]                   : R12       : output : 2.5 V             :         : 4         : N              
+minTSeg[6]                   : R13       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT               : R14       :        :                   :         : 4         :                
 GND                          : R15       : gnd    :                   :         :           :                
-secUSeg[1]                   : R16       : output : 2.5 V             :         : 5         : Y              
+secTSeg[2]                   : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT               : T2        :        :                   :         : 3         :                
 RESERVED_INPUT               : T3        :        :                   :         : 3         :                
 RESERVED_INPUT               : T4        :        :                   :         : 3         :                
-RESERVED_INPUT               : T5        :        :                   :         : 3         :                
-RESERVED_INPUT               : T6        :        :                   :         : 3         :                
-RESERVED_INPUT               : T7        :        :                   :         : 3         :                
+hrTSeg[2]                    : T5        : output : 2.5 V             :         : 3         : N              
+hrTSeg[5]                    : T6        : output : 2.5 V             :         : 3         : N              
+hrTSeg[0]                    : T7        : output : 2.5 V             :         : 3         : N              
 GND+                         : T8        :        :                   :         : 3         :                
 GND+                         : T9        :        :                   :         : 4         :                
-secUSeg[6]                   : T10       : output : 2.5 V             :         : 4         : Y              
-RESERVED_INPUT               : T11       :        :                   :         : 4         :                
-minUSeg[1]                   : T12       : output : 2.5 V             :         : 4         : Y              
-minUSeg[3]                   : T13       : output : 2.5 V             :         : 4         : Y              
-minUSeg[4]                   : T14       : output : 2.5 V             :         : 4         : Y              
-minUSeg[5]                   : T15       : output : 2.5 V             :         : 4         : Y              
+minUSeg[5]                   : T10       : output : 2.5 V             :         : 4         : N              
+minUSeg[6]                   : T11       : output : 2.5 V             :         : 4         : N              
+minTSeg[4]                   : T12       : output : 2.5 V             :         : 4         : N              
+minTSeg[3]                   : T13       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : T14       :        :                   :         : 4         :                
+minTSeg[1]                   : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

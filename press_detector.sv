@@ -1,19 +1,19 @@
 
 /* This is a two state FSM used to capture a button press*/
 module press_detector(
-    input wire signal, // note that the input signal should be double flopped
-    output wire press_seen, 
-    input wire NC, // should be 1 if pushbottin is normally closed.
+    input logic signal, // note that the input signal should be double flopped
+    output logic press_seen, 
+    input logic NC, // should be 1 if pushbottin is normally closed.
     input wire clk,
     input wire resetn,
-    output wire sustained,
-    input wire sustained_resetn
+    output logic sustained,
+    input logic sustained_resetn
 );
 
     typedef enum reg { PRESS = 1'b0, RELEASE = 1'b1  } state_t;
     state_t state_curr;
     state_t state_nxt;
-    wire signal_t;
+    logic signal_t;
 
     reg1bit state_reg(.D(state_nxt), .Q(state_curr), .clk(clk), .resetn(resetn));
 

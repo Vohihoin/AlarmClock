@@ -11,8 +11,9 @@ module min_reg_T(
     logic [3:0] reg_input;
     logic load_signal;
 
-    assign reg_input = (!resetn || (hit5 && inc)) ? 4'b0000 : new_val; 
+    // if we hit 9 and we're incrementing, we want to reset our counter
     assign load_signal = !resetn || set || (hit5 && inc);
+    assign reg_input = (!resetn) ? 4'b0000 : (set) ? new_val : 4'b0000; 
     reg4bit register(.Q(Q), .D(reg_input), .inc(inc), .load(load_signal), .clk(clk));
 
     assign hit5 = (Q == 4'b0101);

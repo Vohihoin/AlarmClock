@@ -1,6 +1,6 @@
 module pointselector(
     output wire [2:0] count_val,
-    output wire [7:0] out,
+    output logic [7:0] out,
     input wire inc,
     input wire resetn,
     input wire [2:0] max,

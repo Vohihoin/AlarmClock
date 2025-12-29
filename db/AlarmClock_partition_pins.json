@@ -4,10 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "alarm",
-					"strict" : false
-				},
-				{
 					"name" : "hrTSeg[6]",
 					"strict" : false
 				},
@@ -61,6 +57,22 @@
 				},
 				{
 					"name" : "hrUSeg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_output[0]",
 					"strict" : false
 				},
 				{
@@ -176,11 +188,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "alarm_mode",
+					"name" : "set_time",
 					"strict" : false
 				},
 				{
 					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "increment",
 					"strict" : false
 				}
 			]

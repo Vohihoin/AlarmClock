@@ -1,6 +1,6 @@
 module bcd7seg(
-  input 	[3:0] num,		// BCD number to display
-  output	[6:0] seg		// seg[6]=A, seg[5]=B, ...
+  input wire	[3:0] num,		// BCD number to display
+  output wire	[6:0] seg		// seg[6]=A, seg[5]=B, ...
 );
 
   ////////////////////////////////////////

@@ -14,9 +14,10 @@ module sec_reg_U(
     logic[3:0] reg_input;
 
     // if we're setting or resetting, we're loading a new value
-    // but reset takes precedence over set
-    assign load = !resetn || set || ((hit9) && inc);
-    assign reg_input = ((!resetn) || ((hit9) && inc)) ? 4'b0000 : new_val; // if we hit 9 and we're incrementing, we want to reset our counter
+    // Reset takes precedence over set
+    // but set takes precedence over hit 9
+    assign load = !resetn || set || ((hit9) && inc); // if we hit 9 and we're incrementing, we want to reset our counter
+    assign reg_input = (!resetn) ? 4'b0000 : (set) ? new_val : 4'b0000; 
 
     reg4bit register(.D(reg_input), .Q(Q), .inc(inc), .load(load), .clk(clk)); 
 

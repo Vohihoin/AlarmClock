@@ -5,6 +5,6 @@ module reg1bit(
     input resetn
 );
 
-    d_ff(.clk(clk), .D(D), .Q(Q), .CLRN(resetn), .PRN(1'b1));
+    d_ff idff(.clk(clk), .D(D), .Q(Q), .CLRN(resetn), .PRN(1'b1));
 
 endmodule
