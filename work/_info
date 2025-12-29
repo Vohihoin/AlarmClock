@@ -11,24 +11,24 @@ cModel Technology
 dC:/Users/aigbe/OneDrive/Desktop/Robotics/ECE352/AHW5
 valarm_clock
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1766817845
+!s110 1766984000
 !i10b 1
-!s100 n8B]FZ0VBG^HBLF9W3[lm0
+!s100 MegA9?3gAdQc[`ciggZ381
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IJ]=5zC`AUPn[EPZi72]Bc0
+I55G27bjHNbc[W=<d?k4aV0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z3 dC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock
-w1766817519
+w1766983995
 8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv
 FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv
-!i122 143
-L0 1 208
+!i122 161
+L0 1 207
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1766817845.000000
+!s108 1766984000.000000
 !s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv|
 !i113 1
@@ -61,24 +61,24 @@ R5
 R6
 valarm_clock_tb2
 R0
-!s110 1766819283
+!s110 1766991600
 !i10b 1
-!s100 _Wjh_[WkN]HSP<mL<focE0
+!s100 a>g2Xg]XDmhXIY=:^43<Z3
 R1
-IJSm1hhCQTD17RR_M8070f3
+I_^]5H_7cHSZ:HXg>flGc00
 R2
 S1
 R3
-w1766819277
+w1766991587
 8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv
 FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv
-!i122 153
-L0 1 56
+!i122 172
+L0 1 97
 R4
 r1
 !s85 0
 31
-!s108 1766819282.000000
+!s108 1766991600.000000
 !s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv|
 !i113 1

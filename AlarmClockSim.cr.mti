@@ -75,13 +75,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	reg6bit
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module sec_reg_U
-
-Top level modules:
-	sec_reg_U
-
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux.v {1 {vlog -work work -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module my_mux
@@ -89,19 +82,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	my_mux
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module reg_cell
+-- Compiling module sec_reg_U
 
 Top level modules:
-	reg_cell
-
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module min_reg_U
-
-Top level modules:
-	min_reg_U
+	sec_reg_U
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -110,6 +96,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	alarm_clock_tb
 
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module min_reg_U
+
+Top level modules:
+	min_reg_U
+
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module reg_cell
+
+Top level modules:
+	reg_cell
+
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/press_detector.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/press_detector.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module press_detector
@@ -117,26 +117,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	press_detector
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module sec_counter_tb
+-- Compiling module logic1
 
 Top level modules:
-	sec_counter_tb
-
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v {1 {vlog -work work -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module my_mux
-
-Top level modules:
-	my_mux
-
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module bcd7seg
-
-Top level modules:
-	bcd7seg
+	logic1
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/d_ff.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/d_ff.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -145,12 +131,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	d_ff
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module logic1
+-- Compiling module bcd7seg
 
 Top level modules:
-	logic1
+	bcd7seg
+
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v {1 {vlog -work work -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module my_mux
+
+Top level modules:
+	my_mux
+
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sec_counter_tb
+
+Top level modules:
+	sec_counter_tb
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL_bb.v {1 {vlog -work work -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL_bb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -173,12 +173,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	half_adder
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module sec_reg_T
+-- Compiling module hr_reg_U
 
 Top level modules:
-	sec_reg_T
+	hr_reg_U
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/pointselector.sv {1 {vlog -work work -sv -stats=none {C:\Users\aigbe\Desktop\Robotics\FPGAWork\AlarmClock\pointselector.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -187,19 +187,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	pointselector
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module hr_reg_U
+-- Compiling module sec_reg_T
 
 Top level modules:
-	hr_reg_U
-
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module segAdec
-
-Top level modules:
-	segAdec
+	sec_reg_T
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_T.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_T.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -208,19 +201,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	min_reg_T
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module segBdec
+-- Compiling module segAdec
 
 Top level modules:
-	segBdec
-
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module sec_reg_tb
-
-Top level modules:
-	sec_reg_tb
+	segAdec
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL.v {1 {vlog -work work -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -229,12 +215,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	PLL
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module reg1bit
+-- Compiling module sec_reg_tb
 
 Top level modules:
-	reg1bit
+	sec_reg_tb
+
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module segBdec
+
+Top level modules:
+	segBdec
+
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module logic0
+
+Top level modules:
+	logic0
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segCdec.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segCdec.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -243,12 +243,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	segCdec
 
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module logic0
+-- Compiling module reg1bit
 
 Top level modules:
-	logic0
+	reg1bit
+
+} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module segDdec
+
+Top level modules:
+	segDdec
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/debouncer.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/debouncer.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -258,12 +265,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	debouncer
-
-} {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module segDdec
-
-Top level modules:
-	segDdec
 
 } {} {}}

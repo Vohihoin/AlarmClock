@@ -73,8 +73,11 @@ module alarm_clock(
     logic increment;
     debouncer increment_debouncer(.pb_1(increment_in), .clk(clk), .pb_out(increment));
 
+    // external resetn used for counter to reset it after setting time
+    logic counter_external_resetn;
+
     // We initialize and connect our registers and counter
-    sec_counter counter(.clk(clk), .resetn_sync(resetn), .inc(inc), .count(count));
+    sec_counter counter(.clk(clk), .resetn_sync(resetn && counter_external_resetn), .inc(inc), .count(count));
     sec_reg_U secRegU(.inc(inc), .clk(clk), .resetn(resetn), .set(secUset), .new_val(secUnewVal), .Q(secUclock), .hit9(secUHit9));
     sec_reg_T secRegT(.clk(clk), .resetn(resetn), .set(secTset), .inc(inc && secUHit9), .new_val(secTnewVal), .Q(secTclock), .hit5(secTHit5));
     min_reg_U minRegU(.inc(inc && secUHit9 && secTHit5), .clk(clk), .resetn(resetn), .set(minUset), .new_val(minUnewVal), .Q(minUclock), .hit9(minUHit9));
@@ -116,6 +119,9 @@ module alarm_clock(
         hrUset = 1'b0;
         hrTset = 1'b0;
 
+        // naturally, we aren't resetting the counter..
+        counter_external_resetn = 1'b1;
+
         // default new value for the digit registers should be the current value stored within them
         secUnewVal = secUclock;
         secTnewVal = secTclock;
@@ -132,7 +138,7 @@ module alarm_clock(
             WAIT: begin
 
                 if (set_time) begin
-                    
+
                     set_time_nxt_state = MAIN;
                     selections_next = 6'b000001;
 
@@ -177,6 +183,12 @@ module alarm_clock(
                         end
 
                     endcase
+                end
+
+                if (!set_time) begin
+                    set_time_nxt_state = WAIT;
+                    // ... but if we're going back to the waiting for set_time state, we start the second counter again
+                    counter_external_resetn = 1'b0;
                 end
 
             end

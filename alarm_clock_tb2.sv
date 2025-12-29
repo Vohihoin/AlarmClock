@@ -35,13 +35,54 @@ module alarm_clock_tb2(
         @(negedge clk)
         resetn = 1'b1;
 
-        #80
-        switch_select_in = 1'b1;
-        increment_in = 1'b1;
 
-        #90
-        switch_select_in = 1'b0;
+        // Test out debouncing
+        #80
+        increment_in = 1'b1;
+        switch_select_in = 1'b1;
+        #30
         increment_in = 1'b0;
+        switch_select_in = 1'b0;
+
+        // enter set time mode
+        #150
+        set_time = 1'b1;
+
+        // select the second digit place - Seconds tens place
+        #10
+        switch_select_in = 1'b1;
+        #130
+        switch_select_in = 1'b0;
+
+        // try and increment the time
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+        
+        if (secT !== 4'b0001) begin
+            $display("Set time mode didn't increment to 1");
+        end
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+        
+        if (secT !== 4'b0010) begin
+            $display("Set time mode didn't increment to 2");
+        end
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+        
+        if (secT !== 4'b0011) begin
+            $display("Set time mode didn't increment to 3");
+        end
+
+        set_time = 1'b0;
+
 
     end
 
