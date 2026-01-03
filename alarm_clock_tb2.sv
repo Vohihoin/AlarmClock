@@ -82,6 +82,7 @@ module alarm_clock_tb2(
         end
 
         set_time = 1'b0;
+        
 
 
     end

@@ -183,6 +183,37 @@ module alarm_clock(
                         end
 
                     endcase
+
+                    if (secUnewVal > 4'b1001) begin
+                        secUnewVal = 4'b0000;
+                    end
+
+                    if (secTnewVal > 4'b0101) begin
+                        secTnewVal = 4'b0000;
+                    end
+
+                    if (minUnewVal > 4'b1001) begin
+                        minUnewVal = 4'b0000;
+                    end
+
+                    if (minTnewVal > 4'b0101) begin
+                        minTnewVal = 4'b0000;
+                    end
+
+                    if (hrTnewVal > 4'b0010) begin
+                        hrTnewVal = 4'b0000;
+                    end
+
+                    if (hrTnewVal > 4'b0001) begin
+                        if (hrUnewVal > 4'b0011) begin
+                            hrUnewVal = 4'b0000;
+                        end
+                    end else begin
+                        if (hrUnewVal > 4'b1001) begin
+                            hrUnewVal = 4'b0000;
+                        end
+                    end
+
                 end
 
                 if (!set_time) begin
