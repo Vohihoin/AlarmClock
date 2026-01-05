@@ -1,9 +1,7 @@
-# Compile of alarm_clock.sv was successful.
 # Compile of alarm_clock_tb2.sv was successful.
-# 2 compiles, 0 failed with no errors.
 vsim -gui work.alarm_clock_tb2
 # vsim -gui work.alarm_clock_tb2 
-# Start time: 22:30:44 on Dec 28,2025
+# Start time: 12:39:10 on Jan 05,2026
 # Loading sv_std.std
 # Loading work.alarm_clock_tb2
 # Loading work.alarm_clock
@@ -31,6 +29,7 @@ vsim -gui work.alarm_clock_tb2
 # Loading work.d_ff
 # Loading work.reg_cell
 # Loading work.half_adder
+# WARNING: No extended dataflow license exists
 add wave -position insertpoint  \
 sim:/alarm_clock_tb2/clk \
 sim:/alarm_clock_tb2/resetn \
@@ -41,308 +40,17 @@ sim:/alarm_clock_tb2/minT \
 sim:/alarm_clock_tb2/hrU \
 sim:/alarm_clock_tb2/hrT
 add wave -position insertpoint  \
-sim:/alarm_clock_tb2/iDUT/switch_select_in \
-sim:/alarm_clock_tb2/iDUT/increment_in \
+sim:/alarm_clock_tb2/iDUT/set_time \
 sim:/alarm_clock_tb2/iDUT/switch_select \
 sim:/alarm_clock_tb2/iDUT/increment
 run
 run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
 run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 run
-# WARNING: No extended dataflow license exists
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
 run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
+# Set time mode didn't increment to 1
 run
-run
-run
-run
-restart
-add wave -position insertpoint  \
-sim:/alarm_clock_tb2/set_time
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Compile of alarm_clock_tb2.sv was successful.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-# Compile of alarm_clock.sv failed with 1 errors.
-# Compile of alarm_clock_tb2.sv was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of alarm_clock.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-# Loading work.alarm_clock
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-add wave -position insertpoint  \
-sim:/alarm_clock_tb2/iDUT/selections
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-vsim -gui work.alarm_clock_tb2
-# End time: 23:01:06 on Dec 28,2025, Elapsed time: 0:30:22
-# Errors: 0, Warnings: 1
-# vsim -gui work.alarm_clock_tb2 
-# Start time: 23:01:06 on Dec 28,2025
-# Loading sv_std.std
-# Loading work.alarm_clock_tb2
-# Loading work.alarm_clock
-# Loading work.reg6bit
-# Loading work.debouncer
-# Loading work.clock_enable
-# Loading work.my_dff_en
-# Loading work.sec_counter
-# Loading work.sec_reg_U
-# Loading work.reg4bit
-# Loading work.sec_reg_T
-# Loading work.min_reg_U
-# Loading work.min_reg_T
-# Loading work.hr_reg_U
-# Loading work.hr_reg_T
-# Loading work.bcd7seg
-# Loading work.segAdec
-# Loading work.segBdec
-# Loading work.segCdec
-# Loading work.segDdec
-# Loading work.segEdec
-# Loading work.segFdec
-# Loading work.segGdec
-# Loading work.reg1bit
-# Loading work.d_ff
-# Loading work.reg_cell
-# Loading work.half_adder
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/alarm_clock_tb2/clk
-run
-run
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of alarm_clock_tb2.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alarm_clock_tb2
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run
-run
-run
-run
-run
-run
+# Set time mode didn't increment to 2
 run
 run
 # Set time mode didn't increment to 3
@@ -351,6 +59,17 @@ run
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 # Compile of alarm_clock_tb2.sv was successful.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -367,6 +86,118 @@ run
 run
 run
 run
+# Set time mode didn't increment to 1
+run
+run
+# Set time mode didn't increment to 2
+run
+# Set time mode didn't increment to 3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+# Set time mode didn't increment to 1
+run
+run
+# Set time mode didn't increment to 2
+run
+# Set time mode didn't increment to 3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 restart
 # Compile of alarm_clock_tb2.sv was successful.
 restart
@@ -382,6 +213,12 @@ run
 run
 run
 run
+# Set time mode didn't increment to 1
+run
+run
+# Set time mode didn't increment to 2
+run
+# Set time mode didn't increment to 3
 run
 run
 run
@@ -410,5 +247,89 @@ run
 run
 run
 run
-# End time: 01:03:34 on Dec 29,2025, Elapsed time: 2:02:28
-# Errors: 0, Warnings: 1
+run
+run
+run
+run
+run
+run
+# Compile of alarm_clock_tb2.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alarm_clock_tb2
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+# Set time mode didn't increment to 1
+run
+run
+# Set time mode didn't increment to 2
+run
+# Set time mode didn't increment to 3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

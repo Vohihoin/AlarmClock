@@ -48,8 +48,13 @@ module alarm_clock_tb2(
         #150
         set_time = 1'b1;
 
-        // select the second digit place - Seconds tens place
+        // select the third digit place - Minutes units place
         #10
+        switch_select_in = 1'b1;
+        #130
+        switch_select_in = 1'b0;
+                
+        #30
         switch_select_in = 1'b1;
         #130
         switch_select_in = 1'b0;
@@ -59,7 +64,7 @@ module alarm_clock_tb2(
         #120
         increment_in = 1'b0;
         
-        if (secT !== 4'b0001) begin
+        if (secU !== 4'b0001) begin
             $display("Set time mode didn't increment to 1");
         end
 
@@ -68,7 +73,7 @@ module alarm_clock_tb2(
         #120
         increment_in = 1'b0;
         
-        if (secT !== 4'b0010) begin
+        if (secU !== 4'b0010) begin
             $display("Set time mode didn't increment to 2");
         end
 
@@ -77,9 +82,134 @@ module alarm_clock_tb2(
         #120
         increment_in = 1'b0;
         
-        if (secT !== 4'b0011) begin
+        if (secU !== 3) begin
             $display("Set time mode didn't increment to 3");
         end
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        switch_select_in = 1'b1;
+        #130
+        switch_select_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        switch_select_in = 1'b1;
+        #130
+        switch_select_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+
+        switch_select_in = 1'b1;
+        #130
+        switch_select_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
+
+        #30
+        increment_in = 1'b1;
+        #120
+        increment_in = 1'b0;
+
 
         set_time = 1'b0;
         
