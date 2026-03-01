@@ -4,12 +4,12 @@ module sec_counter(
     output inc,
     output[25:0] count
 );
-
+    localparam MAX_COUNT = 4; // 26'd50_000_000;
     logic [25:0] reg_input;
-    assign reg_input = (!resetn_sync || inc) ? 26'b00000000000000000000000000 : count + 1'b1;
+    assign reg_input = (!resetn_sync || inc) ? '0 : count + 1'b1;
     d_ff count_reg[25:0](.clk(clk), .D(reg_input), .Q(count), .CLRN(1'b1), .PRN(1'b1));
 
-    assign inc = (count == 3); // 40 ns eq to 1 s // 49999999 this assumes a 50MHz clock cycle and measures a second using that number of cycles
+    assign inc = (count == MAX_COUNT-1); // 40 ns eq to 1 s // 49999999 this assumes a 50MHz clock cycle and measures a second using that number of cycles
                                       // the reason we inc just before we hit that number of seconds is because we would want to increment
                                       // our seconds position as soon as we hit 50000000 clock cycles so the command to increment has to sent 
                                       // just before this. 
