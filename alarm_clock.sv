@@ -1,3 +1,5 @@
+/* Top level alarm clock module
+*/
 module alarm_clock_top_level(
     input wire clk,
     input wire rst_n,
@@ -20,7 +22,7 @@ module alarm_clock_top_level(
     output [6:0] hrUSeg,
     output [6:0] hrTSeg,
 
-    output alarm_ring,
+    output logic alarm_ring,
     output logic buzzer_pwm
 );
     
@@ -76,8 +78,7 @@ module alarm_clock_top_level(
         .alarm_hrT(alarm_hrT)
     );
 
-    // These convert the register values to 7 segment display inputs
-
+    // 7 Segment Decoders with Enable - enable is used to enable (get it) ;) blinking
     logic secU_en;
     logic secT_en;
     logic minU_en;
@@ -92,7 +93,7 @@ module alarm_clock_top_level(
     bcd7seg_en hrUDec(.en(hrU_en), .num(hrU), .seg(hrUSeg));
     bcd7seg_en hrTDec(.en(hrT_en), .num(hrT), .seg(hrTSeg));
 
-    // Timer blinking logic
+    // Digits Blinking Logic
     localparam MAX_COUNT = 26'd50_000_000;
     localparam HALF_COUNT = 26'd25_000_000;
 
@@ -158,13 +159,16 @@ module alarm_clock_top_level(
     always_ff @(posedge clk, negedge rst_n) begin
         if (!rst_n)
             buzzer_cnt <= '0;
-        else 
+        else if (alarm_ring)
             buzzer_cnt <= buzzer_cnt + 1; // because we used a power of 2, counter automatically resets 
     end
-    assign buzzer_pwm = (buzzer_cnt < HALF_BUZZER_COUNT);
+    assign buzzer_pwm = alarm_ring && (buzzer_cnt < HALF_BUZZER_COUNT);
 
 endmodule
 
+/**
+Main alarm clock module with the running clock
+*/
 module alarm_clock(
     input wire clk,
     input wire resetn,
