@@ -5,7 +5,7 @@ module bcd7seg_en(
 );
 
   logic [6:0] raw_seg;
-  bcd7seg(.num(num), .seg(raw_seg));
+  bcd7seg mySeg(.num(num), .seg(raw_seg));
 
   assign seg = raw_seg & {7{en}};
 
