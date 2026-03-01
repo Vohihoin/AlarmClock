@@ -1,7 +1,11 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -9,648 +13,762 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/aigbe/OneDrive/Desktop/Robotics/ECE352/AHW5
+T_opt
+!s110 1772393371
+VT;?:EL8SWd8G_A`BM50gZ3
+04 19 4 work alarm_clock_last_tb fast 0
+=1-000ae431a4f1-69a4939b-14cf9-15d54a
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OE;O;2024.3_2;79
 valarm_clock
-Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1767419124
+2/filespace/v/vohihoin/Project/AlarmClock/alarm_clock.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1772354896
 !i10b 1
-!s100 J]hPS;TK`;]KKNiMB@n?o3
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I5GoMR2:ZAz]FdlO71^d8<2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 XJcIWoTHOZ=:460HgT4HX3
+I8maHnWfJ:?2^3S0=KkILG0
 S1
-Z3 dC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock
-w1767418829
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv
-!i122 173
-L0 1 238
-Z4 OV;L;2020.1;71
+Z5 d/filespace/v/vohihoin/Project/AlarmClock
+Z6 w1772354868
+8/filespace/v/vohihoin/Project/AlarmClock/alarm_clock.sv
+F/filespace/v/vohihoin/Project/AlarmClock/alarm_clock.sv
+!i122 224
+L0 4 228
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OE;L;2024.3_2;79
 r1
 !s85 0
 31
-!s108 1767419123.000000
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock.sv|
-!i113 1
-Z5 o-work work -sv
-Z6 tCvgOpt 0
+!s108 1772354895.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_clock.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_clock.sv|
+!i113 0
+Z9 o-work work -sv
+R2
+valarm_clock_last_tb
+2/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv
+R3
+!s110 1772393338
+!i10b 1
+!s100 ^Mk>Z_fgo1^d?hE=dahkN2
+IWnMQOaJh]mRe9WYB<CAHl2
+S1
+R5
+w1772392678
+8/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv
+F/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv
+!i122 230
+L0 1 80
+R7
+R8
+r1
+!s85 0
+31
+!s108 1772393338.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv|
+!i113 0
+R9
+R2
 valarm_clock_tb
-R0
-Z7 !s110 1766796838
+2/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb.sv
+R3
+Z10 !s110 1772354450
 !i10b 1
 !s100 S>c9I>QdeTJHL4NE72C700
-R1
-I837KQN6^fK_^UU@NNYCd10
-R2
+I_GaADYR3F3Zd`k_Ml;G[]0
 S1
-R3
-w1747982063
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb.sv
-!i122 96
-Z8 L0 1 27
-R4
+R5
+Z11 w1772354000
+8/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb.sv
+F/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb.sv
+!i122 182
+Z12 L0 1 27
+R7
+R8
 r1
 !s85 0
 31
-Z9 !s108 1766796838.000000
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb.sv|
-!i113 1
-R5
-R6
+Z13 !s108 1772354450.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb.sv|
+!i113 0
+R9
+R2
 valarm_clock_tb2
-R0
-!s110 1767642835
+2/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb2.sv
+R3
+R10
 !i10b 1
 !s100 EnLDzJz1WoA<zo[U[BZBV2
-R1
-IiXaB4:4Y;kfNi<8P@hbV32
-R2
+I]0bHQaWfRa>nXXlO]^zlW3
 S1
-R3
-w1767642828
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv
-!i122 180
+R5
+R11
+8/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb2.sv
+F/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb2.sv
+!i122 183
 L0 1 228
-R4
+R7
+R8
 r1
 !s85 0
 31
-!s108 1767642835.000000
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_clock_tb2.sv|
-!i113 1
+R13
+!s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb2.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_tb2.sv|
+!i113 0
+R9
+R2
+valarm_clock_top_level
+2/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_top_level.sv
+R3
+R4
+!i10b 1
+!s100 <;NeN;=io_7l:@f<Jfn[h2
+IOm@JZCMDV@Ugc3gK4>NF81
+S1
 R5
 R6
-valarm_reg
-R0
+8/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_top_level.sv
+F/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_top_level.sv
+!i122 225
+L0 3 165
 R7
+R8
+r1
+!s85 0
+31
+!s108 1772354896.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_top_level.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_top_level.sv|
+!i113 0
+R9
+R2
+valarm_control
+2/filespace/v/vohihoin/Project/AlarmClock/alarm_control.sv
+R3
+!s110 1772354991
+!i10b 1
+!s100 B;G;]_J`PMV4^?ZHn80H90
+Iz^RV<2SXLH3B2<T31DmTF1
+S1
+R5
+w1772354988
+8/filespace/v/vohihoin/Project/AlarmClock/alarm_control.sv
+F/filespace/v/vohihoin/Project/AlarmClock/alarm_control.sv
+!i122 226
+L0 4 105
+R7
+R8
+r1
+!s85 0
+31
+!s108 1772354991.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_control.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_control.sv|
+!i113 0
+R9
+R2
+valarm_reg
+2/filespace/v/vohihoin/Project/AlarmClock/alarm_reg.sv
+R3
+R10
 !i10b 1
 !s100 memiT97TMdBlPhEK5mTjb1
-R1
-I^7R3T1S@G09H22ObjehK30
-R2
+IZ571>3oD@`=PH3N5QU4[>2
 S1
-R3
-w1753837991
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_reg.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_reg.sv
-!i122 98
+R5
+R11
+8/filespace/v/vohihoin/Project/AlarmClock/alarm_reg.sv
+F/filespace/v/vohihoin/Project/AlarmClock/alarm_reg.sv
+!i122 184
 L0 2 24
-R4
+R7
+R8
 r1
 !s85 0
 31
+R13
+!s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_reg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_reg.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_reg.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/alarm_reg.sv|
-!i113 1
-R5
-R6
+R2
 vbcd7seg
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/bcd7seg.sv
+R3
+!s110 1772355123
 !i10b 1
 !s100 hiUedg:>6:D?kHQZMR6N>1
-R1
-I`WCzhn2bUZHDNZ>nTIc7c0
-R2
+IKfJX5UzL2eZOQ[GEeFlAj3
 S1
-R3
-w1760887130
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv
-!i122 99
-Z10 L0 1 17
-R4
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/bcd7seg.sv|
-!i113 1
 R5
-R6
-vclock_enable
-R0
-Z11 !s110 1766818475
-!i10b 1
-!s100 fi2LIH=Rio1l8Dh70R=R>1
-R1
-IJ_5M1gZb4z_W3C1]l0KWa0
-R2
-S1
-R3
-Z12 w1766818337
-Z13 8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/debouncer.sv
-Z14 FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/debouncer.sv
-!i122 146
-L0 17 8
-R4
-r1
-!s85 0
-31
-Z15 !s108 1766818475.000000
-Z16 !s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/debouncer.sv|
-Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/debouncer.sv|
-!i113 1
-R5
-R6
-vd_ff
-R0
+w1772355103
+8/filespace/v/vohihoin/Project/AlarmClock/bcd7seg.sv
+F/filespace/v/vohihoin/Project/AlarmClock/bcd7seg.sv
+!i122 227
+Z14 L0 1 17
 R7
+R8
+r1
+!s85 0
+31
+!s108 1772355122.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/bcd7seg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/bcd7seg.sv|
+!i113 0
+R9
+R2
+vbcd7seg_en
+2/filespace/v/vohihoin/Project/AlarmClock/bcd7seg_en.sv
+R3
+!s110 1772355211
+!i10b 1
+!s100 Tjb3?U[]T[bXXZDh_]7062
+I6^0IE4N@8GP=8fTM9U@:[0
+S1
+R5
+w1772355203
+8/filespace/v/vohihoin/Project/AlarmClock/bcd7seg_en.sv
+F/filespace/v/vohihoin/Project/AlarmClock/bcd7seg_en.sv
+!i122 229
+Z15 L0 1 12
+R7
+R8
+r1
+!s85 0
+31
+!s108 1772355211.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/bcd7seg_en.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/bcd7seg_en.sv|
+!i113 0
+R9
+R2
+vclock_enable
+Z16 2/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
+R3
+Z17 !s110 1772354451
+!i10b 1
+!s100 [fWjN>A9]7PM>dGUSE3mJ1
+I]KViRN3:ES0YEFCTjOl=>0
+S1
+R5
+Z18 w1772354001
+Z19 8/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
+Z20 F/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
+!i122 187
+L0 17 8
+R7
+R8
+r1
+!s85 0
+31
+Z21 !s108 1772354451.000000
+Z22 !s107 /filespace/v/vohihoin/Project/AlarmClock/debouncer.sv|
+Z23 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv|
+!i113 0
+R9
+R2
+vd_ff
+2/filespace/v/vohihoin/Project/AlarmClock/d_ff.sv
+R3
+R10
 !i10b 1
 !s100 Q<S;[fK>:IDMlTgjN1^i>0
-R1
-IV<dO@aJCk?]:D4IfB=]WO0
-R2
+I_@IULQEeFb9iV0;mfh4LF0
 S1
-R3
-w1746666687
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/d_ff.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/d_ff.sv
-!i122 100
-R10
-R4
+R5
+R11
+8/filespace/v/vohihoin/Project/AlarmClock/d_ff.sv
+F/filespace/v/vohihoin/Project/AlarmClock/d_ff.sv
+!i122 186
+R14
+R7
+R8
 r1
 !s85 0
 31
+R13
+!s107 /filespace/v/vohihoin/Project/AlarmClock/d_ff.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/d_ff.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/d_ff.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/d_ff.sv|
-!i113 1
-R5
-R6
+R2
 vdebouncer
-R0
-R11
+R16
+R3
+R17
 !i10b 1
 !s100 3Q1Qb]hd7lmRU2[hG?C=e2
-R1
-Ihn9Q5n28f2=bh^DTnS[[V0
-R2
+IcM=6>YzWMRIgo4==QMYcK3
 S1
-R3
-R12
-R13
-R14
-!i122 146
+R5
+R18
+R19
+R20
+!i122 187
 L0 5 11
-R4
+R7
+R8
 r1
 !s85 0
 31
-R15
-R16
-R17
-!i113 1
-R5
-R6
+R21
+R22
+R23
+!i113 0
+R9
+R2
 vhalf_adder
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv
+R3
+R17
 !i10b 1
 !s100 XL^H>Z0Y]VUHBz^jeL^E`3
-R1
-Iae[DSj0@jeI6a:7a:Ge3k3
-R2
+IzbR1Mk^4K;X;Ioz?Z>2ok1
 S1
-R3
-w1746994062
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/half_adder.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/half_adder.sv
-!i122 102
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv
+F/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv
+!i122 188
 L0 1 11
-R4
+R7
+R8
 r1
 !s85 0
 31
+R21
+!s107 /filespace/v/vohihoin/Project/AlarmClock/half_adder.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/half_adder.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/half_adder.sv|
-!i113 1
-R5
-R6
+R2
 vhr_reg_T
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv
+R3
+R17
 !i10b 1
 !s100 >TG_h9CWOeiOP5OQOad5z2
-R1
-ITa^ALIUiNSWFS30G;EFB`3
-R2
+I_:YokPM;8Y3T3nDGn9^`M0
 S1
-R3
-w1762045806
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_T.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_T.sv
-!i122 103
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv
+F/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv
+!i122 189
 L0 1 20
-R4
+R7
+R8
 r1
 !s85 0
 31
+R21
+!s107 /filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_T.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_T.sv|
-!i113 1
-R5
-R6
+R2
 nhr_reg_@t
 vhr_reg_U
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv
+R3
+R17
 !i10b 1
 !s100 YT`XiL0@9OcS:D@lTfP;H0
-R1
-IbO7fKf2TK^b3UYZ:1DKhG3
-R2
+IiZk4MgKheT8_Q0Z8CSWJ72
 S1
-R3
-w1762045861
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv
-!i122 104
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv
+F/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv
+!i122 190
 L0 1 26
-R4
+R7
+R8
 r1
 !s85 0
 31
+R21
+!s107 /filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/hr_reg_U.sv|
-!i113 1
-R5
-R6
+R2
 nhr_reg_@u
 vlogic0
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/logic0.sv
+R3
+R17
 !i10b 1
 !s100 m?26?FjjOY1NdT1EM@6oO1
-R1
-IPmo[N5PaaEjFch[1kU_af0
-R2
+IFDRMKTe:SCa<@B_BBAA[00
 S1
-R3
-w1762058746
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv
-!i122 105
-Z18 L0 1 5
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/logic0.sv
+F/filespace/v/vohihoin/Project/AlarmClock/logic0.sv
+!i122 191
+Z24 L0 1 5
+R7
+R8
 r1
 !s85 0
 31
+R21
+!s107 /filespace/v/vohihoin/Project/AlarmClock/logic0.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/logic0.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic0.sv|
-!i113 1
-R5
-R6
+R2
 vlogic1
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/logic1.sv
+R3
+Z25 !s110 1772354452
 !i10b 1
 !s100 YU4;;B[<PQTWXAX?oY``B0
-R1
-IA^3ba6lnS>UdgQGABR>Sh0
-R2
+IP8ShBSko665mSm94J`8>D3
 S1
-R3
-w1762058742
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv
-!i122 106
+R5
 R18
-R4
+8/filespace/v/vohihoin/Project/AlarmClock/logic1.sv
+F/filespace/v/vohihoin/Project/AlarmClock/logic1.sv
+!i122 192
+R24
+R7
+R8
 r1
 !s85 0
 31
+Z26 !s108 1772354452.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/logic1.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/logic1.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/logic1.sv|
-!i113 1
-R5
-R6
+R2
 vmin_reg_T
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv
+R3
+R25
 !i10b 1
 !s100 >OR=?]2C:<lCdhOM0e4D^1
-R1
-I1c330jP7e9X2CiQ?4jgS83
-R2
+I;KPK:SZC?GX=27_^J8nAJ1
 S1
-R3
-w1762045783
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_T.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_T.sv
-!i122 107
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv
+F/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv
+!i122 193
 L0 1 21
-R4
+R7
+R8
 r1
 !s85 0
 31
+R26
+!s107 /filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_T.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_T.sv|
-!i113 1
-R5
-R6
+R2
 nmin_reg_@t
 vmin_reg_U
-R0
-R7
+2/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv
+R3
+R25
 !i10b 1
 !s100 a2PIKN5BkF9;YfG]oe76:0
-R1
-I6FJc;HCM=T?Ae7KcVlie>3
-R2
+Iz[7B6^KOcj3[CzR[nn?^01
 S1
-R3
-w1762045748
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv
-!i122 108
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv
+F/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv
+!i122 194
 L0 1 22
-R4
+R7
+R8
 r1
 !s85 0
 31
+R26
+!s107 /filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv|
+!i113 0
 R9
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/min_reg_U.sv|
-!i113 1
-R5
-R6
+R2
 nmin_reg_@u
 vmy_dff_en
-R0
-R11
+R16
+R3
+R17
 !i10b 1
 !s100 eGk<DdARk`l<`LdB1f`Ee1
-R1
-Ij4IHTAenf3<AALD[4CVnT3
-R2
+IYzD3fRIoRl]>M7kE3a?dL2
 S1
-R3
-R12
-R13
-R14
-!i122 146
+R5
+R18
+R19
+R20
+!i122 187
 L0 26 6
-R4
+R7
+R8
 r1
 !s85 0
 31
-R15
-R16
-R17
-!i113 1
-R5
-R6
+R21
+R22
+R23
+!i113 0
+R9
+R2
 vmy_mux
-Z19 !s110 1766796839
+2/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v
+R25
 !i10b 1
 !s100 ekPY5MjmTaaCHH1nVG7gT1
-R1
-I<AChS@@^0IhfQ8zS=KlRO2
-R2
-R3
-w1750630291
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v
-!i122 110
+I00ig9TKSj@d?6>`6MCdfl0
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v
+F/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v
+!i122 196
 L0 35 12
-R4
+R7
+R8
 r1
 !s85 0
 31
-Z20 !s108 1766796839.000000
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/my_mux_bb.v|
-!i113 1
-Z21 o-work work
-R6
+R26
+!s107 /filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v|
+!i113 0
+Z27 o-work work
+R2
 vPLL
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v
+Z28 !s110 1772354453
 !i10b 1
 !s100 iQR?NzE]IJinFXM<[<5=F0
-R1
-I<];`H31?_B7J^GTIRij4]1
-R2
-R3
-w1750627958
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL_bb.v
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL_bb.v
-!i122 112
+I8MS2943`0`R7nfY`<5D[V1
+R5
+R11
+8/filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v
+F/filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v
+!i122 198
 L0 35 8
-R4
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL_bb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/PLL_bb.v|
-!i113 1
-R21
-R6
+Z29 !s108 1772354453.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v|
+!i113 0
+R27
+R2
 n@p@l@l
 vpointselector
-R0
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv
+R3
+R28
 !i10b 1
 !s100 _QoPM=kj2h5b_UfIo<c7L3
-R1
-Ize4[C9ZVzC7RPFL`>bEZ=1
-R2
+IU0gf^aZSR[;oD4FS:k]iX2
 S1
-R3
-w1766794615
-8C:\Users\aigbe\Desktop\Robotics\FPGAWork\AlarmClock\pointselector.sv
-FC:\Users\aigbe\Desktop\Robotics\FPGAWork\AlarmClock\pointselector.sv
-!i122 113
-Z22 L0 1 43
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv
+F/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv
+!i122 199
+Z30 L0 1 43
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:\Users\aigbe\Desktop\Robotics\FPGAWork\AlarmClock\pointselector.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\aigbe\Desktop\Robotics\FPGAWork\AlarmClock\pointselector.sv|
-!i113 1
-R5
-R6
+R29
+!s107 /filespace/v/vohihoin/Project/AlarmClock/pointselector.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv|
+!i113 0
+R9
+R2
 vpress_detector
-R0
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv
+R3
+R28
 !i10b 1
 !s100 LjgXB>D7O[0GHk1GDXjDK1
-R1
-IC9@TKDM4<jG=Iz522QChi1
-R2
+I<iV9dWP^TC_l:DF0[K2od0
 S1
-R3
-w1766796708
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/press_detector.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/press_detector.sv
-!i122 114
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv
+F/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv
+!i122 200
 L0 3 61
-R4
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/press_detector.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/press_detector.sv|
-!i113 1
-R5
-R6
+R29
+!s107 /filespace/v/vohihoin/Project/AlarmClock/press_detector.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv|
+!i113 0
+R9
+R2
 vreg1bit
-R0
-!s110 1766798288
+2/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv
+R3
+Z31 !s110 1772354454
 !i10b 1
 !s100 WIJ>GGE`lZNe;=SW]niN[0
-R1
-IFF<MXjTcYPeblS`aR?GW=1
-R2
+I1ihd5D1ianRIBfbF8OfQz0
 S1
-R3
-w1766798280
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv
-!i122 136
-Z23 L0 1 10
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv
+F/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv
+!i122 201
+Z32 L0 1 10
+R7
+R8
 r1
 !s85 0
 31
-!s108 1766798288.000000
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg1bit.sv|
-!i113 1
-R5
-R6
+R29
+!s107 /filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv|
+!i113 0
+R9
+R2
 vreg3bit
-R0
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv
+R3
+R31
 !i10b 1
 !s100 VZEP_l:@@ln[:20h]TCPA0
-R1
-IK9EmM7b2QoV>jOXASA6Ba1
-R2
+I<^HS@47GVRR^jEbD1fKoH2
 S1
-R3
-w1753257447
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg3bit.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg3bit.sv
-!i122 117
-Z24 L0 1 12
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv
+F/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv
+!i122 202
+R15
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg3bit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg3bit.sv|
-!i113 1
-R5
-R6
+Z33 !s108 1772354454.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv|
+!i113 0
+R9
+R2
 vreg4bit
-R0
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv
+R3
+R31
 !i10b 1
 !s100 Dhgo3LlKNE^kJbMV0k;@f2
-R1
-I_1ghmGReL?Fn<gUD_kZK;2
-R2
+IljB4CW6^QWGaDo=7K=Q770
 S1
-R3
-w1747022010
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg4bit.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg4bit.sv
-!i122 118
-R24
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv
+F/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv
+!i122 203
+R15
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg4bit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg4bit.sv|
-!i113 1
-R5
-R6
+R33
+!s107 /filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv|
+!i113 0
+R9
+R2
 vreg6bit
-R0
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv
+R3
+R31
 !i10b 1
 !s100 Ug;?g:MeA?^>TL3nkLSnH1
-R1
-I1>6^?IG<_?9PnWAEP^5f;0
-R2
+Ic?F<@^K6XH4Dh9aRfC2hQ3
 S1
-R3
-w1762058347
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg6bit.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg6bit.sv
-!i122 119
-R23
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv
+F/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv
+!i122 204
+R32
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg6bit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg6bit.sv|
-!i113 1
-R5
-R6
+R33
+!s107 /filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv|
+!i113 0
+R9
+R2
 vreg_cell
-R0
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv
+R3
+R31
 !i10b 1
 !s100 HZ94Qg^c;AUeD7Xj?ea_G3
-R1
-IATMe@D94];WKa_HV:dKmC3
-R2
+IXRE00CNdC>c>;VA<bfdVi0
 S1
-R3
-w1747023212
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv
-!i122 115
-Z25 L0 3 20
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv
+F/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv
+!i122 205
+Z34 L0 3 20
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/reg_cell.sv|
-!i113 1
-R5
-R6
+R33
+!s107 /filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv|
+!i113 0
+R9
+R2
 vreg_cell_sec_0
-R0
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 !s110 1747009524
 !i10b 1
 !s100 YgVS;EgiP5[Ge6hBiPNKY1
-R1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
 I<BYD;IXTYcO2=mnGAULM<3
-R2
+R7
 S1
 dC:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock
 w1747009520
 8C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell_sec_0.sv
 FC:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell_sec_0.sv
 !i122 2
-R25
-R4
+R34
+OV;L;2020.1;71
 r1
 !s85 0
 31
@@ -658,364 +776,364 @@ r1
 !s107 C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell_sec_0.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell_sec_0.sv|
 !i113 1
-R5
-R6
+R9
+R2
 vregister_tb
-R0
-R19
+2/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv
+R3
+Z35 !s110 1772354455
 !i10b 1
 !s100 j_lh_Hln@>dOCcA4UF3RO1
-R1
-IfzmbDJS<;n^cHJ[P4ZLl]0
-R2
+IaO9`9]1z1`4Ya>2I;hdC`3
 S1
-R3
-w1747027033
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/register_tb.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/register_tb.sv
-!i122 120
-R22
-R4
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv
+F/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv
+!i122 206
+R30
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/register_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/register_tb.sv|
-!i113 1
-R5
-R6
+R33
+!s107 /filespace/v/vohihoin/Project/AlarmClock/register_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv|
+!i113 0
+R9
+R2
 vsec_counter
-R0
-!s110 1766798129
-!i10b 1
-!s100 @NgGV9F>I6FIHlYoOII0T1
-R1
-ISanEe`[`7;2EQ41n6A9UQ0
-R2
-S1
+2/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv
 R3
-w1766797034
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter.sv
-!i122 134
+R35
+!i10b 1
+!s100 7WbeIFDQ4LQQ<zC^OKX;11
+IKBhgOVlBISnN?P0KN:QW@3
+S1
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv
+F/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv
+!i122 207
 L0 1 18
-R4
+R7
+R8
 r1
 !s85 0
 31
-!s108 1766798129.000000
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter.sv|
-!i113 1
-R5
-R6
+Z36 !s108 1772354455.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv|
+!i113 0
+R9
+R2
 vsec_counter_tb
-R0
-Z26 !s110 1766796840
+2/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv
+R3
+R35
 !i10b 1
 !s100 C0S7[J4z>HVS98D^ceC^;1
-R1
-I@PJN6Jo:YN2;7CNA12mWA2
-R2
+I>F3::DL324QkTC?GG<6;J0
 S1
-R3
-w1747101475
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv
-!i122 122
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv
+F/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv
+!i122 208
 L0 1 33
-R4
+R7
+R8
 r1
 !s85 0
 31
-R20
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv|
-!i113 1
-R5
-R6
+R36
+!s107 /filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv|
+!i113 0
+R9
+R2
 vsec_reg_T
-R0
-R26
+2/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv
+R3
+R35
 !i10b 1
 !s100 F6G:zSKFVz7?bKZg8lNea1
-R1
-IMSQhjKKcRV_MiAFUe2lz:0
-R2
+IL<15KDAQ@RZ2>_aG0WGln1
 S1
-R3
-w1762045710
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv
-!i122 123
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv
+F/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv
+!i122 209
 L0 4 21
-R4
+R7
+R8
 r1
 !s85 0
 31
-Z27 !s108 1766796840.000000
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_T.sv|
-!i113 1
-R5
-R6
+R36
+!s107 /filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv|
+!i113 0
+R9
+R2
 nsec_reg_@t
 vsec_reg_tb
-R0
-R26
+2/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv
+R3
+Z37 !s110 1772354456
 !i10b 1
 !s100 W2iB5>lQV@Ac?:=3jaiW21
-R1
-ID0o_<PzVb<KB183kdz<Tl1
-R2
+IE9Vkazc:1zW9no^72O_2X3
 S1
-R3
-w1747155963
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv
-!i122 124
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv
+F/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv
+!i122 210
 L0 1 67
-R4
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_tb.sv|
-!i113 1
-R5
-R6
+R36
+!s107 /filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv|
+!i113 0
+R9
+R2
 vsec_reg_U
-R0
-R26
+2/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv
+R3
+R37
 !i10b 1
 !s100 1XaCzIdW>nV[aB?hlPjYX1
-R1
-Ig_Lae]0QP@CKeOM=AKNaP0
-R2
+I8?8ooc5mWbDG_IVdCVTWB0
 S1
-R3
-w1762045274
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv
-!i122 125
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv
+F/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv
+!i122 211
 L0 3 24
-R4
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_reg_U.sv|
-!i113 1
-R5
-R6
+Z38 !s108 1772354456.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv|
+!i113 0
+R9
+R2
 nsec_reg_@u
 vsegAdec
-R0
-R26
+2/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv
+R3
+R37
 !i10b 1
 !s100 D^^Z`Dgm`5;HXCR89mA];3
-R1
-I<_^b79N=WOd80307]UC4`1
-R2
+I:mCF>J`;m0bX<o^lok0UF0
 S1
-R3
-w1752112180
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv
-!i122 126
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv
+F/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv
+!i122 212
 L0 3 14
-R4
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segAdec.sv|
-!i113 1
-R5
-R6
+R38
+!s107 /filespace/v/vohihoin/Project/AlarmClock/segAdec.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv|
+!i113 0
+R9
+R2
 nseg@adec
 vsegBdec
-R0
-R26
-!i10b 1
-!s100 E2^3AhgN9dlB=YUZDz[Vm1
-R1
-IEIY2JHL=0BIbIBd5?jEOK2
-R2
-S1
+2/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv
 R3
-w1752112234
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv
-!i122 127
+R37
+!i10b 1
+!s100 =B5>kn]R_z2;VQ=NC]Dn20
+IQ3=BFidkI5WQ2^j9c2Xl=0
+S1
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv
+F/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv
+!i122 213
 L0 3 12
-R4
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segBdec.sv|
-!i113 1
-R5
-R6
+R38
+!s107 /filespace/v/vohihoin/Project/AlarmClock/segBdec.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv|
+!i113 0
+R9
+R2
 nseg@bdec
 vsegCdec
-R0
-R26
-!i10b 1
-!s100 HzAjk00;SZQ8U2`A>B0aF3
-R1
-I`N4j=iSXdGo2macYoWogg3
-R2
-S1
+2/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv
 R3
-w1752112239
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segCdec.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segCdec.sv
-!i122 128
-Z28 L0 3 11
-R4
+R37
+!i10b 1
+!s100 jzVBFig`FJ=]hXzCj^C_?3
+IoMh_[dboFAhQYPf<e@2mJ2
+S1
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv
+F/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv
+!i122 214
+Z39 L0 3 11
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segCdec.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segCdec.sv|
-!i113 1
-R5
-R6
+R38
+!s107 /filespace/v/vohihoin/Project/AlarmClock/segCdec.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv|
+!i113 0
+R9
+R2
 nseg@cdec
 vsegDdec
-R0
-R26
-!i10b 1
-!s100 n>7KchIig:HSo?2PIjhER0
-R1
-I@VUmI^BCB33^YcozUFJoM0
-R2
-S1
+2/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv
 R3
-w1752112241
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv
-!i122 129
-R28
-R4
+Z40 !s110 1772354457
+!i10b 1
+!s100 kOc`mFi@zO=@n><TGgJ3e2
+I3dddj;W@;A<?l6>V:L;=b1
+S1
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv
+F/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv
+!i122 215
+R39
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segDdec.sv|
-!i113 1
-R5
-R6
+Z41 !s108 1772354457.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/segDdec.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv|
+!i113 0
+R9
+R2
 nseg@ddec
 vsegEdec
-R0
-R26
-!i10b 1
-!s100 P[kMmAV<zELc<o;Pk[BNK1
-R1
-I@HY]g:OgOjHoYA`QHzMU60
-R2
-S1
+2/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv
 R3
-w1752112245
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segEdec.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segEdec.sv
-!i122 130
-R28
-R4
+R40
+!i10b 1
+!s100 l4ESHFGV_H[mA9z@QgBXb2
+I31bV[McHdhnVWAVfV_2[k3
+S1
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv
+F/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv
+!i122 216
+R39
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segEdec.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segEdec.sv|
-!i113 1
-R5
-R6
+R41
+!s107 /filespace/v/vohihoin/Project/AlarmClock/segEdec.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv|
+!i113 0
+R9
+R2
 nseg@edec
 vsegFdec
-R0
-R26
-!i10b 1
-!s100 ma[J`d`;]D1K<o<T?`?@F1
-R1
-Ii3WjR=Z[S[`P9gkI871J?2
-R2
-S1
+2/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv
 R3
-w1752112248
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segFdec.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segFdec.sv
-!i122 131
-R28
-R4
+R40
+!i10b 1
+!s100 HZ^j:30A>SK6G:RzMg3kL1
+IePKdSdR;YO8>OgUOZmDcS3
+S1
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv
+F/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv
+!i122 217
+R39
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segFdec.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segFdec.sv|
-!i113 1
-R5
-R6
+R41
+!s107 /filespace/v/vohihoin/Project/AlarmClock/segFdec.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv|
+!i113 0
+R9
+R2
 nseg@fdec
 vsegGdec
-R0
-R26
+2/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
+R3
+R40
 !i10b 1
 !s100 XVG2JUTYRa;hZjcX0h;Vj0
-R1
-IkR;>fHzmgCahTfXC]Rgn20
-R2
+Ic^Ko5AhMOKczDl47aRAQn3
 S1
-R3
-w1752112319
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segGdec.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segGdec.sv
-!i122 132
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
+F/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
+!i122 218
+R12
+R7
 R8
-R4
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segGdec.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/segGdec.sv|
-!i113 1
-R5
-R6
+R41
+!s107 /filespace/v/vohihoin/Project/AlarmClock/segGdec.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv|
+!i113 0
+R9
+R2
 nseg@gdec
 vsimple_counter
-R0
-R26
+2/filespace/v/vohihoin/Project/AlarmClock/simple_counter.sv
+R3
+!s110 1772354458
 !i10b 1
 !s100 ^G68ef8NE6hRZFfF]:U`D1
-R1
-IoFT;VFzOBR[Yj71H<`G:W0
-R2
+IlTb5n9D]ZenNg33im6OF91
 S1
-R3
-w1751340408
-8C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/simple_counter.sv
-FC:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/simple_counter.sv
-!i122 133
+R5
+R18
+8/filespace/v/vohihoin/Project/AlarmClock/simple_counter.sv
+F/filespace/v/vohihoin/Project/AlarmClock/simple_counter.sv
+!i122 219
 L0 1 15
-R4
+R7
+R8
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/simple_counter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/simple_counter.sv|
-!i113 1
-R5
-R6
+!s108 1772354458.000000
+!s107 /filespace/v/vohihoin/Project/AlarmClock/simple_counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/simple_counter.sv|
+!i113 0
+R9
+R2

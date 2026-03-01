@@ -74,7 +74,7 @@ module alarm_clock_last_tb(
     end
 
     always 
-        #5 clk = ~clk;
+        #2 clk = ~clk;
 
 
 endmodule

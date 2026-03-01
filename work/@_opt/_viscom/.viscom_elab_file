@@ -1,0 +1,1 @@
+/cae/apps/data/mentor-2024/questasim/linux/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 393216 work.alarm_clock_last_tb -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt -id 1-000ae431a4f1-69a4939b-14cf9-15d54a +__betafsm

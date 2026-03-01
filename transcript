@@ -1,0 +1,57 @@
+# //  Questa Sim
+# //  Version 2024.3_2 linux Nov 25 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project AlarmClockSim
+# Load canceled
+# Compile of alarm_clock_last_tb.sv was successful.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+vsim work.alarm_clock_last_tb -voptargs=+acc
+# vsim work.alarm_clock_last_tb -voptargs="+acc" 
+# Start time: 13:29:28 on Mar 01,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.alarm_clock_last_tb(fast)
+# Loading work.alarm_clock_top_level(fast)
+# Loading work.alarm_clock(fast)
+# Loading work.reg6bit(fast)
+# Loading work.debouncer(fast)
+# Loading work.clock_enable(fast)
+# Loading work.my_dff_en(fast)
+# Loading work.sec_counter(fast)
+# Loading work.sec_reg_U(fast)
+# Loading work.reg4bit(fast)
+# Loading work.sec_reg_T(fast)
+# Loading work.min_reg_U(fast)
+# Loading work.min_reg_T(fast)
+# Loading work.hr_reg_U(fast)
+# Loading work.hr_reg_T(fast)
+# Loading work.reg1bit(fast)
+# Loading work.d_ff(fast)
+# Loading work.alarm_control(fast)
+# Loading work.bcd7seg_en(fast)
+# Loading work.bcd7seg(fast)
+# Loading work.segAdec(fast)
+# Loading work.segBdec(fast)
+# Loading work.segCdec(fast)
+# Loading work.segDdec(fast)
+# Loading work.segEdec(fast)
+# Loading work.segFdec(fast)
+# Loading work.segGdec(fast)
+# Loading work.reg_cell(fast)
+# Loading work.half_adder(fast)
