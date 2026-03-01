@@ -68,7 +68,7 @@ module alarm_clock_last_tb(
 
         while (!((hrT === 1) && (hrU === 2))) @(negedge clk);
 
-        $display("Yahoo!! Cool beans")
+        $display("Yahoo!! Cool beans");
         $stop();
 
     end
