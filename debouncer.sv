@@ -18,7 +18,7 @@ module clock_enable(input Clk_50M,output slow_clk_en);
     reg [26:0]counter=0;
     always @(posedge Clk_50M)
     begin
-       counter <= (counter>=3)?0:counter+1; // actual counter value 124999 instead of 3
+       counter <= (counter>=124999)?0:counter+1; // actual counter value 124999 instead of 3
     end
     assign slow_clk_en = (counter == 3)?1'b1:1'b0;
 endmodule
