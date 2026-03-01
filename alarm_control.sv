@@ -90,10 +90,10 @@ module alarm_control(
     logic time_achieved;
     logic time_achieved_prev;
     assign time_achieved = !in_alarm_mode && 
-                 (minU == minU_in) &&
-                 (minT == minT_in) &&
-                 (hrU == hrU_in) &&
-                 (hrT == hrT_in);
+                 (alarm_minU == minU_in) &&
+                 (alarm_minT == minT_in) &&
+                 (alarm_hrU == hrU_in) &&
+                 (alarm_hrT == hrT_in);
 
     always_ff @(posedge clk, negedge rst_n) begin
         if (!rst_n)
