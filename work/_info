@@ -5,6 +5,12 @@ Z0 !s12c _opt
 Z1 !s99 nomlopt
 R0
 R1
+R0
+R1
+R0
+R1
+R0
+R1
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -14,10 +20,10 @@ R1
 cModel Technology
 dC:/Users/aigbe/OneDrive/Desktop/Robotics/ECE352/AHW5
 T_opt
-!s110 1772393371
-VT;?:EL8SWd8G_A`BM50gZ3
+!s110 1773680815
+VN5gA;Zn:`a1Tczfl?CkTV3
 04 19 4 work alarm_clock_last_tb fast 0
-=1-000ae431a4f1-69a4939b-14cf9-15d54a
+=2-000ae431a4f1-69b838af-904f4-64d9c
 R1
 !s12f OEM100
 !s12b OEM100
@@ -55,23 +61,23 @@ R2
 valarm_clock_last_tb
 2/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv
 R3
-!s110 1772393338
+!s110 1773680809
 !i10b 1
-!s100 ^Mk>Z_fgo1^d?hE=dahkN2
-IWnMQOaJh]mRe9WYB<CAHl2
+!s100 98T8Rbg9og1?7;MaWQoMh1
+I4m>[;C]O:]6Y[^F<@V`B=0
 S1
 R5
-w1772392678
+w1773680799
 8/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv
 F/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv
-!i122 230
+!i122 243
 L0 1 80
 R7
 R8
 r1
 !s85 0
 31
-!s108 1772393338.000000
+!s108 1773680809.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv|
 !i113 0
@@ -255,23 +261,23 @@ R2
 vclock_enable
 Z16 2/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
 R3
-Z17 !s110 1772354451
+Z17 !s110 1773680528
 !i10b 1
-!s100 [fWjN>A9]7PM>dGUSE3mJ1
-I]KViRN3:ES0YEFCTjOl=>0
+!s100 ^=4aA=Y0fUcUIF3<TOS3X1
+IDciHk>L5J499;<0<o9XfC1
 S1
 R5
-Z18 w1772354001
+Z18 w1773680518
 Z19 8/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
 Z20 F/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
-!i122 187
-L0 17 8
+!i122 241
+L0 27 20
 R7
 R8
 r1
 !s85 0
 31
-Z21 !s108 1772354451.000000
+Z21 !s108 1773680528.000000
 Z22 !s107 /filespace/v/vohihoin/Project/AlarmClock/debouncer.sv|
 Z23 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/debouncer.sv|
 !i113 0
@@ -307,15 +313,15 @@ R16
 R3
 R17
 !i10b 1
-!s100 3Q1Qb]hd7lmRU2[hG?C=e2
-IcM=6>YzWMRIgo4==QMYcK3
+!s100 B=RY[VbB:?`lO>nA7[^IW1
+IT<HcR?T?iXAAz>RNb=_m40
 S1
 R5
 R18
 R19
 R20
-!i122 187
-L0 5 11
+!i122 241
+L0 8 17
 R7
 R8
 r1
@@ -330,13 +336,13 @@ R2
 vhalf_adder
 2/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv
 R3
-R17
+Z24 !s110 1772354451
 !i10b 1
 !s100 XL^H>Z0Y]VUHBz^jeL^E`3
 IzbR1Mk^4K;X;Ioz?Z>2ok1
 S1
 R5
-R18
+Z25 w1772354001
 8/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv
 F/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv
 !i122 188
@@ -346,7 +352,7 @@ R8
 r1
 !s85 0
 31
-R21
+Z26 !s108 1772354451.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/half_adder.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/half_adder.sv|
 !i113 0
@@ -355,13 +361,13 @@ R2
 vhr_reg_T
 2/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv
 R3
-R17
+R24
 !i10b 1
 !s100 >TG_h9CWOeiOP5OQOad5z2
 I_:YokPM;8Y3T3nDGn9^`M0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv
 F/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv
 !i122 189
@@ -371,7 +377,7 @@ R8
 r1
 !s85 0
 31
-R21
+R26
 !s107 /filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/hr_reg_T.sv|
 !i113 0
@@ -381,13 +387,13 @@ nhr_reg_@t
 vhr_reg_U
 2/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv
 R3
-R17
+R24
 !i10b 1
 !s100 YT`XiL0@9OcS:D@lTfP;H0
 IiZk4MgKheT8_Q0Z8CSWJ72
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv
 F/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv
 !i122 190
@@ -397,7 +403,7 @@ R8
 r1
 !s85 0
 31
-R21
+R26
 !s107 /filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/hr_reg_U.sv|
 !i113 0
@@ -407,23 +413,23 @@ nhr_reg_@u
 vlogic0
 2/filespace/v/vohihoin/Project/AlarmClock/logic0.sv
 R3
-R17
+R24
 !i10b 1
 !s100 m?26?FjjOY1NdT1EM@6oO1
 IFDRMKTe:SCa<@B_BBAA[00
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/logic0.sv
 F/filespace/v/vohihoin/Project/AlarmClock/logic0.sv
 !i122 191
-Z24 L0 1 5
+Z27 L0 1 5
 R7
 R8
 r1
 !s85 0
 31
-R21
+R26
 !s107 /filespace/v/vohihoin/Project/AlarmClock/logic0.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/logic0.sv|
 !i113 0
@@ -432,23 +438,23 @@ R2
 vlogic1
 2/filespace/v/vohihoin/Project/AlarmClock/logic1.sv
 R3
-Z25 !s110 1772354452
+Z28 !s110 1772354452
 !i10b 1
 !s100 YU4;;B[<PQTWXAX?oY``B0
 IP8ShBSko665mSm94J`8>D3
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/logic1.sv
 F/filespace/v/vohihoin/Project/AlarmClock/logic1.sv
 !i122 192
-R24
+R27
 R7
 R8
 r1
 !s85 0
 31
-Z26 !s108 1772354452.000000
+Z29 !s108 1772354452.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/logic1.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/logic1.sv|
 !i113 0
@@ -457,13 +463,13 @@ R2
 vmin_reg_T
 2/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv
 R3
-R25
+R28
 !i10b 1
 !s100 >OR=?]2C:<lCdhOM0e4D^1
 I;KPK:SZC?GX=27_^J8nAJ1
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv
 F/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv
 !i122 193
@@ -473,7 +479,7 @@ R8
 r1
 !s85 0
 31
-R26
+R29
 !s107 /filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/min_reg_T.sv|
 !i113 0
@@ -483,13 +489,13 @@ nmin_reg_@t
 vmin_reg_U
 2/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv
 R3
-R25
+R28
 !i10b 1
 !s100 a2PIKN5BkF9;YfG]oe76:0
 Iz[7B6^KOcj3[CzR[nn?^01
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv
 F/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv
 !i122 194
@@ -499,7 +505,7 @@ R8
 r1
 !s85 0
 31
-R26
+R29
 !s107 /filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/min_reg_U.sv|
 !i113 0
@@ -511,15 +517,15 @@ R16
 R3
 R17
 !i10b 1
-!s100 eGk<DdARk`l<`LdB1f`Ee1
-IYzD3fRIoRl]>M7kE3a?dL2
+!s100 OO8h9S_2lbEElm`=B_Wa82
+I516WPLD:EX<?BASI7;5`Y1
 S1
 R5
 R18
 R19
 R20
-!i122 187
-L0 26 6
+!i122 241
+L0 49 6
 R7
 R8
 r1
@@ -533,12 +539,12 @@ R9
 R2
 vmy_mux
 2/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v
-R25
+R28
 !i10b 1
 !s100 ekPY5MjmTaaCHH1nVG7gT1
 I00ig9TKSj@d?6>`6MCdfl0
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v
 F/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v
 !i122 196
@@ -548,15 +554,15 @@ R8
 r1
 !s85 0
 31
-R26
+R29
 !s107 /filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/my_mux_bb.v|
 !i113 0
-Z27 o-work work
+Z30 o-work work
 R2
 vPLL
 2/filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v
-Z28 !s110 1772354453
+Z31 !s110 1772354453
 !i10b 1
 !s100 iQR?NzE]IJinFXM<[<5=F0
 I8MS2943`0`R7nfY`<5D[V1
@@ -571,33 +577,33 @@ R8
 r1
 !s85 0
 31
-Z29 !s108 1772354453.000000
+Z32 !s108 1772354453.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/PLL_bb.v|
 !i113 0
-R27
+R30
 R2
 n@p@l@l
 vpointselector
 2/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv
 R3
-R28
+R31
 !i10b 1
 !s100 _QoPM=kj2h5b_UfIo<c7L3
 IU0gf^aZSR[;oD4FS:k]iX2
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv
 F/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv
 !i122 199
-Z30 L0 1 43
+Z33 L0 1 43
 R7
 R8
 r1
 !s85 0
 31
-R29
+R32
 !s107 /filespace/v/vohihoin/Project/AlarmClock/pointselector.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/pointselector.sv|
 !i113 0
@@ -606,13 +612,13 @@ R2
 vpress_detector
 2/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv
 R3
-R28
+R31
 !i10b 1
 !s100 LjgXB>D7O[0GHk1GDXjDK1
 I<iV9dWP^TC_l:DF0[K2od0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv
 F/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv
 !i122 200
@@ -622,7 +628,7 @@ R8
 r1
 !s85 0
 31
-R29
+R32
 !s107 /filespace/v/vohihoin/Project/AlarmClock/press_detector.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/press_detector.sv|
 !i113 0
@@ -631,23 +637,23 @@ R2
 vreg1bit
 2/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv
 R3
-Z31 !s110 1772354454
+Z34 !s110 1772354454
 !i10b 1
 !s100 WIJ>GGE`lZNe;=SW]niN[0
 I1ihd5D1ianRIBfbF8OfQz0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv
 F/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv
 !i122 201
-Z32 L0 1 10
+Z35 L0 1 10
 R7
 R8
 r1
 !s85 0
 31
-R29
+R32
 !s107 /filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg1bit.sv|
 !i113 0
@@ -656,13 +662,13 @@ R2
 vreg3bit
 2/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv
 R3
-R31
+R34
 !i10b 1
 !s100 VZEP_l:@@ln[:20h]TCPA0
 I<^HS@47GVRR^jEbD1fKoH2
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv
 F/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv
 !i122 202
@@ -672,7 +678,7 @@ R8
 r1
 !s85 0
 31
-Z33 !s108 1772354454.000000
+Z36 !s108 1772354454.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg3bit.sv|
 !i113 0
@@ -681,13 +687,13 @@ R2
 vreg4bit
 2/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv
 R3
-R31
+R34
 !i10b 1
 !s100 Dhgo3LlKNE^kJbMV0k;@f2
 IljB4CW6^QWGaDo=7K=Q770
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv
 F/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv
 !i122 203
@@ -697,7 +703,7 @@ R8
 r1
 !s85 0
 31
-R33
+R36
 !s107 /filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg4bit.sv|
 !i113 0
@@ -706,23 +712,23 @@ R2
 vreg6bit
 2/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv
 R3
-R31
+R34
 !i10b 1
 !s100 Ug;?g:MeA?^>TL3nkLSnH1
 Ic?F<@^K6XH4Dh9aRfC2hQ3
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv
 F/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv
 !i122 204
-R32
+R35
 R7
 R8
 r1
 !s85 0
 31
-R33
+R36
 !s107 /filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg6bit.sv|
 !i113 0
@@ -731,23 +737,23 @@ R2
 vreg_cell
 2/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv
 R3
-R31
+R34
 !i10b 1
 !s100 HZ94Qg^c;AUeD7Xj?ea_G3
 IXRE00CNdC>c>;VA<bfdVi0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv
 F/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv
 !i122 205
-Z34 L0 3 20
+Z37 L0 3 20
 R7
 R8
 r1
 !s85 0
 31
-R33
+R36
 !s107 /filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/reg_cell.sv|
 !i113 0
@@ -767,7 +773,7 @@ w1747009520
 8C:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell_sec_0.sv
 FC:/Users/aigbe/OneDrive/Desktop/Robotics/FPGAWork/Projects/AlarmClock/reg_cell_sec_0.sv
 !i122 2
-R34
+R37
 OV;L;2020.1;71
 r1
 !s85 0
@@ -781,23 +787,23 @@ R2
 vregister_tb
 2/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv
 R3
-Z35 !s110 1772354455
+Z38 !s110 1772354455
 !i10b 1
 !s100 j_lh_Hln@>dOCcA4UF3RO1
 IaO9`9]1z1`4Ya>2I;hdC`3
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv
 F/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv
 !i122 206
-R30
+R33
 R7
 R8
 r1
 !s85 0
 31
-R33
+R36
 !s107 /filespace/v/vohihoin/Project/AlarmClock/register_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/register_tb.sv|
 !i113 0
@@ -806,23 +812,23 @@ R2
 vsec_counter
 2/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv
 R3
-R35
+R17
 !i10b 1
-!s100 7WbeIFDQ4LQQ<zC^OKX;11
-IKBhgOVlBISnN?P0KN:QW@3
+!s100 d`lB^g;hYTohQX<LEEVf`3
+I1<Cz?^oK6SL9llX[230HZ1
 S1
 R5
-R18
+w1773680494
 8/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv
 F/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv
-!i122 207
-L0 1 18
+!i122 242
+L0 1 28
 R7
 R8
 r1
 !s85 0
 31
-Z36 !s108 1772354455.000000
+R21
 !s107 /filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv|
 !i113 0
@@ -831,13 +837,13 @@ R2
 vsec_counter_tb
 2/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv
 R3
-R35
+R38
 !i10b 1
 !s100 C0S7[J4z>HVS98D^ceC^;1
 I>F3::DL324QkTC?GG<6;J0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv
 F/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv
 !i122 208
@@ -847,7 +853,7 @@ R8
 r1
 !s85 0
 31
-R36
+Z39 !s108 1772354455.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_counter_tb.sv|
 !i113 0
@@ -856,13 +862,13 @@ R2
 vsec_reg_T
 2/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv
 R3
-R35
+R38
 !i10b 1
 !s100 F6G:zSKFVz7?bKZg8lNea1
 IL<15KDAQ@RZ2>_aG0WGln1
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv
 F/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv
 !i122 209
@@ -872,7 +878,7 @@ R8
 r1
 !s85 0
 31
-R36
+R39
 !s107 /filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_reg_T.sv|
 !i113 0
@@ -882,13 +888,13 @@ nsec_reg_@t
 vsec_reg_tb
 2/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv
 R3
-Z37 !s110 1772354456
+Z40 !s110 1772354456
 !i10b 1
 !s100 W2iB5>lQV@Ac?:=3jaiW21
 IE9Vkazc:1zW9no^72O_2X3
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv
 F/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv
 !i122 210
@@ -898,7 +904,7 @@ R8
 r1
 !s85 0
 31
-R36
+R39
 !s107 /filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_reg_tb.sv|
 !i113 0
@@ -907,13 +913,13 @@ R2
 vsec_reg_U
 2/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv
 R3
-R37
+R40
 !i10b 1
 !s100 1XaCzIdW>nV[aB?hlPjYX1
 I8?8ooc5mWbDG_IVdCVTWB0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv
 F/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv
 !i122 211
@@ -923,7 +929,7 @@ R8
 r1
 !s85 0
 31
-Z38 !s108 1772354456.000000
+Z41 !s108 1772354456.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/sec_reg_U.sv|
 !i113 0
@@ -933,13 +939,13 @@ nsec_reg_@u
 vsegAdec
 2/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv
 R3
-R37
+R40
 !i10b 1
 !s100 D^^Z`Dgm`5;HXCR89mA];3
 I:mCF>J`;m0bX<o^lok0UF0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv
 F/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv
 !i122 212
@@ -949,7 +955,7 @@ R8
 r1
 !s85 0
 31
-R38
+R41
 !s107 /filespace/v/vohihoin/Project/AlarmClock/segAdec.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segAdec.sv|
 !i113 0
@@ -959,13 +965,13 @@ nseg@adec
 vsegBdec
 2/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv
 R3
-R37
+R40
 !i10b 1
 !s100 =B5>kn]R_z2;VQ=NC]Dn20
 IQ3=BFidkI5WQ2^j9c2Xl=0
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv
 F/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv
 !i122 213
@@ -975,7 +981,7 @@ R8
 r1
 !s85 0
 31
-R38
+R41
 !s107 /filespace/v/vohihoin/Project/AlarmClock/segBdec.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segBdec.sv|
 !i113 0
@@ -985,23 +991,23 @@ nseg@bdec
 vsegCdec
 2/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv
 R3
-R37
+R40
 !i10b 1
 !s100 jzVBFig`FJ=]hXzCj^C_?3
 IoMh_[dboFAhQYPf<e@2mJ2
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv
 F/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv
 !i122 214
-Z39 L0 3 11
+Z42 L0 3 11
 R7
 R8
 r1
 !s85 0
 31
-R38
+R41
 !s107 /filespace/v/vohihoin/Project/AlarmClock/segCdec.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segCdec.sv|
 !i113 0
@@ -1011,23 +1017,23 @@ nseg@cdec
 vsegDdec
 2/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv
 R3
-Z40 !s110 1772354457
+Z43 !s110 1772354457
 !i10b 1
 !s100 kOc`mFi@zO=@n><TGgJ3e2
 I3dddj;W@;A<?l6>V:L;=b1
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv
 F/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv
 !i122 215
-R39
+R42
 R7
 R8
 r1
 !s85 0
 31
-Z41 !s108 1772354457.000000
+Z44 !s108 1772354457.000000
 !s107 /filespace/v/vohihoin/Project/AlarmClock/segDdec.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segDdec.sv|
 !i113 0
@@ -1037,23 +1043,23 @@ nseg@ddec
 vsegEdec
 2/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv
 R3
-R40
+R43
 !i10b 1
 !s100 l4ESHFGV_H[mA9z@QgBXb2
 I31bV[McHdhnVWAVfV_2[k3
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv
 F/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv
 !i122 216
-R39
+R42
 R7
 R8
 r1
 !s85 0
 31
-R41
+R44
 !s107 /filespace/v/vohihoin/Project/AlarmClock/segEdec.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segEdec.sv|
 !i113 0
@@ -1063,23 +1069,23 @@ nseg@edec
 vsegFdec
 2/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv
 R3
-R40
+R43
 !i10b 1
 !s100 HZ^j:30A>SK6G:RzMg3kL1
 IePKdSdR;YO8>OgUOZmDcS3
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv
 F/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv
 !i122 217
-R39
+R42
 R7
 R8
 r1
 !s85 0
 31
-R41
+R44
 !s107 /filespace/v/vohihoin/Project/AlarmClock/segFdec.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segFdec.sv|
 !i113 0
@@ -1089,13 +1095,13 @@ nseg@fdec
 vsegGdec
 2/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
 R3
-R40
+R43
 !i10b 1
 !s100 XVG2JUTYRa;hZjcX0h;Vj0
 Ic^Ko5AhMOKczDl47aRAQn3
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
 F/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
 !i122 218
@@ -1105,7 +1111,7 @@ R8
 r1
 !s85 0
 31
-R41
+R44
 !s107 /filespace/v/vohihoin/Project/AlarmClock/segGdec.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/v/vohihoin/Project/AlarmClock/segGdec.sv|
 !i113 0
@@ -1121,7 +1127,7 @@ R3
 IlTb5n9D]ZenNg33im6OF91
 S1
 R5
-R18
+R25
 8/filespace/v/vohihoin/Project/AlarmClock/simple_counter.sv
 F/filespace/v/vohihoin/Project/AlarmClock/simple_counter.sv
 !i122 219

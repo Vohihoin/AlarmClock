@@ -12,14 +12,120 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
+# Loading project EX14_actual
+# reading /cae/apps/data/mentor-2024/questasim/linux/../modelsim.ini
 # Loading project AlarmClockSim
-# Load canceled
-# Compile of alarm_clock_last_tb.sv was successful.
+# Compile of debouncer.sv failed with 1 errors.
+# Compile of sec_counter.sv failed with 1 errors.
 # Compile of sec_counter_inst.v failed with 2 errors.
-# 2 compiles, 1 failed with 2 errors.
+# 3 compiles, 3 failed with 4 errors.
+# Compile of debouncer.sv failed with 1 errors.
+# Compile of sec_counter.sv failed with 1 errors.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 3 failed with 4 errors.
+# Compile of debouncer.sv was successful with warnings.
+# Compile of sec_counter.sv was successful with warnings.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
 vsim work.alarm_clock_last_tb -voptargs=+acc
 # vsim work.alarm_clock_last_tb -voptargs="+acc" 
-# Start time: 13:29:28 on Mar 01,2026
+# Start time: 11:38:43 on Mar 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Error (suppressible): /filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv(21): (vopt-7063) Failed to find 'MAX_COUNT' in hierarchical name 'set_count.MAX_COUNT'.
+#         Region: alarm_clock_last_tb.iDUT.mainClock.counter
+# ** Error (suppressible): /filespace/v/vohihoin/Project/AlarmClock/debouncer.sv(42): (vopt-7063) Failed to find 'MAX_COUNT' in hierarchical name 'set_count.MAX_COUNT'.
+#         Region: alarm_clock_last_tb.iDUT.mainClock.increment_debouncer.u1
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 11:38:45 on Mar 16,2026, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 5
+# Compile of debouncer.sv failed with 2 errors.
+# Compile of sec_counter.sv failed with 1 errors.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 3 failed with 5 errors.
+# Compile of debouncer.sv failed with 2 errors.
+# Compile of sec_counter.sv failed with 1 errors.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 3 failed with 5 errors.
+# Compile of debouncer.sv failed with 2 errors.
+# Compile of sec_counter.sv failed with 1 errors.
+# Compile of debouncer.sv failed with 4 errors.
+# Compile of sec_counter.sv failed with 1 errors.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 3 failed with 7 errors.
+# Compile of sec_counter_inst.v failed with 2 errors.
+# 3 compiles, 3 failed with 5 errors.
+# Compile of debouncer.sv failed with 2 errors.
+# Compile of sec_counter.sv failed with 1 errors.
+# 2 compiles, 2 failed with 3 errors.
+# Compile of debouncer.sv was successful.
+# Compile of sec_counter.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.alarm_clock_last_tb
+# vsim -voptargs="+acc" work.alarm_clock_last_tb 
+# Start time: 12:02:34 on Mar 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_top_level.sv(63): (vopt-2685) [TFMPC] - Too few port connections for 'alarmDevice'.  Expected 16, found 15.
+# ** Warning: /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_top_level.sv(63): (vopt-2718) [TFMPC] - Missing connection for port 'rst_alarm_ring'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.alarm_clock_last_tb(fast)
+# Loading work.alarm_clock_top_level(fast)
+# Loading work.alarm_clock(fast)
+# Loading work.reg6bit(fast)
+# Loading work.debouncer(fast)
+# Loading work.clock_enable(fast)
+# Loading work.my_dff_en(fast)
+# Loading work.sec_counter(fast)
+# Loading work.sec_reg_U(fast)
+# Loading work.reg4bit(fast)
+# Loading work.sec_reg_T(fast)
+# Loading work.min_reg_U(fast)
+# Loading work.min_reg_T(fast)
+# Loading work.hr_reg_U(fast)
+# Loading work.hr_reg_T(fast)
+# Loading work.reg1bit(fast)
+# Loading work.d_ff(fast)
+# Loading work.alarm_control(fast)
+# Loading work.bcd7seg_en(fast)
+# Loading work.bcd7seg(fast)
+# Loading work.segAdec(fast)
+# Loading work.segBdec(fast)
+# Loading work.segCdec(fast)
+# Loading work.segDdec(fast)
+# Loading work.segEdec(fast)
+# Loading work.segFdec(fast)
+# Loading work.segGdec(fast)
+# Loading work.reg_cell(fast)
+# Loading work.half_adder(fast)
+add wave -position insertpoint  \
+sim:/alarm_clock_last_tb/alarm_ring \
+sim:/alarm_clock_last_tb/buzzer_pwm \
+sim:/alarm_clock_last_tb/clk \
+sim:/alarm_clock_last_tb/hrT \
+sim:/alarm_clock_last_tb/hrU \
+sim:/alarm_clock_last_tb/minT \
+sim:/alarm_clock_last_tb/minU \
+sim:/alarm_clock_last_tb/secT \
+sim:/alarm_clock_last_tb/secU \
+sim:/alarm_clock_last_tb/set_alarm \
+sim:/alarm_clock_last_tb/set_time \
+sim:/alarm_clock_last_tb/switch_sel
+run -all
+# Yahoo!! Cool beans
+# ** Note: $stop    : /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv(72)
+#    Time: 72000004 ps  Iteration: 1  Instance: /alarm_clock_last_tb
+# Break in Module alarm_clock_last_tb at /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv line 72
+# Compile of alarm_clock_last_tb.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
@@ -55,3 +161,11 @@ vsim work.alarm_clock_last_tb -voptargs=+acc
 # Loading work.segGdec(fast)
 # Loading work.reg_cell(fast)
 # Loading work.half_adder(fast)
+run -all
+# Yahoo!! Cool beans
+# ** Note: $stop    : /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv(72)
+#    Time: 243600004 ps  Iteration: 1  Instance: /alarm_clock_last_tb
+# Break in Module alarm_clock_last_tb at /filespace/v/vohihoin/Project/AlarmClock/alarm_clock_last_tb.sv line 72
+exit
+# End time: 12:10:00 on Mar 16,2026, Elapsed time: 0:07:26
+# Errors: 0, Warnings: 2

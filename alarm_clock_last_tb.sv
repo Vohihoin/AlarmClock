@@ -66,7 +66,7 @@ module alarm_clock_last_tb(
 
         rst_n = 1'b1;
 
-        while (!((hrT === 0) && (hrU === 1))) @(negedge clk);
+        while (!((hrT === 0) && (hrU === 3) && (minT == 2) && (minU == 3))) @(negedge clk);
 
         $display("Yahoo!! Cool beans");
         $stop();

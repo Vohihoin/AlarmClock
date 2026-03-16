@@ -27,20 +27,21 @@ endmodule
 module clock_enable
     #(parameter FAST_SIM = 1)
     (input Clk_50M,output slow_clk_en);
-        
-    generate: set_count
+    
+    logic [25:0] MAX_COUNT;
+    generate
         if (FAST_SIM)
-            localparam MAX_COUNT = 13;
+            assign MAX_COUNT = 13;
         else 
-            localparam MAX_COUNT = 124999;
+            assign MAX_COUNT = 124999;
     endgenerate
 
     reg [26:0]counter=0;
     always @(posedge Clk_50M)
     begin
-       counter <= (counter >= set_count.MAX_COUNT) ? 0 :counter+1; // actual counter value 124999 instead of 3
+       counter <= (counter >= MAX_COUNT) ? 0 :counter+1; // actual counter value 124999 instead of 3
     end
-    assign slow_clk_en = (counter == set_count.MAX_COUNT)?1'b1:1'b0;
+    assign slow_clk_en = (counter == MAX_COUNT)?1'b1:1'b0;
 
 endmodule
 

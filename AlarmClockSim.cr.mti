@@ -54,6 +54,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	reg_cell
 
+} {} {}} /filespace/v/vohihoin/Project/AlarmClock/debouncer.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
+QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+-- Compiling module debouncer
+-- Compiling module clock_enable
+-- Compiling module my_dff_en
+
+Top level modules:
+	debouncer
+
 } {} {}} /filespace/v/vohihoin/Project/AlarmClock/logic1.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/v/vohihoin/Project/AlarmClock/logic1.sv
 QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
 -- Compiling module logic1
@@ -67,15 +76,6 @@ QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
 
 Top level modules:
 	d_ff
-
-} {} {}} /filespace/v/vohihoin/Project/AlarmClock/debouncer.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/v/vohihoin/Project/AlarmClock/debouncer.sv
-QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
--- Compiling module debouncer
--- Compiling module clock_enable
--- Compiling module my_dff_en
-
-Top level modules:
-	debouncer
 
 } {} {}} C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/aigbe/Desktop/Robotics/FPGAWork/AlarmClock/sec_counter_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -280,12 +280,7 @@ QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
 Top level modules:
 	sec_reg_U
 
-} {} {}} /filespace/v/vohihoin/Project/AlarmClock/sec_counter_inst.v {0 {vlog -work work -vopt -stats=none /filespace/v/vohihoin/Project/AlarmClock/sec_counter_inst.v
-QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-** Error: (vlog-13069) /filespace/v/vohihoin/Project/AlarmClock/sec_counter_inst.v(20): near "sec_counter_inst": syntax error, unexpected IDENTIFIER.
-** Error: /filespace/v/vohihoin/Project/AlarmClock/sec_counter_inst.v(20): (vlog-13205) Syntax error found in the scope following 'sec_counter'. Is there a missing '::'?
-
-} {3.0 5.0} {}} /filespace/v/vohihoin/Project/AlarmClock/PLL.v {1 {vlog -work work -vopt -stats=none /filespace/v/vohihoin/Project/AlarmClock/PLL.v
+} {} {}} /filespace/v/vohihoin/Project/AlarmClock/PLL.v {1 {vlog -work work -vopt -stats=none /filespace/v/vohihoin/Project/AlarmClock/PLL.v
 QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
 -- Compiling module PLL
 
@@ -488,19 +483,19 @@ QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
 Top level modules:
 	alarm_clock
 
-} {} {}} /filespace/v/vohihoin/Project/AlarmClock/segGdec.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
-QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
--- Compiling module segGdec
-
-Top level modules:
-	segGdec
-
 } {} {}} /filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/v/vohihoin/Project/AlarmClock/sec_counter.sv
 QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
 -- Compiling module sec_counter
 
 Top level modules:
 	sec_counter
+
+} {} {}} /filespace/v/vohihoin/Project/AlarmClock/segGdec.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/v/vohihoin/Project/AlarmClock/segGdec.sv
+QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+-- Compiling module segGdec
+
+Top level modules:
+	segGdec
 
 } {} {}} /filespace/v/vohihoin/Project/AlarmClock/half_adder.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/v/vohihoin/Project/AlarmClock/half_adder.sv
 QuestaSim vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
