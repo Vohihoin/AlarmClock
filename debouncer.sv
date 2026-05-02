@@ -5,7 +5,7 @@
 
 // Module basically double flops the signal and uses the clock_enable module to produce a slower "clock" that only 
 // lets the flip flops sample once every couple of cycles
-module debouncer
+module debouncer // Takes 3 "COUNTS" to get out
     #(parameter FAST_SIM = 1)
     (input pb_1,clk,output pb_out);
 
@@ -31,7 +31,7 @@ module clock_enable
     logic [25:0] MAX_COUNT;
     generate
         if (FAST_SIM)
-            assign MAX_COUNT = 13;
+            assign MAX_COUNT = 10; // for fast simulation, we want to increment every 10 clock cycles instead of every 50 million clock cycles
         else 
             assign MAX_COUNT = 124999;
     endgenerate

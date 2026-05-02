@@ -10,7 +10,7 @@ module sec_counter
     logic [25:0] MAX_COUNT;
     generate
         if (FAST_SIM)
-            assign MAX_COUNT = 26'd5000;
+            assign MAX_COUNT = 26'd50; // for fast simulation, we want to increment every 50 clock cycles instead of every 50 million clock cycles
         else 
             assign MAX_COUNT = 26'd50_000_000;
     endgenerate
