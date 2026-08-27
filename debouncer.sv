@@ -6,7 +6,7 @@
 // Module basically double flops the signal and uses the clock_enable module to produce a slower "clock" that only 
 // lets the flip flops sample once every couple of cycles
 module debouncer // Takes 3 "COUNTS" to get out
-    #(parameter FAST_SIM = 1)
+    #(parameter FAST_SIM = 0)
     (input pb_1,clk,output pb_out);
 
     wire slow_clk_en;
@@ -25,7 +25,7 @@ endmodule
 
 // Slow clock enable for debouncing button 
 module clock_enable
-    #(parameter FAST_SIM = 1)
+    #(parameter FAST_SIM = 0)
     (input Clk_50M,output slow_clk_en);
     
     logic [25:0] MAX_COUNT;

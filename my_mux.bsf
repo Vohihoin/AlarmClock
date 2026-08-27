@@ -28,14 +28,14 @@ on the Quartus Prime software download page.
 		(pt 0 40)
 		(input)
 		(text "data1x[3..0]" (rect 0 0 68 13)(font "Arial" (font_size 8)))
-		(text "data1x[3..0]" (rect 4 28 60 39)(font "Arial" (font_size 8)))
+		(text "data1x[3..0]" (rect 4 28 59 39)(font "Arial" (font_size 8)))
 		(line (pt 0 40)(pt 64 40)(line_width 3))
 	)
 	(port
 		(pt 0 56)
 		(input)
 		(text "data0x[3..0]" (rect 0 0 68 13)(font "Arial" (font_size 8)))
-		(text "data0x[3..0]" (rect 4 44 60 55)(font "Arial" (font_size 8)))
+		(text "data0x[3..0]" (rect 4 44 59 55)(font "Arial" (font_size 8)))
 		(line (pt 0 56)(pt 64 56)(line_width 3))
 	)
 	(port
@@ -49,7 +49,7 @@ on the Quartus Prime software download page.
 		(pt 144 48)
 		(output)
 		(text "result[3..0]" (rect 0 0 61 13)(font "Arial" (font_size 8)))
-		(text "result[3..0]" (rect 90 36 140 47)(font "Arial" (font_size 8)))
+		(text "result[3..0]" (rect 90 36 139 47)(font "Arial" (font_size 8)))
 		(line (pt 144 48)(pt 80 48)(line_width 3))
 	)
 	(drawing

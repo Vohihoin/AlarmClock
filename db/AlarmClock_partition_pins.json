@@ -60,22 +60,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "LED_output[3]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_output[2]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_output[1]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_output[0]",
-					"strict" : false
-				},
-				{
 					"name" : "minTSeg[6]",
 					"strict" : false
 				},
@@ -192,11 +176,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "set_alarm",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
 				{
 					"name" : "increment",
+					"strict" : false
+				},
+				{
+					"name" : "switch_select",
 					"strict" : false
 				}
 			]

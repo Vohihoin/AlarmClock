@@ -1,17 +1,17 @@
 module bcd7seg(
   input wire	[3:0] num,		// BCD number to display
-  output wire	[6:0] seg		// seg[6]=A, seg[5]=B, ...
+  output wire	[6:0] seg		// seg[0]=A, seg[1]=B, ...
 );
 
   ////////////////////////////////////////
   // Instantiate the 7 segment drivers //
   //////////////////////////////////////
-  segAdec iA(.D(num),.segA(seg[6]));
-  segBdec iB(.D(num),.segB(seg[5]));
-  segCdec iC(.D(num),.segC(seg[4]));
+  segAdec iA(.D(num),.segA(seg[0]));
+  segBdec iB(.D(num),.segB(seg[1]));
+  segCdec iC(.D(num),.segC(seg[2]));
   segDdec iD(.D(num),.segD(seg[3]));
-  segEdec iE(.D(num),.segE(seg[2]));
-  segFdec iF(.D(num),.segF(seg[1]));
-  segGdec iG(.D(num),.segG(seg[0]));
+  segEdec iE(.D(num),.segE(seg[4]));
+  segFdec iF(.D(num),.segF(seg[5]));
+  segGdec iG(.D(num),.segG(seg[6]));
 
 endmodule  

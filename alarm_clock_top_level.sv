@@ -5,7 +5,7 @@ module alarm_clock_top_level(
     input wire rst_n,
     input wire set_time,
     input wire set_alarm,
-    input wire switch_select,
+    input wire switch_select_n,
     input wire increment_in,
 
     output logic [3:0] secU,
@@ -34,8 +34,11 @@ module alarm_clock_top_level(
     logic [3:0] hrUclock;
     logic [3:0] hrTclock;
 
+    logic switch_select;
     logic switch_select_deb;
     logic inc_deb;
+
+    assign switch_select = ~switch_select_n;
 
     alarm_clock mainClock(
         .clk(clk), 

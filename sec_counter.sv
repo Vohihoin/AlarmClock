@@ -1,5 +1,5 @@
 module sec_counter
-#(parameter FAST_SIM = 1)
+#(parameter FAST_SIM = 0)
 (
     input clk,
     input resetn_sync,

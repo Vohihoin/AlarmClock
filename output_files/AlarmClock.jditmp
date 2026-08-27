@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="363f14a8812678261731"/>
+    <hash md5_digest_80b="f2bcd4d59e3e8bf46eb6"/>
   </project>
   <file_info>
-    <file device="EP4CE22F17C6" path="AlarmClock.sof" usercode="0xFFFFFFFF"/>
+    <file device="5CSEMA5F31C6" path="AlarmClock.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>
