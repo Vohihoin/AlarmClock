@@ -1,13 +1,13 @@
-Fitter Status : Successful - Thu Aug 27 12:49:39 2026
+Fitter Status : Successful - Thu Aug 27 15:25:09 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : AlarmClock
 Top-level Entity Name : AlarmClock
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 222 / 32,070 ( < 1 % )
-Total registers : 149
-Total pins : 48 / 457 ( 11 % )
+Logic utilization (in ALMs) : 224 / 32,070 ( < 1 % )
+Total registers : 144
+Total pins : 50 / 457 ( 11 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
 Total RAM Blocks : 0 / 397 ( 0 % )

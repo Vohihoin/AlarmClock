@@ -1,5 +1,5 @@
 Flow report for AlarmClock
-Thu Aug 27 12:49:52 2026
+Thu Aug 27 15:25:19 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,16 +41,16 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Aug 27 12:49:45 2026           ;
+; Flow Status                     ; Successful - Thu Aug 27 15:25:14 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; AlarmClock                                      ;
 ; Top-level Entity Name           ; AlarmClock                                      ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 222 / 32,070 ( < 1 % )                          ;
-; Total registers                 ; 149                                             ;
-; Total pins                      ; 48 / 457 ( 11 % )                               ;
+; Logic utilization (in ALMs)     ; 224 / 32,070 ( < 1 % )                          ;
+; Total registers                 ; 144                                             ;
+; Total pins                      ; 50 / 457 ( 11 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
@@ -68,7 +68,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/27/2026 12:47:59 ;
+; Start date & time ; 08/27/2026 15:23:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AlarmClock          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 220478393434451.178785287948028        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 220478393434451.178786221813768        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -110,10 +110,10 @@ on the Quartus Prime software download page.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4910 MB             ; 00:00:16                           ;
-; Fitter               ; 00:01:32     ; 1.0                     ; 8050 MB             ; 00:09:06                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 5243 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.4                     ; 5438 MB             ; 00:00:06                           ;
-; Total                ; 00:01:49     ; --                      ; --                  ; 00:09:33                           ;
+; Fitter               ; 00:01:23     ; 1.0                     ; 8081 MB             ; 00:08:33                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 5243 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.5                     ; 5438 MB             ; 00:00:05                           ;
+; Total                ; 00:01:38     ; --                      ; --                  ; 00:08:58                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

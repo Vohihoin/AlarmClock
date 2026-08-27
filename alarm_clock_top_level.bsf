@@ -67,6 +67,13 @@ on the Quartus Prime software download page.
 		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
 	(port
+		(pt 0 128)
+		(input)
+		(text "reset_alarm" (rect 0 0 48 12)(font "Arial" ))
+		(text "reset_alarm" (rect 21 123 69 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
 		(pt 224 32)
 		(output)
 		(text "secU[3..0]" (rect 0 0 41 12)(font "Arial" ))

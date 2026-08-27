@@ -7,6 +7,7 @@ module alarm_clock_top_level(
     input wire set_alarm,
     input wire switch_select_n,
     input wire increment_in,
+    input logic reset_alarm,
 
     output logic [3:0] secU,
     output logic [3:0] secT,
@@ -38,6 +39,8 @@ module alarm_clock_top_level(
     logic switch_select_deb;
     logic inc_deb;
 
+    logic [5:0] selections;
+
     assign switch_select = ~switch_select_n;
 
     alarm_clock mainClock(
@@ -52,7 +55,7 @@ module alarm_clock_top_level(
         .minT(minTclock),
         .hrU(hrUclock),
         .hrT(hrTclock),
-
+        .selections(selections),
         .switch_select_deb(switch_select_deb),
         .inc_deb(inc_deb)
     ); 
@@ -62,6 +65,8 @@ module alarm_clock_top_level(
     logic [3:0] alarm_minT;
     logic [3:0] alarm_hrU;
     logic [3:0] alarm_hrT;
+
+    logic [3:0] alarm_selected_place;
 
     alarm_control alarmDevice(
         .clk(clk),
@@ -78,7 +83,9 @@ module alarm_clock_top_level(
         .alarm_minU(alarm_minU),
         .alarm_minT(alarm_minT),
         .alarm_hrU(alarm_hrU),
-        .alarm_hrT(alarm_hrT)
+        .alarm_hrT(alarm_hrT),
+        .alarm_selected_place(alarm_selected_place),
+        .rst_alarm_ring(reset_alarm)
     );
 
     // 7 Segment Decoders with Enable - enable is used to enable (get it) ;) blinking
@@ -135,16 +142,20 @@ module alarm_clock_top_level(
 
         if (set_time) begin // In set_time mode, we're still displaying clock values but we're blinking them using a 
                             // timer controlled "PWM" signal
-            secU_en = pwm_val;
-            secT_en = pwm_val;
-            minU_en = pwm_val;
-            minT_en = pwm_val;
-            hrU_en = pwm_val;
-            hrT_en = pwm_val;
+            secU_en = ((1 << 0) & selections) ? pwm_val : 1'b1;
+            secT_en = ((1 << 1) & selections) ? pwm_val : 1'b1;
+            minU_en = ((1 << 2) & selections) ? pwm_val : 1'b1;
+            minT_en = ((1 << 3) & selections) ? pwm_val : 1'b1;
+            hrU_en = ((1 << 4) & selections) ? pwm_val : 1'b1;
+            hrT_en = ((1 << 5) & selections) ? pwm_val : 1'b1;
         end else if (set_alarm) begin // in set_alarm mode, we're displaying the alarm register values and blinking them
                                       // but since we aren't setting the seconds place, we disable those places
             secU_en = 1'b0;
             secT_en = 1'b0;
+            minU_en = ((1 << 0) & alarm_selected_place) ? pwm_val : 1'b1;
+            minT_en = ((1 << 1) & alarm_selected_place) ? pwm_val : 1'b1;
+            hrU_en = ((1 << 2) & alarm_selected_place) ? pwm_val : 1'b1;
+            hrT_en = ((1 << 3) & alarm_selected_place) ? pwm_val : 1'b1;
             minU = alarm_minU;
             minT = alarm_minT;
             hrU = alarm_hrU;

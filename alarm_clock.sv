@@ -17,7 +17,8 @@ module alarm_clock(
 
     // debounced signals
     output switch_select_deb, 
-    output inc_deb
+    output inc_deb,
+    output logic [5:0] selections
 
 );
 
@@ -64,7 +65,6 @@ module alarm_clock(
     // logic for debouncing input signals and a register for holding the state of the digit selector 
 
     logic [5:0] selections_next;
-    logic [5:0] selections;
 
     reg6bit iREG1(.clk(clk), .resetn(resetn), .D(selections_next), .Q(selections));
     logic switch_select;

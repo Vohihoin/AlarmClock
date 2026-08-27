@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Aug 27 12:48:06 2026
+Analysis & Synthesis Status : Successful - Thu Aug 27 15:23:45 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : AlarmClock
 Top-level Entity Name : AlarmClock
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 137
-Total pins : 48
+Total registers : 135
+Total pins : 50
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

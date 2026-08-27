@@ -19,14 +19,14 @@ module alarm_control(
     output logic [3:0] alarm_minU,
     output logic [3:0] alarm_minT,
     output logic [3:0] alarm_hrU,
-    output logic [3:0] alarm_hrT
+    output logic [3:0] alarm_hrT,
+    output logic [3:0] alarm_selected_place
 
 );
 
     // Logic for being in alarm mode
     logic in_alarm_mode; // flopped in_alarm_mode signal
-    logic load_in; // signal that tells the registers to load in a new value once we enter the alarm_mode state
-
+    
     always_ff @(posedge clk, negedge rst_n) begin
         if (!rst_n)
             in_alarm_mode <= '0;
@@ -43,13 +43,9 @@ module alarm_control(
             in_alarm_mode_prev <= in_alarm_mode;
     end
 
-    // we load in when we go from not being in alarm mode to being in alarm mode
-    assign load_in = in_alarm_mode && !in_alarm_mode_prev; 
-
-
-
     // Logic for controlling the selected digit place
     logic [3:0] selected_place; // signal used to indicate which digit place is selected
+    assign alarm_selected_place = selected_place;
 
     always_ff @(posedge clk, negedge rst_n) begin
         if (!rst_n)
@@ -71,17 +67,13 @@ module alarm_control(
             alarm_minT <= '0;
             alarm_hrU <= '0;
             alarm_hrT <= '0;
-        end else if (load_in) begin
-            alarm_minU <= minU_in;
-            alarm_minT <= minT_in;
-            alarm_hrU <= hrU_in;
-            alarm_hrT <= hrT_in;
         end else if (inc_value && in_alarm_mode) begin
             // we only want to increment the register that selected_place corresponds to
-            alarm_minU <= alarm_minU + |(selected_place & MIN_U_MASK);
-            alarm_minT <= alarm_minT + |(selected_place & MIN_T_MASK);
-            alarm_hrU <= alarm_hrU + |(selected_place & HR_U_MASK);
-            alarm_hrT <= alarm_hrT + |(selected_place & HR_T_MASK);
+            alarm_minU <= ((alarm_minU + |(selected_place & MIN_U_MASK)) > 4'b1001) ? 4'b0000 : (alarm_minU + |(selected_place & MIN_U_MASK));
+            alarm_minT <= ((alarm_minT + |(selected_place & MIN_T_MASK)) > 4'b0101) ? 4'b0000 : (alarm_minT + |(selected_place & MIN_T_MASK));
+            alarm_hrU <= (alarm_hrT <= 4'b0001) ? ( ((alarm_hrU + |(selected_place & HR_U_MASK)) > 4'b1001) ? 4'b0000 : (alarm_hrU + |(selected_place & HR_U_MASK)) )
+                         : ( ( (alarm_hrU + |(selected_place & HR_U_MASK)) <= 3 ) ? (alarm_hrU + |(selected_place & HR_U_MASK)) : 4'b0000);
+            alarm_hrT <= ((alarm_hrT + |(selected_place & HR_T_MASK)) > 4'b0010) ? 4'b0000 : (alarm_hrT + |(selected_place & HR_T_MASK));
         end
     end
 
@@ -97,10 +89,21 @@ module alarm_control(
 
     always_ff @(posedge clk, negedge rst_n) begin
         if (!rst_n)
+            time_achieved_prev <= '0;
+        else
+            time_achieved_prev <= time_achieved;
+    end
+
+    assign set_alarm_ring = time_achieved && !time_achieved_prev;
+
+    always_ff @(posedge clk, negedge rst_n) begin
+        if (!rst_n)
             alarm_ring <= '0;
-        else if (rst_alarm_ring)
+        else if (in_alarm_mode) // Case 1: We are in alarm mode, so we don't want to ring the alarm
             alarm_ring <= '0;
-        else if (set_alarm_ring)
+        else if (rst_alarm_ring) // Case 2: We are not in alarm mode, but the user has reset the alarm ring signal
+            alarm_ring <= '0;
+        else if (set_alarm_ring) // Case 3: We are not in alarm mode, and the time has been achieved, so we want to ring the alarm
             alarm_ring <= '1;
     end
 

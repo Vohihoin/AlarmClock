@@ -1,4 +1,12 @@
 |AlarmClock
+alarm_ring <= alarm_clock_top_level:inst.alarm_ring
+CLOCK_50 => PLL:inst4.inclk0
+reset => alarm_clock_top_level:inst.rst_n
+set_time => alarm_clock_top_level:inst.set_time
+set_alarm => alarm_clock_top_level:inst.set_alarm
+switch_select => alarm_clock_top_level:inst.switch_select_n
+increment => LPM_INV:inst7.data[0]
+reset_alarm => LPM_INV:inst8.data[0]
 hrTSeg[0] <= alarm_clock_top_level:inst.hrTSeg[0]
 hrTSeg[1] <= alarm_clock_top_level:inst.hrTSeg[1]
 hrTSeg[2] <= alarm_clock_top_level:inst.hrTSeg[2]
@@ -6,12 +14,6 @@ hrTSeg[3] <= alarm_clock_top_level:inst.hrTSeg[3]
 hrTSeg[4] <= alarm_clock_top_level:inst.hrTSeg[4]
 hrTSeg[5] <= alarm_clock_top_level:inst.hrTSeg[5]
 hrTSeg[6] <= alarm_clock_top_level:inst.hrTSeg[6]
-CLOCK_50 => PLL:inst4.inclk0
-reset => alarm_clock_top_level:inst.rst_n
-set_time => alarm_clock_top_level:inst.set_time
-set_alarm => alarm_clock_top_level:inst.set_alarm
-switch_select => alarm_clock_top_level:inst.switch_select_n
-increment => LPM_INV:inst7.data[0]
 hrUSeg[0] <= alarm_clock_top_level:inst.hrUSeg[0]
 hrUSeg[1] <= alarm_clock_top_level:inst.hrUSeg[1]
 hrUSeg[2] <= alarm_clock_top_level:inst.hrUSeg[2]
@@ -56,6 +58,7 @@ set_time => set_time.IN2
 set_alarm => set_alarm.IN1
 switch_select_n => switch_select.IN1
 increment_in => increment_in.IN1
+reset_alarm => reset_alarm.IN1
 secU[0] <= secU[0].DB_MAX_OUTPUT_PORT_TYPE
 secU[1] <= secU[1].DB_MAX_OUTPUT_PORT_TYPE
 secU[2] <= secU[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -166,6 +169,12 @@ hrT[2] <= hr_reg_T:hrRegT.Q
 hrT[3] <= hr_reg_T:hrRegT.Q
 switch_select_deb <= debouncer:switch_select_debouncer.pb_out
 inc_deb <= debouncer:increment_debouncer.pb_out
+selections[0] <= reg6bit:iREG1.Q
+selections[1] <= reg6bit:iREG1.Q
+selections[2] <= reg6bit:iREG1.Q
+selections[3] <= reg6bit:iREG1.Q
+selections[4] <= reg6bit:iREG1.Q
+selections[5] <= reg6bit:iREG1.Q
 
 
 |AlarmClock|alarm_clock_top_level:inst|alarm_clock:mainClock|reg6bit:iREG1
@@ -1629,6 +1638,7 @@ Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 |AlarmClock|alarm_clock_top_level:inst|alarm_control:alarmDevice
 clk => alarm_ring~reg0.CLK
+clk => time_achieved_prev.CLK
 clk => alarm_hrT[0]~reg0.CLK
 clk => alarm_hrT[1]~reg0.CLK
 clk => alarm_hrT[2]~reg0.CLK
@@ -1649,7 +1659,6 @@ clk => selected_place[0].CLK
 clk => selected_place[1].CLK
 clk => selected_place[2].CLK
 clk => selected_place[3].CLK
-clk => in_alarm_mode_prev.CLK
 clk => in_alarm_mode.CLK
 rst_n => alarm_hrT[0]~reg0.ACLR
 rst_n => alarm_hrT[1]~reg0.ACLR
@@ -1668,33 +1677,33 @@ rst_n => alarm_minU[1]~reg0.ACLR
 rst_n => alarm_minU[2]~reg0.ACLR
 rst_n => alarm_minU[3]~reg0.ACLR
 rst_n => alarm_ring~reg0.ACLR
-rst_n => in_alarm_mode.ACLR
-rst_n => in_alarm_mode_prev.ACLR
 rst_n => selected_place[0].PRESET
 rst_n => selected_place[1].ACLR
 rst_n => selected_place[2].ACLR
 rst_n => selected_place[3].ACLR
+rst_n => in_alarm_mode.ACLR
+rst_n => time_achieved_prev.ACLR
 switch_select => always2.IN1
 inc_value => always3.IN1
 set_alarm => in_alarm_mode.IN0
 set_time => in_alarm_mode.IN1
-minU_in[0] => alarm_minU.DATAB
-minU_in[1] => alarm_minU.DATAB
-minU_in[2] => alarm_minU.DATAB
-minU_in[3] => alarm_minU.DATAB
-minT_in[0] => alarm_minT.DATAB
-minT_in[1] => alarm_minT.DATAB
-minT_in[2] => alarm_minT.DATAB
-minT_in[3] => alarm_minT.DATAB
-hrU_in[0] => alarm_hrU.DATAB
-hrU_in[1] => alarm_hrU.DATAB
-hrU_in[2] => alarm_hrU.DATAB
-hrU_in[3] => alarm_hrU.DATAB
-hrT_in[0] => alarm_hrT.DATAB
-hrT_in[1] => alarm_hrT.DATAB
-hrT_in[2] => alarm_hrT.DATAB
-hrT_in[3] => alarm_hrT.DATAB
-rst_alarm_ring => alarm_ring~reg0.ENA
+minU_in[0] => Equal0.IN3
+minU_in[1] => Equal0.IN2
+minU_in[2] => Equal0.IN1
+minU_in[3] => Equal0.IN0
+minT_in[0] => Equal1.IN3
+minT_in[1] => Equal1.IN2
+minT_in[2] => Equal1.IN1
+minT_in[3] => Equal1.IN0
+hrU_in[0] => Equal2.IN3
+hrU_in[1] => Equal2.IN2
+hrU_in[2] => Equal2.IN1
+hrU_in[3] => Equal2.IN0
+hrT_in[0] => Equal3.IN3
+hrT_in[1] => Equal3.IN2
+hrT_in[2] => Equal3.IN1
+hrT_in[3] => Equal3.IN0
+rst_alarm_ring => alarm_ring.OUTPUTSELECT
 alarm_ring <= alarm_ring~reg0.DB_MAX_OUTPUT_PORT_TYPE
 alarm_minU[0] <= alarm_minU[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 alarm_minU[1] <= alarm_minU[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1712,6 +1721,10 @@ alarm_hrT[0] <= alarm_hrT[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 alarm_hrT[1] <= alarm_hrT[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 alarm_hrT[2] <= alarm_hrT[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 alarm_hrT[3] <= alarm_hrT[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+alarm_selected_place[0] <= selected_place[0].DB_MAX_OUTPUT_PORT_TYPE
+alarm_selected_place[1] <= selected_place[1].DB_MAX_OUTPUT_PORT_TYPE
+alarm_selected_place[2] <= selected_place[2].DB_MAX_OUTPUT_PORT_TYPE
+alarm_selected_place[3] <= selected_place[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |AlarmClock|alarm_clock_top_level:inst|bcd7seg_en:secUDec
@@ -2356,6 +2369,11 @@ locked <= generic_pll1.LOCKED
 
 
 |AlarmClock|LPM_INV:inst7
+data[0] => result[0].IN0
+result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AlarmClock|LPM_INV:inst8
 data[0] => result[0].IN0
 result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
 

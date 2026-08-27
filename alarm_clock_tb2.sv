@@ -219,9 +219,10 @@ module alarm_clock_tb2(
 
     always #5 clk = ~clk; // period of 10
 
+    logic [5:0] selections;
     alarm_clock iDUT(.clk(clk), .resetn(resetn), .set_time(set_time), .switch_select_in(switch_select_in), .increment_in(increment_in),
             .secU(secU), .secT(secT), .minU(minU), .minT(minT), .hrU(hrU), .hrT(hrT), .secUSeg(secUSeg), .secTSeg(secTSeg), .minUSeg(minUSeg),
-            .minTSeg(minTSeg), .hrUSeg(hrUSeg), .hrTSeg(hrTSeg));
+            .minTSeg(minTSeg), .hrUSeg(hrUSeg), .hrTSeg(hrTSeg), .selections(selections));
 
 
 

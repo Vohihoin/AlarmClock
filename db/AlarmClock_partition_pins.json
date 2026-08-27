@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "alarm_ring",
+					"strict" : false
+				},
+				{
 					"name" : "hrTSeg[6]",
 					"strict" : false
 				},
@@ -177,6 +181,10 @@
 				},
 				{
 					"name" : "set_alarm",
+					"strict" : false
+				},
+				{
+					"name" : "reset_alarm",
 					"strict" : false
 				},
 				{
