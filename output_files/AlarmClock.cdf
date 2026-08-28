@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/Owner/Desktop/Robotics/FPGAWork/AlarmClock/output_files/") File("AlarmClock.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5) Path("C:/Users/Owner/Desktop/Robotics/FPGAWork/AlarmClock/output_files/") File("AlarmClock.jic") MfrSpec(OpMask(1) SEC_Device(EPCS128) Child_OpMask(1 1));
 
 ChainEnd;
 
